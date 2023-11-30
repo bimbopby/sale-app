@@ -28,11 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/reactnative/ivpusic/imagepicker/PickerModule;Lcom/facebook/react/bridge/Promise;Ljava/util/concurrent/Callable;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 244
     iput-object p1, p0, Lcom/reactnative/ivpusic/imagepicker/PickerModule$3;->this$0:Lcom/reactnative/ivpusic/imagepicker/PickerModule;

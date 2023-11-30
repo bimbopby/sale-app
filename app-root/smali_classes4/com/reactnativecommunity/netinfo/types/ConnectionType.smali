@@ -38,67 +38,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-    .locals 3
-
-    const/16 v0, 0x8
-
-    new-array v0, v0, [Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    .line 11
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->BLUETOOTH:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->CELLULAR:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->ETHERNET:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->NONE:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->UNKNOWN:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x4
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->WIFI:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x5
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->WIMAX:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x6
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->VPN:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    const/4 v2, 0x7
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 16
 
     .line 12
     new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
@@ -114,102 +55,122 @@
     sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->BLUETOOTH:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     .line 13
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    new-instance v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
-    const-string v1, "CELLULAR"
+    const-string v3, "CELLULAR"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    const-string v3, "cellular"
+    const-string v5, "cellular"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v3, v4, v5}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->CELLULAR:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v1, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->CELLULAR:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     .line 14
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    new-instance v3, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
-    const-string v1, "ETHERNET"
+    const-string v5, "ETHERNET"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    const-string v3, "ethernet"
+    const-string v7, "ethernet"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v3, v5, v6, v7}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->ETHERNET:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v3, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->ETHERNET:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     .line 15
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    new-instance v5, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
-    const-string v1, "NONE"
+    const-string v7, "NONE"
 
-    const/4 v2, 0x3
+    const/4 v8, 0x3
 
-    const-string v3, "none"
+    const-string v9, "none"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v5, v7, v8, v9}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->NONE:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v5, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->NONE:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     .line 16
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    new-instance v7, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
-    const-string v1, "UNKNOWN"
+    const-string v9, "UNKNOWN"
 
-    const/4 v2, 0x4
+    const/4 v10, 0x4
 
-    const-string v3, "unknown"
+    const-string v11, "unknown"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v7, v9, v10, v11}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->UNKNOWN:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v7, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->UNKNOWN:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     .line 17
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    new-instance v9, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
-    const-string v1, "WIFI"
+    const-string v11, "WIFI"
 
-    const/4 v2, 0x5
+    const/4 v12, 0x5
 
-    const-string v3, "wifi"
+    const-string v13, "wifi"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v9, v11, v12, v13}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->WIFI:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v9, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->WIFI:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     .line 18
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    new-instance v11, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
-    const-string v1, "WIMAX"
+    const-string v13, "WIMAX"
 
-    const/4 v2, 0x6
+    const/4 v14, 0x6
 
-    const-string v3, "wimax"
+    const-string v15, "wimax"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v11, v13, v14, v15}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->WIMAX:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v11, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->WIMAX:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     .line 19
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    new-instance v13, Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
-    const-string v1, "VPN"
+    const-string v15, "VPN"
 
-    const/4 v2, 0x7
+    const/4 v14, 0x7
 
-    const-string v3, "vpn"
+    const-string v12, "vpn"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v13, v15, v14, v12}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->VPN:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v13, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->VPN:Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+
+    const/16 v12, 0x8
+
+    new-array v12, v12, [Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+
+    aput-object v0, v12, v2
+
+    aput-object v1, v12, v4
+
+    aput-object v3, v12, v6
+
+    aput-object v5, v12, v8
+
+    aput-object v7, v12, v10
+
+    const/4 v0, 0x5
+
+    aput-object v9, v12, v0
+
+    const/4 v0, 0x6
+
+    aput-object v11, v12, v0
+
+    aput-object v13, v12, v14
 
     .line 11
-    invoke-static {}, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->$values()[Lcom/reactnativecommunity/netinfo/types/ConnectionType;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->$VALUES:[Lcom/reactnativecommunity/netinfo/types/ConnectionType;
+    sput-object v12, Lcom/reactnativecommunity/netinfo/types/ConnectionType;->$VALUES:[Lcom/reactnativecommunity/netinfo/types/ConnectionType;
 
     return-void
 .end method

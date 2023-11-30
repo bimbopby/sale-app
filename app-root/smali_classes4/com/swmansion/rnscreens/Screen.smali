@@ -6,10 +6,10 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/swmansion/rnscreens/Screen$StackPresentation;,
+        Lcom/swmansion/rnscreens/Screen$ActivityState;,
         Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;,
         Lcom/swmansion/rnscreens/Screen$StackAnimation;,
-        Lcom/swmansion/rnscreens/Screen$ActivityState;
+        Lcom/swmansion/rnscreens/Screen$StackPresentation;
     }
 .end annotation
 

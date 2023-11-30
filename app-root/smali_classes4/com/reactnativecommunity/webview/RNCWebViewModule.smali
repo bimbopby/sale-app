@@ -13,8 +13,8 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/reactnativecommunity/webview/RNCWebViewModule$ShouldOverrideUrlLoadingLock;,
-        Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+        Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;,
+        Lcom/reactnativecommunity/webview/RNCWebViewModule$ShouldOverrideUrlLoadingLock;
     }
 .end annotation
 

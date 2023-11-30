@@ -15,9 +15,9 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/rt2zz/reactnativecontacts/ContactsProvider$Contact$PostalAddressItem;,
         Lcom/rt2zz/reactnativecontacts/ContactsProvider$Contact$Birthday;,
-        Lcom/rt2zz/reactnativecontacts/ContactsProvider$Contact$Item;,
-        Lcom/rt2zz/reactnativecontacts/ContactsProvider$Contact$PostalAddressItem;
+        Lcom/rt2zz/reactnativecontacts/ContactsProvider$Contact$Item;
     }
 .end annotation
 

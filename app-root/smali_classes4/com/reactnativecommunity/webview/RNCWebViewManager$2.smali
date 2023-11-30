@@ -28,11 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/reactnativecommunity/webview/RNCWebViewManager;Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebView;Lcom/facebook/react/uimanager/ThemedReactContext;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 219
     iput-object p1, p0, Lcom/reactnativecommunity/webview/RNCWebViewManager$2;->this$0:Lcom/reactnativecommunity/webview/RNCWebViewManager;

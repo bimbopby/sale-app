@@ -26,11 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/reactnativecommunity/asyncstorage/AsyncStorageModule$SerialExecutor;Ljava/lang/Runnable;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 60
     iput-object p1, p0, Lcom/reactnativecommunity/asyncstorage/AsyncStorageModule$SerialExecutor$1;->this$1:Lcom/reactnativecommunity/asyncstorage/AsyncStorageModule$SerialExecutor;

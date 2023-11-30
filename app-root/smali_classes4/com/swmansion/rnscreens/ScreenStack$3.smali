@@ -26,11 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/swmansion/rnscreens/ScreenStack;Lcom/swmansion/rnscreens/ScreenStackFragment;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 262
     iput-object p1, p0, Lcom/swmansion/rnscreens/ScreenStack$3;->this$0:Lcom/swmansion/rnscreens/ScreenStack;

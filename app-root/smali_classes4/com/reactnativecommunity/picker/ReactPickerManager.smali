@@ -6,8 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/reactnativecommunity/picker/ReactPickerManager$ReactPickerAdapter;,
-        Lcom/reactnativecommunity/picker/ReactPickerManager$PickerEventEmitter;
+        Lcom/reactnativecommunity/picker/ReactPickerManager$PickerEventEmitter;,
+        Lcom/reactnativecommunity/picker/ReactPickerManager$ReactPickerAdapter;
     }
 .end annotation
 

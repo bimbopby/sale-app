@@ -6,9 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/reactnativecommunity/netinfo/AmazonFireDeviceConnectivityPoller$ConnectivityChangedCallback;,
+        Lcom/reactnativecommunity/netinfo/AmazonFireDeviceConnectivityPoller$PollerTask;,
         Lcom/reactnativecommunity/netinfo/AmazonFireDeviceConnectivityPoller$Receiver;,
-        Lcom/reactnativecommunity/netinfo/AmazonFireDeviceConnectivityPoller$PollerTask;
+        Lcom/reactnativecommunity/netinfo/AmazonFireDeviceConnectivityPoller$ConnectivityChangedCallback;
     }
 .end annotation
 

@@ -26,43 +26,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/swmansion/gesturehandler/PointerEventsConfig;
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [Lcom/swmansion/gesturehandler/PointerEventsConfig;
-
-    .line 3
-    sget-object v1, Lcom/swmansion/gesturehandler/PointerEventsConfig;->NONE:Lcom/swmansion/gesturehandler/PointerEventsConfig;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/gesturehandler/PointerEventsConfig;->BOX_NONE:Lcom/swmansion/gesturehandler/PointerEventsConfig;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/gesturehandler/PointerEventsConfig;->BOX_ONLY:Lcom/swmansion/gesturehandler/PointerEventsConfig;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/gesturehandler/PointerEventsConfig;->AUTO:Lcom/swmansion/gesturehandler/PointerEventsConfig;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 9
 
     .line 8
     new-instance v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;
@@ -76,44 +41,52 @@
     sput-object v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;->NONE:Lcom/swmansion/gesturehandler/PointerEventsConfig;
 
     .line 13
-    new-instance v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;
+    new-instance v1, Lcom/swmansion/gesturehandler/PointerEventsConfig;
 
-    const-string v1, "BOX_NONE"
+    const-string v3, "BOX_NONE"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/gesturehandler/PointerEventsConfig;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/swmansion/gesturehandler/PointerEventsConfig;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;->BOX_NONE:Lcom/swmansion/gesturehandler/PointerEventsConfig;
+    sput-object v1, Lcom/swmansion/gesturehandler/PointerEventsConfig;->BOX_NONE:Lcom/swmansion/gesturehandler/PointerEventsConfig;
 
     .line 18
-    new-instance v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;
+    new-instance v3, Lcom/swmansion/gesturehandler/PointerEventsConfig;
 
-    const-string v1, "BOX_ONLY"
+    const-string v5, "BOX_ONLY"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/gesturehandler/PointerEventsConfig;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/swmansion/gesturehandler/PointerEventsConfig;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;->BOX_ONLY:Lcom/swmansion/gesturehandler/PointerEventsConfig;
+    sput-object v3, Lcom/swmansion/gesturehandler/PointerEventsConfig;->BOX_ONLY:Lcom/swmansion/gesturehandler/PointerEventsConfig;
 
     .line 23
-    new-instance v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;
+    new-instance v5, Lcom/swmansion/gesturehandler/PointerEventsConfig;
 
-    const-string v1, "AUTO"
+    const-string v7, "AUTO"
 
-    const/4 v2, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/gesturehandler/PointerEventsConfig;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/swmansion/gesturehandler/PointerEventsConfig;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;->AUTO:Lcom/swmansion/gesturehandler/PointerEventsConfig;
+    sput-object v5, Lcom/swmansion/gesturehandler/PointerEventsConfig;->AUTO:Lcom/swmansion/gesturehandler/PointerEventsConfig;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Lcom/swmansion/gesturehandler/PointerEventsConfig;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 3
-    invoke-static {}, Lcom/swmansion/gesturehandler/PointerEventsConfig;->$values()[Lcom/swmansion/gesturehandler/PointerEventsConfig;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/swmansion/gesturehandler/PointerEventsConfig;->$VALUES:[Lcom/swmansion/gesturehandler/PointerEventsConfig;
+    sput-object v7, Lcom/swmansion/gesturehandler/PointerEventsConfig;->$VALUES:[Lcom/swmansion/gesturehandler/PointerEventsConfig;
 
     return-void
 .end method

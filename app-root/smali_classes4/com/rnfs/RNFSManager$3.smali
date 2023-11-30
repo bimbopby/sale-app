@@ -30,11 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/rnfs/RNFSManager;ILcom/facebook/react/bridge/Promise;Lcom/facebook/react/bridge/ReadableMap;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 723
     iput-object p1, p0, Lcom/rnfs/RNFSManager$3;->this$0:Lcom/rnfs/RNFSManager;

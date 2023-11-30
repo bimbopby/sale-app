@@ -26,11 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/swmansion/rnscreens/ScreenContainer;Landroidx/fragment/app/FragmentTransaction;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 217
     iput-object p1, p0, Lcom/swmansion/rnscreens/ScreenContainer$3;->this$0:Lcom/swmansion/rnscreens/ScreenContainer;

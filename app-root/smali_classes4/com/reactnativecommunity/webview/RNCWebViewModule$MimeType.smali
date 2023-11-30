@@ -37,37 +37,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
-    .locals 3
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
-
-    .line 86
-    sget-object v1, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->DEFAULT:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->IMAGE:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->VIDEO:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 8
 
     .line 87
     new-instance v0, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
@@ -83,37 +54,43 @@
     sput-object v0, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->DEFAULT:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
 
     .line 88
-    new-instance v0, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+    new-instance v1, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
 
-    const-string v1, "IMAGE"
+    const-string v3, "IMAGE"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    const-string v3, "image"
+    const-string v5, "image"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v3, v4, v5}, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->IMAGE:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+    sput-object v1, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->IMAGE:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
 
     .line 89
-    new-instance v0, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+    new-instance v3, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
 
-    const-string v1, "VIDEO"
+    const-string v5, "VIDEO"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    const-string v3, "video"
+    const-string v7, "video"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v3, v5, v6, v7}, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->VIDEO:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+    sput-object v3, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->VIDEO:Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+
+    const/4 v5, 0x3
+
+    new-array v5, v5, [Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 86
-    invoke-static {}, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->$values()[Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->$VALUES:[Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
+    sput-object v5, Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;->$VALUES:[Lcom/reactnativecommunity/webview/RNCWebViewModule$MimeType;
 
     return-void
 .end method

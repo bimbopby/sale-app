@@ -33,37 +33,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/swmansion/rnscreens/Screen$ActivityState;
-    .locals 3
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Lcom/swmansion/rnscreens/Screen$ActivityState;
-
-    .line 41
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$ActivityState;->INACTIVE:Lcom/swmansion/rnscreens/Screen$ActivityState;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$ActivityState;->TRANSITIONING_OR_BELOW_TOP:Lcom/swmansion/rnscreens/Screen$ActivityState;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$ActivityState;->ON_TOP:Lcom/swmansion/rnscreens/Screen$ActivityState;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 7
 
     .line 42
     new-instance v0, Lcom/swmansion/rnscreens/Screen$ActivityState;
@@ -77,33 +48,39 @@
     sput-object v0, Lcom/swmansion/rnscreens/Screen$ActivityState;->INACTIVE:Lcom/swmansion/rnscreens/Screen$ActivityState;
 
     .line 43
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$ActivityState;
+    new-instance v1, Lcom/swmansion/rnscreens/Screen$ActivityState;
 
-    const-string v1, "TRANSITIONING_OR_BELOW_TOP"
+    const-string v3, "TRANSITIONING_OR_BELOW_TOP"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$ActivityState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/swmansion/rnscreens/Screen$ActivityState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$ActivityState;->TRANSITIONING_OR_BELOW_TOP:Lcom/swmansion/rnscreens/Screen$ActivityState;
+    sput-object v1, Lcom/swmansion/rnscreens/Screen$ActivityState;->TRANSITIONING_OR_BELOW_TOP:Lcom/swmansion/rnscreens/Screen$ActivityState;
 
     .line 44
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$ActivityState;
+    new-instance v3, Lcom/swmansion/rnscreens/Screen$ActivityState;
 
-    const-string v1, "ON_TOP"
+    const-string v5, "ON_TOP"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$ActivityState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/swmansion/rnscreens/Screen$ActivityState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$ActivityState;->ON_TOP:Lcom/swmansion/rnscreens/Screen$ActivityState;
+    sput-object v3, Lcom/swmansion/rnscreens/Screen$ActivityState;->ON_TOP:Lcom/swmansion/rnscreens/Screen$ActivityState;
+
+    const/4 v5, 0x3
+
+    new-array v5, v5, [Lcom/swmansion/rnscreens/Screen$ActivityState;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 41
-    invoke-static {}, Lcom/swmansion/rnscreens/Screen$ActivityState;->$values()[Lcom/swmansion/rnscreens/Screen$ActivityState;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$ActivityState;->$VALUES:[Lcom/swmansion/rnscreens/Screen$ActivityState;
+    sput-object v5, Lcom/swmansion/rnscreens/Screen$ActivityState;->$VALUES:[Lcom/swmansion/rnscreens/Screen$ActivityState;
 
     return-void
 .end method

@@ -30,43 +30,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
-
-    .line 15
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_2G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_3G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_4G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_5G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 10
 
     .line 17
     new-instance v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
@@ -82,50 +47,58 @@
     sput-object v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_2G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
 
     .line 18
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+    new-instance v1, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
 
-    const-string v1, "CG_3G"
+    const-string v3, "CG_3G"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    const-string v3, "3g"
+    const-string v5, "3g"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v3, v4, v5}, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_3G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+    sput-object v1, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_3G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
 
     .line 19
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+    new-instance v3, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
 
-    const-string v1, "CG_4G"
+    const-string v5, "CG_4G"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    const-string v3, "4g"
+    const-string v7, "4g"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v3, v5, v6, v7}, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_4G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+    sput-object v3, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_4G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
 
     .line 20
-    new-instance v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+    new-instance v5, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
 
-    const-string v1, "CG_5G"
+    const-string v7, "CG_5G"
 
-    const/4 v2, 0x3
+    const/4 v8, 0x3
 
-    const-string v3, "5g"
+    const-string v9, "5g"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v5, v7, v8, v9}, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_5G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+    sput-object v5, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->CG_5G:Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
 
     .line 15
-    invoke-static {}, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->$values()[Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->$VALUES:[Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
+    sput-object v7, Lcom/reactnativecommunity/netinfo/types/CellularGeneration;->$VALUES:[Lcom/reactnativecommunity/netinfo/types/CellularGeneration;
 
     return-void
 .end method

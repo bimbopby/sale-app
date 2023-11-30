@@ -26,11 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/th3rdwave/safeareacontext/SafeAreaProviderManager;Lcom/facebook/react/uimanager/events/EventDispatcher;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 44
     iput-object p1, p0, Lcom/th3rdwave/safeareacontext/SafeAreaProviderManager$1;->this$0:Lcom/th3rdwave/safeareacontext/SafeAreaProviderManager;

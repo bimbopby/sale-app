@@ -22,31 +22,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
-    .locals 3
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
-
-    .line 3
-    sget-object v1, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->PADDING:Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->MARGIN:Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 5
 
     .line 4
     new-instance v0, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
@@ -60,22 +37,26 @@
     sput-object v0, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->PADDING:Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
 
     .line 5
-    new-instance v0, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
+    new-instance v1, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
 
-    const-string v1, "MARGIN"
+    const-string v3, "MARGIN"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->MARGIN:Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
+    sput-object v1, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->MARGIN:Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
+
+    const/4 v3, 0x2
+
+    new-array v3, v3, [Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 3
-    invoke-static {}, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->$values()[Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->$VALUES:[Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
+    sput-object v3, Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;->$VALUES:[Lcom/th3rdwave/safeareacontext/SafeAreaViewMode;
 
     return-void
 .end method

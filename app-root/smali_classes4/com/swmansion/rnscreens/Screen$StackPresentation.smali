@@ -33,37 +33,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/swmansion/rnscreens/Screen$StackPresentation;
-    .locals 3
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Lcom/swmansion/rnscreens/Screen$StackPresentation;
-
-    .line 22
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackPresentation;->PUSH:Lcom/swmansion/rnscreens/Screen$StackPresentation;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackPresentation;->MODAL:Lcom/swmansion/rnscreens/Screen$StackPresentation;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackPresentation;->TRANSPARENT_MODAL:Lcom/swmansion/rnscreens/Screen$StackPresentation;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 7
 
     .line 23
     new-instance v0, Lcom/swmansion/rnscreens/Screen$StackPresentation;
@@ -77,33 +48,39 @@
     sput-object v0, Lcom/swmansion/rnscreens/Screen$StackPresentation;->PUSH:Lcom/swmansion/rnscreens/Screen$StackPresentation;
 
     .line 24
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$StackPresentation;
+    new-instance v1, Lcom/swmansion/rnscreens/Screen$StackPresentation;
 
-    const-string v1, "MODAL"
+    const-string v3, "MODAL"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$StackPresentation;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/swmansion/rnscreens/Screen$StackPresentation;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackPresentation;->MODAL:Lcom/swmansion/rnscreens/Screen$StackPresentation;
+    sput-object v1, Lcom/swmansion/rnscreens/Screen$StackPresentation;->MODAL:Lcom/swmansion/rnscreens/Screen$StackPresentation;
 
     .line 25
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$StackPresentation;
+    new-instance v3, Lcom/swmansion/rnscreens/Screen$StackPresentation;
 
-    const-string v1, "TRANSPARENT_MODAL"
+    const-string v5, "TRANSPARENT_MODAL"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$StackPresentation;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/swmansion/rnscreens/Screen$StackPresentation;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackPresentation;->TRANSPARENT_MODAL:Lcom/swmansion/rnscreens/Screen$StackPresentation;
+    sput-object v3, Lcom/swmansion/rnscreens/Screen$StackPresentation;->TRANSPARENT_MODAL:Lcom/swmansion/rnscreens/Screen$StackPresentation;
+
+    const/4 v5, 0x3
+
+    new-array v5, v5, [Lcom/swmansion/rnscreens/Screen$StackPresentation;
+
+    aput-object v0, v5, v2
+
+    aput-object v1, v5, v4
+
+    aput-object v3, v5, v6
 
     .line 22
-    invoke-static {}, Lcom/swmansion/rnscreens/Screen$StackPresentation;->$values()[Lcom/swmansion/rnscreens/Screen$StackPresentation;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackPresentation;->$VALUES:[Lcom/swmansion/rnscreens/Screen$StackPresentation;
+    sput-object v5, Lcom/swmansion/rnscreens/Screen$StackPresentation;->$VALUES:[Lcom/swmansion/rnscreens/Screen$StackPresentation;
 
     return-void
 .end method

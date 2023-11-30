@@ -26,11 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 600
     iput-object p1, p0, Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule$2;->this$0:Lcom/swmansion/gesturehandler/react/RNGestureHandlerModule;

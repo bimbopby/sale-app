@@ -37,49 +37,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/swmansion/rnscreens/Screen$StackAnimation;
-    .locals 3
-
-    const/4 v0, 0x5
-
-    new-array v0, v0, [Lcom/swmansion/rnscreens/Screen$StackAnimation;
-
-    .line 28
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackAnimation;->DEFAULT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackAnimation;->NONE:Lcom/swmansion/rnscreens/Screen$StackAnimation;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackAnimation;->FADE:Lcom/swmansion/rnscreens/Screen$StackAnimation;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackAnimation;->SLIDE_FROM_RIGHT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
-
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$StackAnimation;->SLIDE_FROM_LEFT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
-
-    const/4 v2, 0x4
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 11
 
     .line 29
     new-instance v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;
@@ -93,55 +52,65 @@
     sput-object v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;->DEFAULT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
     .line 30
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    new-instance v1, Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
-    const-string v1, "NONE"
+    const-string v3, "NONE"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;->NONE:Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    sput-object v1, Lcom/swmansion/rnscreens/Screen$StackAnimation;->NONE:Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
     .line 31
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    new-instance v3, Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
-    const-string v1, "FADE"
+    const-string v5, "FADE"
 
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v5, v6}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;->FADE:Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    sput-object v3, Lcom/swmansion/rnscreens/Screen$StackAnimation;->FADE:Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
     .line 32
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    new-instance v5, Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
-    const-string v1, "SLIDE_FROM_RIGHT"
+    const-string v7, "SLIDE_FROM_RIGHT"
 
-    const/4 v2, 0x3
+    const/4 v8, 0x3
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v7, v8}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;->SLIDE_FROM_RIGHT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    sput-object v5, Lcom/swmansion/rnscreens/Screen$StackAnimation;->SLIDE_FROM_RIGHT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
     .line 33
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    new-instance v7, Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
-    const-string v1, "SLIDE_FROM_LEFT"
+    const-string v9, "SLIDE_FROM_LEFT"
 
-    const/4 v2, 0x4
+    const/4 v10, 0x4
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v9, v10}, Lcom/swmansion/rnscreens/Screen$StackAnimation;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;->SLIDE_FROM_LEFT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    sput-object v7, Lcom/swmansion/rnscreens/Screen$StackAnimation;->SLIDE_FROM_LEFT:Lcom/swmansion/rnscreens/Screen$StackAnimation;
+
+    const/4 v9, 0x5
+
+    new-array v9, v9, [Lcom/swmansion/rnscreens/Screen$StackAnimation;
+
+    aput-object v0, v9, v2
+
+    aput-object v1, v9, v4
+
+    aput-object v3, v9, v6
+
+    aput-object v5, v9, v8
+
+    aput-object v7, v9, v10
 
     .line 28
-    invoke-static {}, Lcom/swmansion/rnscreens/Screen$StackAnimation;->$values()[Lcom/swmansion/rnscreens/Screen$StackAnimation;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$StackAnimation;->$VALUES:[Lcom/swmansion/rnscreens/Screen$StackAnimation;
+    sput-object v9, Lcom/swmansion/rnscreens/Screen$StackAnimation;->$VALUES:[Lcom/swmansion/rnscreens/Screen$StackAnimation;
 
     return-void
 .end method

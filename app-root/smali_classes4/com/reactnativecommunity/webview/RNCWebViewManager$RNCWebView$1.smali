@@ -30,11 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebView;Landroid/webkit/WebView;Ljava/lang/String;Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebView;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1728
     iput-object p1, p0, Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebView$1;->this$0:Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebView;

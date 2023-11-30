@@ -10,8 +10,8 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebChromeClient;,
         Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebView;,
+        Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebChromeClient;,
         Lcom/reactnativecommunity/webview/RNCWebViewManager$RNCWebViewClient;
     }
 .end annotation

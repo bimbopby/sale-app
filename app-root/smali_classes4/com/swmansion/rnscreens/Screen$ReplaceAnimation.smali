@@ -31,31 +31,8 @@
 
 
 # direct methods
-.method private static synthetic $values()[Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
-    .locals 3
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
-
-    .line 36
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->PUSH:Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->POP:Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 5
 
     .line 37
     new-instance v0, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
@@ -69,22 +46,26 @@
     sput-object v0, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->PUSH:Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
 
     .line 38
-    new-instance v0, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
+    new-instance v1, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
 
-    const-string v1, "POP"
+    const-string v3, "POP"
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->POP:Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
+    sput-object v1, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->POP:Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
+
+    const/4 v3, 0x2
+
+    new-array v3, v3, [Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
+
+    aput-object v0, v3, v2
+
+    aput-object v1, v3, v4
 
     .line 36
-    invoke-static {}, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->$values()[Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->$VALUES:[Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
+    sput-object v3, Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;->$VALUES:[Lcom/swmansion/rnscreens/Screen$ReplaceAnimation;
 
     return-void
 .end method

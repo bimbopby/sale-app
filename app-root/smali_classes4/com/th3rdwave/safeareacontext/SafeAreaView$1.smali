@@ -26,11 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/th3rdwave/safeareacontext/SafeAreaView;Ljava/util/concurrent/atomic/AtomicBoolean;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 70
     iput-object p1, p0, Lcom/th3rdwave/safeareacontext/SafeAreaView$1;->this$0:Lcom/th3rdwave/safeareacontext/SafeAreaView;

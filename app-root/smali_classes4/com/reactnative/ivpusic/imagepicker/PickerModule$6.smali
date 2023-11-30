@@ -37,11 +37,6 @@
 # direct methods
 .method constructor <init>(Lcom/reactnative/ivpusic/imagepicker/PickerModule;Landroid/app/Activity;Landroid/net/Uri;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 422
     iput-object p1, p0, Lcom/reactnative/ivpusic/imagepicker/PickerModule$6;->this$0:Lcom/reactnative/ivpusic/imagepicker/PickerModule;

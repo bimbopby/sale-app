@@ -26,11 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/rnfs/RNFSManager;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 740
     iput-object p1, p0, Lcom/rnfs/RNFSManager$4;->this$0:Lcom/rnfs/RNFSManager;
