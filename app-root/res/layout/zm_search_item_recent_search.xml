@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_dialog_margin_16dp" android:paddingRight="@dimen/zm_ui_kit_page_left_padding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.ZMSimpleEmojiTextView android:gravity="center|left" android:id="@id/txt_item_recent_search" android:layout_width="0.0dip" android:layout_height="65.0dip" android:text="@string/zm_btn_view_more" android:drawableLeft="@drawable/zm_ic_search_item_recent_search" android:drawablePadding="@dimen/zm_ui_kit_page_left_padding" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary" />
+    <ImageButton android:id="@id/btn_clear_item" android:background="@color/zm_white" android:padding="@dimen/zm_ui_kit_page_left_padding" android:layout_width="@dimen/zm_btn_height_32dp" android:layout_height="@dimen/zm_btn_height_32dp" android:src="@drawable/ic_close_search_history" android:contentDescription="@string/zm_bnt_clear" />
+</LinearLayout>

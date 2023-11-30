@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/appIcon" android:layout_width="@dimen/zm_avatar_small_size" android:layout_height="@dimen/zm_avatar_small_size" android:importantForAccessibility="no" app:zm_avatarBorderSize="0.0dip" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:id="@id/txtName" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:focusable="true" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZmTextView.Button.Secondary" />
+</LinearLayout>

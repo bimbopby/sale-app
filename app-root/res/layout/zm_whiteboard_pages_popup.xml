@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/zm_whiteboard_common_toolbar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.annotate.popup.pages.PagesView android:id="@id/mPagesView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:layout_marginBottom="@dimen/zm_margin_smaller_size" android:layout_marginStart="@dimen/zm_margin_smaller_size" android:layout_marginEnd="@dimen/zm_margin_smaller_size" />
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_smaller_size" android:layout_marginStart="@dimen/zm_margin_smaller_size" android:layout_marginEnd="@dimen/zm_margin_smaller_size">
+        <TextView android:id="@id/tvPageIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary.MediumPlus" />
+        <TextView android:id="@id/tvCreateTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_whiteboard_accessibility_tips_max_289013" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+    </LinearLayout>
+</LinearLayout>

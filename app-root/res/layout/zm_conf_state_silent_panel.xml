@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/confStateSilent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/onHoldView" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/zm_conf_on_hold_view" />
+    <include android:id="@id/vNoHostView" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/zm_conf_no_host_view" />
+    <include android:id="@id/vWaitingRoomView" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/zm_conf_waiting_room_view" />
+    <us.zoom.uicommon.widget.view.ZMTipLayer android:id="@id/tipLayerForSilentMode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/zm_font_pip_size" android:gravity="center" android:id="@id/txtPipStatus" android:background="@color/zm_black" android:padding="@dimen/zm_padding_normal_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_msg_you_are_in_silent_mode" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ZMTextView.ExtremLarge.OnDark" />
+</androidx.constraintlayout.widget.ConstraintLayout>

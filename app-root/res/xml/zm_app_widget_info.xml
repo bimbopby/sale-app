@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="155.0dip" android:minHeight="155.0dip" android:updatePeriodMillis="@integer/zm_widget_refesh_rate" android:initialLayout="@layout/zm_app_widget" android:previewImage="@drawable/ic_zoom_icon" android:resizeMode="horizontal|vertical" android:initialKeyguardLayout="@layout/zm_app_widget" android:widgetCategory="home_screen" android:maxResizeWidth="329.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

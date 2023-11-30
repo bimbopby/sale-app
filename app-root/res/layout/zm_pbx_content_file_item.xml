@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.ZMGifView android:id="@id/imgFileLogo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/zm_ic_filetype_image" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <com.zipow.videobox.view.ZMSimpleEmojiTextView android:gravity="left" android:id="@id/txtFileName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZmTextView.Content.Primary" />
+        <TextView android:gravity="left" android:id="@id/txtFileOwner" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary.Small.Dimmed" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/panelTranslate" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/txtTranslateSpeed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Small.Dimmed" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/progressBarPending" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" style="@style/PollingPercentBar" />
+    </LinearLayout>
+    <Button android:id="@id/btnCancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/zm_btn_cancel" style="@style/ZMButton.NoBackground" />
+</LinearLayout>

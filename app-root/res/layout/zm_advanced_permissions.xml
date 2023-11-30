@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <View android:id="@id/viewRight" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_advanced_permissions_387580" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_margin_medium_size" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/addMemberPermissionsViewGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_advanced_permissions_add_members_label_387580" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/panelAddMembers" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/addMemberByAllPanel" style="@style/ZmSettingItem">
+                        <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_advanced_permissions_all_channel_members_387580" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/addMemberByAllImg" android:duplicateParentState="true" android:layout_width="wrap_content" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/addMemberByAdminPanel" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/addMemberByAdminText" android:layout_width="0.0dip" android:text="@string/zm_lbl_advanced_permissions_owner_and_admins_387580" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/addMemberByAdminImg" android:duplicateParentState="true" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/panelSetExternal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size">
+                    <LinearLayout android:id="@id/optionIncludeExternal" style="@style/ZmSettingItem">
+                        <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_create_group_edit_external_160938" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkSetExternal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/addExternalByAllPanel" style="@style/ZmSettingItem">
+                        <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_create_group_all_members_181697" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/addExternalByAllImg" android:duplicateParentState="true" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/addExternalBySameOrgPanel" style="@style/ZmSettingItem">
+                        <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_create_group_same_organization_only_181697" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/addExternalBySameOrgImg" android:duplicateParentState="true" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/addExternalByAdminPanel" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/addExternalByAdminText" android:layout_width="0.0dip" android:text="@string/zm_lbl_advanced_permissions_send_by_admins_label_387580" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/addExternalByAdminImg" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </LinearLayout>
+            <TextView android:id="@id/txtNotificationFor" android:layout_marginTop="@dimen/zm_margin_small_minus_size" android:layout_marginBottom="@dimen/zm_margin_smallest_size" android:text="@string/zm_lbl_advanced_permissions_post_label_387580" style="@style/ZmSettingOptionTitle" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/panelNotificationFor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/postByAllPanel" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_advanced_permissions_post_by_everyone_label_387580" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/postByAllImg" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/postByAdminPanel" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/postByAdminText" android:layout_width="0.0dip" android:text="@string/zm_lbl_advanced_permissions_post_by_owner_and_admins_label_387580" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/postByAdminImg" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/panelAdminPlus" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/panelAdminText" android:layout_width="0.0dip" android:text="@string/zm_lbl_advanced_permissions_post_by_owner_admins_and_specific_label_387580" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/imgAdminPlus" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size">
+                <LinearLayout android:id="@id/panelSpecificPeople" style="@style/ZmSettingItem">
+                    <TextView android:text="@string/zm_mm_lbl_posting_permissions_specific_people_128567" style="@style/ZmSettingItemTitle" />
+                    <TextView android:id="@id/txtSpecificNames" android:layout_width="0.0dip" android:text="@string/zm_hintl_not_set" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_small_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

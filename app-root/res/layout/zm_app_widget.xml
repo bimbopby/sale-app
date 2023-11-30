@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/meeting_widget_rounded_bg" android:padding="@dimen/zm_padding_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_normal" android:layout_marginTop="@dimen/zm_padding_small" android:layout_marginRight="@dimen/zm_font_medium_size" android:layout_marginBottom="@dimen/zm_padding_small">
+        <TextView android:textSize="@dimen/zm_font_medium_size" android:textStyle="bold" android:textColor="@color/zm_v1_blue_C900" android:id="@id/tv_meeting" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_widget_upcoming_meetings_371496" android:layout_toLeftOf="@id/imgAccountType" android:layout_alignParentLeft="true" android:importantForAccessibility="no" />
+        <ImageView android:id="@id/imgAccountType" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/zm_padding_large_size" android:layout_height="@dimen/zm_padding_large_size" android:src="@drawable/zm_ic_setting_zoom" android:layout_alignParentRight="true" android:importantForAccessibility="no" />
+    </RelativeLayout>
+    <ListView android:id="@id/meetingsListView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/zm_font_medium_size" android:gravity="center" android:id="@id/tv_no_meetings" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_widget_no_upcoming_meetings_371496" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/zm_font_medium_size" android:gravity="center" android:id="@id/tv_signin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_widget_please_sign_in_371496" android:layout_centerHorizontal="true" />
+</LinearLayout>

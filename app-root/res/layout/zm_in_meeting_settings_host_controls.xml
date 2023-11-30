@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/hostHostControlPanel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtHostControls" android:layout_marginTop="@dimen/zm_margin_small_size" android:text="@string/zm_lbl_in_meeting_settings_host_control_147675" style="@style/ZmSettingOptionTitle" />
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panelMeetingTopic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" zoom:zm_dividerHeight="1.0px" zoom:zm_showTopDivider="false">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" style="@style/ZmSettingItem.UnClick">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="start|center" android:id="@id/txtMeetingTopicTitle" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_sip_pop_width_small" android:text="@string/zm_mi_meeting_topic_title_105983" style="@style/ZmSettingItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|right" android:id="@id/txtMeetingTopic" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_smaller_size" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/zm_mi_meeting_topic_name_105983" android:singleLine="true" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/zm_next_arrow" android:contentDescription="@string/zm_description_mm_btn_more" />
+        </LinearLayout>
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/optionEnableWebinarReactions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" zoom:zm_dividerHeight="1.0px" zoom:zm_showTopDivider="false">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" style="@style/ZmSettingItem.UnClick">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_mi_mute_enable_webinar_reactions_324770" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkEnableWebinarReactions" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+        </LinearLayout>
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/optionMuteOnEntry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" zoom:zm_dividerHeight="1.0px" zoom:zm_showTopDivider="false">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" style="@style/ZmSettingItem.UnClick">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_mi_mute_on_entry_75334" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkMuteOnEntry" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+        </LinearLayout>
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    <LinearLayout android:orientation="vertical" android:id="@id/optionPlayEnterExitChime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp">
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" zoom:zm_dividerHeight="1.0px" zoom:zm_showTopDivider="false">
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" style="@style/ZmSettingItem.UnClick">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_mi_play_enter_exit_sound_162309" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkPlayEnterExitChime" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </LinearLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panelMeetingSpeakingLanguageHostOnly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" zoom:zm_dividerHeight="1.0px" zoom:zm_showTopDivider="false">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingRight="@dimen/zm_setting_item_padding_right" style="@style/ZmSettingItem.UnClick">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="start|center" android:id="@id/txtMeetingSpeakingLanguageHostOnly" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_sip_pop_width_small" android:text="@string/zm_multi_captions_language_setting_283773" android:singleLine="true" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <ImageView android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/zm_next_arrow" android:contentDescription="@string/zm_description_mm_btn_more" />
+        </LinearLayout>
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+</LinearLayout>

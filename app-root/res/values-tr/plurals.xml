@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d saniye ileri sar</item>
+        <item quantity="one">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d saniye geri sar</item>
+        <item quantity="one">%d saniye geri sar</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d yeni bildirim</item>
+        <item quantity="one">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="zm_accessibility_reacion_label_233717">
+        <item quantity="other">%1$s, %2$d kullanıcılar bu tepkiyi ekledi</item>
+        <item quantity="one">%1$s, %2$d kullanıcı bu tepkiyi ekledi</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_233717">
+        <item quantity="other">%d cevaplar göster</item>
+        <item quantity="one">%d cevap göster</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="other">, %d yeni @all anmalar</item>
+        <item quantity="one">, %d yeni @all anma</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="other">, %d yeni @me anmalar</item>
+        <item quantity="one">, %d yeni @me anma</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="other">, %d yeni mesajlar</item>
+        <item quantity="one">, %d yeni mesaj</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="other">%s yeni mesajlar, buton</item>
+        <item quantity="one">%s yeni mesaj, buton</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_439129">
+        <item quantity="other">Çok fazla yanlış girişimde bulundunuz. %d dakika sonra tekrar deneyin.</item>
+        <item quantity="one">Çok fazla yanlış girişimde bulundunuz. %d dakika içinde tekrar deneyin.</item>
+    </plurals>
+    <plurals name="zm_conf_barge_slg_monitors_285616">
+        <item quantity="other">%d izleyici</item>
+        <item quantity="one">%d izleyici</item>
+    </plurals>
+    <plurals name="zm_description_tab_contacts_138733">
+        <item quantity="other">Kişiler %s okunmamış mesaj sekmesi</item>
+        <item quantity="one">Kişiler %s okunmamış mesaj sekmesi</item>
+    </plurals>
+    <plurals name="zm_description_tab_meet_and_chat_plural_448431">
+        <item quantity="other">Ekip Sohbeti %s okunmamış mesaj sekmesi</item>
+        <item quantity="one">Ekip Sohbeti %s okunmamış mesaj sekmesi</item>
+    </plurals>
+    <plurals name="zm_description_tab_sip_4_117773">
+        <item quantity="other">%1$s,%2$s yeni bildirim</item>
+        <item quantity="one">%1$s,%2$s yeni bildirim</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_hour_204709">
+        <item quantity="other">%d saat önce güncellendi</item>
+        <item quantity="one">%d saat önce güncellendi</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_minute_204709">
+        <item quantity="other">%d dakika önce güncellendi</item>
+        <item quantity="one">%d dakika önce güncellendi</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_left_times_171869">
+        <item quantity="other">%d kere ayrıldı</item>
+        <item quantity="one">%d kere ayrıldı</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_rejoin_times_171869">
+        <item quantity="other">%d kere ayrıldı ve yeniden katıldı</item>
+        <item quantity="one">%d kere ayrıldı ve yeniden katıldı</item>
+    </plurals>
+    <plurals name="zm_encryption_exceptions_211920">
+        <item quantity="other">%d istisnalar</item>
+        <item quantity="one">%d istisna</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_attendee_211920">
+        <item quantity="other">%d telefon üzerinden rolsüz katılımcılar</item>
+        <item quantity="one">%d telefon üzerinden rolsüz katılımcı</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_211920">
+        <item quantity="other">%d telefon üzerinden panelistler</item>
+        <item quantity="one">%d telefon üzerinden panelist</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_attendee_tail_211920">
+        <item quantity="other">ve %d telefon üzerinden rolsüz katılımcılar</item>
+        <item quantity="one">ve %d telefon üzerinden rolsüz katılımcı</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_participant_211920">
+        <item quantity="other">%d telefon katılımcıları</item>
+        <item quantity="one">%d telefon katılımcısı</item>
+    </plurals>
+    <plurals name="zm_lbl_chat_preview_card_number_416255">
+        <item quantity="other">Tek mesajda yalnızca %d öge ekleyebilirsiniz.</item>
+        <item quantity="one">Tek mesajda yalnızca %d öge ekleyebilirsiniz.</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_439129">
+        <item quantity="other">%d yanıt</item>
+        <item quantity="one">%d yanıt</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_439129">
+        <item quantity="other">%d Yanıt</item>
+        <item quantity="one">%d Yanıt</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_150170">
+        <item quantity="other">%d Okunmadı Olarak İşaretlendi</item>
+        <item quantity="one">%d Okunmadı Olarak İşaretlendi</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_150170">
+        <item quantity="other">%d ＠all</item>
+        <item quantity="one">%d ＠all</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_150170">
+        <item quantity="other">%d ＠me</item>
+        <item quantity="one">%d ＠me</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_439129">
+        <item quantity="other">%s yeni mesaj</item>
+        <item quantity="one">%s yeni mesaj</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_439129">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">%d saat</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_439129">
+        <item quantity="other">%d dk</item>
+        <item quantity="one">%d dk</item>
+    </plurals>
+    <plurals name="zm_lbl_participant_184616">
+        <item quantity="other">%d katılımcılar</item>
+        <item quantity="one">%d katılımcı</item>
+    </plurals>
+    <plurals name="zm_lbl_view_all_domain_447969">
+        <item quantity="other">%d Etki Alanının Tümü Görüntüle/Düzenle</item>
+        <item quantity="one">%d Etki Alanının Tümünü Görüntüle/Düzenle</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count_447969">
+        <item quantity="other">Toplam %d telefon arayarak katılım dinleyicisi</item>
+        <item quantity="one">Toplam %d telefon arayarak katılım dinleyicisi</item>
+    </plurals>
+    <plurals name="zm_mesh_badge_client_421788">
+        <item quantity="other">%d panelist eski istemci sürümü kullanıyor</item>
+        <item quantity="one">%d panelist eski istemci sürümü kullanıyor</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_chat_app_message_preview_428741">
+        <item quantity="other">(%d uygulama kartı)</item>
+        <item quantity="one">(%d uygulama kartı)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_files_439129">
+        <item quantity="other">(%d Dosya)</item>
+        <item quantity="one">(%d Dosya)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_pictures_439129">
+        <item quantity="other">(%d Resim)</item>
+        <item quantity="one">(%d Resim)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s yeni mesaj</item>
+        <item quantity="one">↑%s yeni mesaj</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_439129">
+        <item quantity="other">%d gün</item>
+        <item quantity="one">%d gün</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_439129">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">%d saat</item>
+    </plurals>
+    <plurals name="zm_mm_msg_minute_439129">
+        <item quantity="other">%d dakika</item>
+        <item quantity="one">%d dakika</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_439129">
+        <item quantity="other">%d ay</item>
+        <item quantity="one">%d ay</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_439129">
+        <item quantity="other">%d yıl</item>
+        <item quantity="one">%d yıl</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_messages_no_longer_available_285622">
+        <item quantity="other">Mesaj artık kullanılamadığı veya erişilemediği için %1$d hatırlatma silindi.</item>
+        <item quantity="one">Mesaj artık kullanılamadığı veya erişilemediği için %d hatırlatma silindi</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_3_439129">
+        <item quantity="other">%1$s: %2$s Resim</item>
+        <item quantity="one">%1$s: Resim</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_7_285622">
+        <item quantity="other">%1$s: %2$s (%3$s Dosya)</item>
+        <item quantity="one">%1$s: %2$s (%3$s Dosya)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_8_285622">
+        <item quantity="other">%1$s: %2$s (%3$s Resim)</item>
+        <item quantity="one">%1$s: %2$s (%3$s Resim)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_3_285622">
+        <item quantity="other">Siz: %1$s Resim</item>
+        <item quantity="one">Siz: %1$s Resim</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_7_285622">
+        <item quantity="other">Siz: %1$s (%2$s Dosya)</item>
+        <item quantity="one">Siz: %1$s (%2$s Dosya)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_8_285622">
+        <item quantity="other">Siz: %1$s (%2$s Resim)</item>
+        <item quantity="one">Siz: %1$s (%2$s Resim)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_hours_285622">
+        <item quantity="other">%1$d saat önce hatırlatma aldınız</item>
+        <item quantity="one">%1$d saat önce hatırlatma aldınız</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_minutes_285622">
+        <item quantity="other">%1$d dakika önce hatırlatma aldınız</item>
+        <item quantity="one">%1$d dakika önce hatırlatma aldınız</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_unread_reminders_285622">
+        <item quantity="other">%1$s(%2$d okunmamış hatırlatma)</item>
+        <item quantity="one">%1$s(%2$d okunmamış hatırlatma)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_hours_285622">
+        <item quantity="other">%1$d saat içinde bir hatırlatma alacaksınız</item>
+        <item quantity="one">%1$d saat içinde bir hatırlatma alacaksınız</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_minutes_285622">
+        <item quantity="other">%1$d dakika içinde bir hatırlatma alacaksınız</item>
+        <item quantity="one">%1$d dakika içinde bir hatırlatma alacaksınız</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_439129">
+        <item quantity="other">%1$d Ek</item>
+        <item quantity="one">%1$d Ek</item>
+    </plurals>
+    <plurals name="zm_mm_with_members_354919">
+        <item quantity="other">%d üyeli</item>
+        <item quantity="one">%d üyeli</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left_439129">
+        <item quantity="other">%d karakter kaldı</item>
+        <item quantity="one">%d karakter kaldı</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="other">%1$d kişiler eklendi %2$s</item>
+        <item quantity="one">%1$d kişi eklendi %2$s</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent_439129">
+        <item quantity="other">%d davetiye gönderildi</item>
+        <item quantity="one">%d davetiye gönderildi</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_439129">
+        <item quantity="other">%1$s(%2$d okunmamış mesaj)</item>
+        <item quantity="one">%1$s(%2$d okunmamış mesaj)</item>
+    </plurals>
+    <plurals name="zm_pbx_invite_to_meeting_invitation_sent_131469">
+        <item quantity="other">%1$d davetiye gönderildi</item>
+        <item quantity="one">%1$d davetiye gönderildi</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_msg_remove_selected_voice_mail_to_recently_deleted_232709">
+        <item quantity="other">Seçilen sesli mesajı Son Silinenlere taşıyorsunuz. Bu işlem daha sonra geri alınabilir.</item>
+        <item quantity="one">Seçilen sesli mesajı Son Silinenlere taşıyorsunuz. Bu işlem daha sonra geri alınabilir.</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_reminder_232709">
+        <item quantity="other">Listedeki öğeler, silme öncesinde kalan günleri gösterir. Bu süre dolduktan sonra öğeler kalıcı olarak silinir. Bu işlem %d güne kadar sürebilir.</item>
+        <item quantity="one">Listedeki öğeler, silme öncesinde kalan günleri gösterir. Bu süre dolduktan sonra öğeler kalıcı olarak silinir. Bu işlem %d güne kadar sürebilir.</item>
+    </plurals>
+    <plurals name="zm_question_count_271813">
+        <item quantity="other">%d sorular</item>
+        <item quantity="one">%d soru</item>
+    </plurals>
+    <plurals name="zm_reaction_counts_ax_211853">
+        <item quantity="other">%1$s, %2$d kullanıcı şu reaksiyonu gönderdi</item>
+        <item quantity="one">%1$s, %2$d kullanıcısı şu reaksiyonu gönderdi</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_count_donw_404978">
+        <item quantity="other">%1$d dk. içinde</item>
+        <item quantity="one">%1$d dk. içinde</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_end_datetime_v2_403153">
+        <item quantity="other">%1$d etkinlik tekrarı</item>
+        <item quantity="one">%1$d etkinlik tekrarı</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyday_403153">
+        <item quantity="other">%1$d günde bir, %2$s</item>
+        <item quantity="one">Her gün, %1$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_403153">
+        <item quantity="other">%1$d ayda bir, %2$d günü, %3$s</item>
+        <item quantity="one">Her ay, ayın %1$d günü, %2$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_sequence_403153">
+        <item quantity="other">%1$d ayda bir, %2$s %3$s günü, %4$s</item>
+        <item quantity="one">Her ay, %1$s %2$s günü, %3$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyweek_403153">
+        <item quantity="other">%1$d haftada bir, %2$s günü, %3$s</item>
+        <item quantity="one">Her hafta, %1$s günü, %2$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_hour_311995">
+        <item quantity="other">%d sa</item>
+        <item quantity="one">%d sa</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_member_joined_311995">
+        <item quantity="other">%1$d kişi katıldı</item>
+        <item quantity="one">%d kişi katıldı</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_min_311995">
+        <item quantity="other">%d dk</item>
+        <item quantity="one">%d dk</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_439129">
+        <item quantity="other">%1$d çağrı</item>
+        <item quantity="one">%1$d çağrı</item>
+    </plurals>
+    <plurals name="zm_sip_desc_session_new_message_117773">
+        <item quantity="other">%1$s yeni mesajlar</item>
+        <item quantity="one">%1$s yeni mesaj</item>
+    </plurals>
+    <plurals name="zm_sip_msg_delete_selected_voicemail_232709">
+        <item quantity="other">Seçilen sesli mesajları kalıcı olarak siliyorsunuz. Bu eylem geri alınamaz.</item>
+        <item quantity="one">Seçilen sesli mesajı kalıcı olarak siliyorsunuz. Bu eylem geri alınamaz.</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_file_439129">
+        <item quantity="other">%1$d dosya gönderildi</item>
+        <item quantity="one">%1$d dosya gönderildi</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_image_439129">
+        <item quantity="other">%1$d resim gönderildi</item>
+        <item quantity="one">%1$d resim gönderildi</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_file_187397">
+        <item quantity="other">%1$s (%2$d dosya)</item>
+        <item quantity="one">%1$s (%2$d Dosya)</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_image_187397">
+        <item quantity="other">%1$s (%2$d Görüntüler)</item>
+        <item quantity="one">%1$s (%2$d Görüntü)</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">%d emoji seçildi</item>
+        <item quantity="one">Bir emoji seçildi</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_are_following_you_383781">
+        <item quantity="other">sizi takip ediyor</item>
+        <item quantity="one">sizi takip ediyor</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_number_are_following_you_383781">
+        <item quantity="other">%d kişi</item>
+        <item quantity="one">%d kişi</item>
+    </plurals>
+</resources>

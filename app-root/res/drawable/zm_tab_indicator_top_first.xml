@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:state_selected="false" android:state_pressed="false">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_transparent" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_selected="true" android:state_pressed="false">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_v2_meeting_normal_tab_bg" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_selected="false" android:state_pressed="false">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_transparent" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_selected="true" android:state_pressed="false">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_v2_meeting_normal_tab_bg" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_selected="false" android:state_pressed="true">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_v2_meeting_normal_tab_bg" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_selected="true" android:state_pressed="true">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_v2_meeting_normal_tab_bg" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_selected="false" android:state_pressed="true">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_v2_meeting_normal_tab_bg" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_selected="true" android:state_pressed="true">
+        <shape>
+            <corners android:topLeftRadius="6.0dip" android:bottomLeftRadius="6.0dip" />
+            <solid android:color="@color/zm_v2_meeting_normal_tab_bg" />
+            <stroke android:width="1.0dip" android:color="@color/zm_v2_meeting_normal_tab_bg" />
+        </shape>
+    </item>
+</selector>

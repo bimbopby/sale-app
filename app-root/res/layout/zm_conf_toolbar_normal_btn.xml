@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/toolbarButtonParent" android:layout_width="wrap_content" android:layout_height="65.0dip" android:minWidth="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/toolbarButton" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="55.0dip" android:minHeight="55.0dip" android:layout_centerInParent="true" zoom:zm_icon="@drawable/zm_btn_mute_audio" zoom:zm_text="@string/zm_btn_mute_audio" />
+</RelativeLayout>

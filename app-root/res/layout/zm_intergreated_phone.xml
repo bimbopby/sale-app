@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_title_intergreated_phone_67420" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="horizontal" android:id="@id/optionCallForwardTurnOnState" android:background="@color/zm_pbx_setting_call_forward_turn_on_status_bg" android:paddingLeft="@dimen/zm_padding_large_size" android:paddingRight="@dimen/zm_padding_large_size" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_height_32dp">
+                    <TextView android:id="@id/txtCallForwardTurnOnInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_pbx_call_forward_setting_state_356266" zoom:layout_constrainedWidth="true" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toStartOf="@id/txtCallForwardTurnOff" zoom:layout_constraintHorizontal_chainStyle="packed" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmTextView.Content.Primary.MediumPlus" />
+                    <TextView android:textColor="@color/zm_pbx_setting_call_forward_turn_off_btn" android:id="@id/txtCallForwardTurnOff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_pbx_call_forward_setting_turn_off_356266" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toEndOf="@id/txtCallForwardTurnOnInfo" zoom:layout_constraintTop_toTopOf="@id/txtCallForwardTurnOnInfo" style="@style/ZmTextView.Content.Primary.MediumPlus" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                    <LinearLayout android:id="@id/optionDirectNumber" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/txtTitleDirectNumber" android:text="@string/zm_title_direct_number_184616" style="@style/ZmSettingItemTitle" />
+                        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/directContainer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/optionCompanyNumber" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/txtCompanyNumberTitle" android:text="@string/zm_title_company_number_184616" style="@style/ZmSettingItemTitle" />
+                        <TextView android:id="@id/txtCompanyNumber" android:text="@string/zm_intergeated_phone_not_set_31439" style="@style/ZmSettingItemContent" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/optionLocalDialing" style="@style/ZmSettingItem">
+                        <TextView android:text="@string/zm_title_local_dialing_184616" style="@style/ZmSettingItemTitle" />
+                        <TextView android:id="@id/txtLocalDialing" android:text="@string/zm_intergeated_phone_not_set_31439" android:maxLines="1" style="@style/ZmSettingItemContent" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/optionAreaCode" style="@style/ZmSettingItem">
+                        <TextView android:text="@string/zm_title_area_code_184616" style="@style/ZmSettingItemTitle" />
+                        <TextView android:id="@id/txtAreaCode" android:text="@string/zm_intergeated_phone_not_set_31439" android:maxLines="1" style="@style/ZmSettingItemContent" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <TextView android:id="@id/txtPBXTips" android:text="@string/zm_intergeated_phone_tips_115402" style="@style/ZmSettingDescription" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catReceiveCallsFromCallQueues" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/optionReceiveCallsFromCallQueues" style="@style/ZmSettingItem">
+                        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:textColor="@color/zm_v2_txt_primary_color" android:id="@id/txtReceiveCallsFromCallQueues" android:layout_width="0.0dip" android:text="@string/zm_title_receive_calls_from_call_queues_184616" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <TextView android:id="@id/txtOptOutReason" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/zm_margin_normal" android:maxLines="1" android:layout_weight="0.5" style="@style/ZmSettingItemContent" />
+                        <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkReceiveCallsFromCallQueues" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <com.zipow.videobox.view.mm.MMCallQueueOptRecyclerView android:id="@id/callQueueOptList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catCallForward" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/optionCallForward" style="@style/ZmSettingItem.UnClick">
+                        <TextView android:text="@string/zm_pbx_call_forward_setting_title_356266" style="@style/ZmSettingItemTitle" />
+                        <TextView android:ellipsize="start" android:id="@id/txtCallForwardState" android:paddingRight="14.0dip" android:text="@string/zm_switch_off_186458" style="@style/ZmSettingItemContent" />
+                        <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catReceiveCallsFromSLG" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/optionReceiveCallsFromSLG" style="@style/ZmSettingItem">
+                        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:textColor="@color/zm_v2_txt_primary_color" android:id="@id/txtReceiveCallsFromSLG" android:layout_width="0.0dip" android:text="@string/zm_title_receive_calls_from_SLG" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkReceiveCallsFromSLG" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catCallControls" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/tvCallControl" style="@style/ZmSettingItem">
+                        <TextView android:layout_width="0.0dip" android:text="@string/zm_sip_call_control_setting_263745" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catLocation" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/optionLocation" style="@style/ZmSettingItem.UnClick">
+                        <TextView android:text="@string/zm_title_pbx_location_setting_186458" style="@style/ZmSettingItemTitle" />
+                        <TextView android:ellipsize="start" android:id="@id/txtLocationState" android:paddingRight="14.0dip" android:text="@string/zm_switch_off_186458" style="@style/ZmSettingItemContent" />
+                        <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <TextView android:id="@id/txtLocationDescription" android:text="@string/zm_des_pbx_location_setting_332597" style="@style/ZmSettingDescription" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catAutoLiveTranscript" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/optionAutoLiveTranscript" style="@style/ZmSettingItem">
+                        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:textColor="@color/zm_v2_txt_primary_color" android:id="@id/txtAutoLiveTranscript" android:layout_width="0.0dip" android:text="@string/zm_pbx_setting_transcript_automatically_288876" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkAutoLiveTranscript" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                <TextView android:id="@id/txtAutoLiveTranscriptTips" android:text="@string/zm_pbx_setting_transcript_automatically_description_288876" style="@style/ZmSettingDescription" />
+                <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/panelVideoGreeting" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size">
+                    <TextView android:id="@id/txtTitleVideoGreeting" android:text="@string/zm_pbx_setting_title_video_greeting_290287" style="@style/ZmSettingOptionTitle" />
+                    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catVideoGreeting" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/optionVideoGreeting" style="@style/ZmSettingItem">
+                            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:textColor="@color/zm_v2_btn_blue_text_color2" android:id="@id/txtVideoGreeting" android:layout_width="0.0dip" android:text="@string/zm_pbx_setting_video_greeting_290287" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/optionDeleteVideoGreeting" style="@style/ZmSettingItem">
+                            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:textColor="@color/zm_v2_btn_red_text_color" android:id="@id/txtDeleteVideoGreeting" android:layout_width="0.0dip" android:text="@string/zm_lbl_delete" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        </LinearLayout>
+                    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                    <TextView android:id="@id/txtDescVideoGreeting" android:text="@string/zm_pbx_setting_desc_video_greeting_290287" style="@style/ZmSettingDescription" />
+                </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/btnDiagnoistic" style="@style/ZmSettingItem">
+                        <TextView android:layout_width="0.0dip" android:text="@string/zm_sip_send_log_title_150295" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

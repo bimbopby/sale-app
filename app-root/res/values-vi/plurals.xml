@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Tua nhanh %d giây</item>
+        <item quantity="one">Tua nhanh %d giây</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Tua lại %d giây</item>
+        <item quantity="one">Tua lại %d giây</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d thông báo mới</item>
+        <item quantity="one">%d thông báo mới</item>
+    </plurals>
+    <plurals name="zm_accessibility_reacion_label_233717">
+        <item quantity="other">%1$s, %2$d người dùng đã thêm phản ứng này</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_233717">
+        <item quantity="other">Xem %d phản hồi</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="other">, %d lần nhắc đến @tấtcả mới</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="other">, %d lần nhắc đến @tôi mới</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="other">, %d new messages</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="other">%s tin nhắn mới, nút</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_439129">
+        <item quantity="other">Bạn đã nhập sai quá nhiều lần. Thử lại sau %d phút.</item>
+    </plurals>
+    <plurals name="zm_conf_barge_slg_monitors_285616">
+        <item quantity="other">%d theo dõi</item>
+    </plurals>
+    <plurals name="zm_description_tab_contacts_138733">
+        <item quantity="other">Tab Liên lạc %s tin nhắn chưa đọc</item>
+    </plurals>
+    <plurals name="zm_description_tab_meet_and_chat_plural_448431">
+        <item quantity="other">Trò chuyện nhóm %s tab tin nhắn chưa đọc</item>
+    </plurals>
+    <plurals name="zm_description_tab_sip_4_117773">
+        <item quantity="other">%1$s, %2$s thông báo mới</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_hour_204709">
+        <item quantity="other">Cập nhật %d giờ trước</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_minute_204709">
+        <item quantity="other">Cập nhật %d phút trước</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_left_times_171869">
+        <item quantity="other">Còn lại %d lần</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_rejoin_times_171869">
+        <item quantity="other">Còn lại %d lần và đã tham gia lại</item>
+    </plurals>
+    <plurals name="zm_encryption_exceptions_211920">
+        <item quantity="other">%d ngoại lệ</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_attendee_211920">
+        <item quantity="other">%d người dự thính qua điện thoại</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_211920">
+        <item quantity="other">%d người tham gia chính qua điện thoại</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_attendee_tail_211920">
+        <item quantity="other"> và %d người dự thính qua điện thoại</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_participant_211920">
+        <item quantity="other">%d người tham gia qua điện thoại</item>
+    </plurals>
+    <plurals name="zm_lbl_chat_preview_card_number_416255">
+        <item quantity="other">Bạn chỉ có thể thêm tối đa %d mục trong một tin nhắn.</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_439129">
+        <item quantity="other">%d câu trả lời</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_439129">
+        <item quantity="other">%d câu trả lời</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_150170">
+        <item quantity="other">%d Được đánh dấu là Chưa đọc</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_150170">
+        <item quantity="other">%d ＠ tất cả</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_150170">
+        <item quantity="other">%d ＠ tôi</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_439129">
+        <item quantity="other">%s tin nhắn mới</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_439129">
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_439129">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="zm_lbl_participant_184616">
+        <item quantity="other">%d người tham gia</item>
+    </plurals>
+    <plurals name="zm_lbl_view_all_domain_447969">
+        <item quantity="other">Xem/Chỉnh sửa tất cả %d tên miền</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count_447969">
+        <item quantity="other">Tất cả %d người nghe cuộc gọi đến</item>
+    </plurals>
+    <plurals name="zm_mesh_badge_client_421788">
+        <item quantity="other">%d người tham gia chính với phiên bản client cũ</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_chat_app_message_preview_428741">
+        <item quantity="other">(%d thẻ ứng dụng)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_files_439129">
+        <item quantity="other">(%d tệp)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_pictures_439129">
+        <item quantity="other">(%d hình ảnh)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s tin nhắn mới</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_439129">
+        <item quantity="other">%d ngày</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_439129">
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <plurals name="zm_mm_msg_minute_439129">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_439129">
+        <item quantity="other">%d tháng</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_439129">
+        <item quantity="other">%d năm</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_messages_no_longer_available_285622">
+        <item quantity="other">%1$d nhắc nhở đã bị xóa vì tin nhắn không còn khả dụng hoặc truy cập được.</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_3_439129">
+        <item quantity="other">%1$s: %2$s hình ảnh</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_7_285622">
+        <item quantity="other">%1$s: %2$s (%3$s tệp)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_8_285622">
+        <item quantity="other">%1$s: %2$s (%3$s hình ảnh)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_3_285622">
+        <item quantity="other">Bạn: %1$s hình ảnh</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_7_285622">
+        <item quantity="other">Bạn: %1$s (%2$s tệp)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_8_285622">
+        <item quantity="other">Bạn: %1$s (%2$s hình ảnh)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_hours_285622">
+        <item quantity="other">Bạn đã được nhắc nhở %1$d giờ trước</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_minutes_285622">
+        <item quantity="other">Bạn đã được nhắc nhở %1$d phút trước</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_unread_reminders_285622">
+        <item quantity="other">%1$s(%2$d nhắc nhở chưa đọc)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_hours_285622">
+        <item quantity="other">Bạn sẽ nhận được nhắc nhở trong %1$d giờ</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_minutes_285622">
+        <item quantity="other">Bạn sẽ nhận được nhắc nhở trong %1$d phút</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_439129">
+        <item quantity="other">%1$d tệp đính kèm</item>
+    </plurals>
+    <plurals name="zm_mm_with_members_354919">
+        <item quantity="other">với %d thành viên</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left_439129">
+        <item quantity="other">%d ký tự còn lại</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="other">%1$d liên lạc được thêm vào %2$s</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent_439129">
+        <item quantity="other">%d lời mời đã gửi đi</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_439129">
+        <item quantity="other">%1$s(%2$d tin nhắn chưa đọc)</item>
+    </plurals>
+    <plurals name="zm_pbx_invite_to_meeting_invitation_sent_131469">
+        <item quantity="other">%1$d lời mời đã được gửi đi</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_msg_remove_selected_voice_mail_to_recently_deleted_232709">
+        <item quantity="other">Bạn đang chuyển thư thoại đã chọn vào mục Đã xóa gần đây. Thao tác này có thể được khôi phục sau đó.</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_reminder_232709">
+        <item quantity="other">Các mục trong danh sách hiển thị số ngày còn lại trước khi xóa. Sau thời gian đó, các mục sẽ bị xóa vĩnh viễn. Có thể mất tới %d ngày.</item>
+    </plurals>
+    <plurals name="zm_question_count_271813">
+        <item quantity="other">%d câu hỏi</item>
+    </plurals>
+    <plurals name="zm_reaction_counts_ax_211853">
+        <item quantity="other">%1$s, %2$d người dùng gửi phản ứng này</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_count_donw_404978">
+        <item quantity="other">sau %1$d phút</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_end_datetime_v2_403153">
+        <item quantity="other">%1$d sự kiện</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyday_403153">
+        <item quantity="other">Mỗi %1$d ngày, %2$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_403153">
+        <item quantity="other">Mỗi %1$d tháng vào %2$d, %3$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_sequence_403153">
+        <item quantity="other">Mỗi %1$d tháng vào %2$s %3$s, %4$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyweek_403153">
+        <item quantity="other">Mỗi %1$d tuần vào %2$s, %3$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_hour_311995">
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_member_joined_311995">
+        <item quantity="other">%1$d người đã tham gia</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_min_311995">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_439129">
+        <item quantity="other">%1$d cuộc gọi</item>
+    </plurals>
+    <plurals name="zm_sip_desc_session_new_message_117773">
+        <item quantity="other">%1$s tin nhắn mới</item>
+    </plurals>
+    <plurals name="zm_sip_msg_delete_selected_voicemail_232709">
+        <item quantity="other">Bạn đang xóa vĩnh viễn các thư thoại đã chọn. Hành động này không thể hoàn tác.</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_file_439129">
+        <item quantity="other">Đã gửi %1$d tệp</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_image_439129">
+        <item quantity="other">Đã gửi %1$d hình ảnh</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_file_187397">
+        <item quantity="other">%1$s (%2$d tập tin)</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_image_187397">
+        <item quantity="other">%1$s (%2$d hình ảnh)</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">%d biểu tượng cảm xúc được chọn</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_are_following_you_383781">
+        <item quantity="other">đang theo dõi bạn</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_number_are_following_you_383781">
+        <item quantity="other">%d người</item>
+    </plurals>
+</resources>

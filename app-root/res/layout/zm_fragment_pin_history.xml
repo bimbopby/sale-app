@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/zm_pin_history_title_back_btn" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/viewRight" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_mm_lbl_group_pin_history_196619" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/panelTitleBar">
+        <ListView android:id="@id/zm_fragment_pin_history_listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/zm_transparent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/zm_fragment_pin_history_emptyView" android:background="@color/zm_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/empty_progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+            <TextView android:id="@id/empty_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_pin_history_empty_196619" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+            <Button android:id="@id/btn_view_history" android:layout_marginTop="@dimen/zm_margin_medium_size" android:text="@string/zm_lbl_view_pin_history_196619" style="@style/ZmButton.Medium" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

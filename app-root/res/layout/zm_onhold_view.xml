@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/vTitleBar" android:background="@drawable/zm_top_toolbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_leftButton="@id/panelTitleLeft" zoom:zm_rightButton="@id/btnLeave" zoom:zm_title="@id/meetingTitle">
+            <LinearLayout android:orientation="horizontal" android:id="@id/panelTitleLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:id="@id/btnLeave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_leave_meeting" style="@style/ZMButton.TitleBar.Warning" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/meetingTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/encryption" android:background="@drawable/ic_encryption_gcm_on_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_gravity="center_vertical" android:id="@id/txtMeetingNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_smallest_size" android:layout_marginRight="@dimen/zm_padding_smallest_size" android:text="111-111-1111" style="@style/ZMTextView.Medium.OnDark" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/dropDown" android:background="@drawable/ic_drop_down_on_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+        <com.zipow.videobox.view.panel.ZmLeaveCancelPanel android:id="@id/zmOnHoldLeaveCancelPanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/meetingTopic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_msg_you_are_in_silent_mode" style="@style/ZMTextView.ExtremLarge.OnDark" />
+    </LinearLayout>
+</LinearLayout>

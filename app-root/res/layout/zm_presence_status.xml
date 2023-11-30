@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_presence_change_40739" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+        <LinearLayout android:id="@id/panelPsAvailable" style="@style/ZmSettingItem">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_small_size" android:src="@drawable/zm_status_available" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_presence_status_available_40739" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <ImageView android:id="@id/imgPsAvailable" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelPsDnd" style="@style/ZmSettingItem">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_small_size" android:src="@drawable/zm_status_dnd" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_presence_status_dnd_40739" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <LinearLayout android:gravity="center|right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="right" android:id="@id/txtTimeInterval" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+                <ImageView android:id="@id/imgPsDnd" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+</LinearLayout>

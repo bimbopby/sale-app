@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/rightButton" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <Button android:id="@id/leftButton" android:text="@string/zm_btn_cancel" style="@style/ZmTitleBarAction.Dark" />
+        <Button android:enabled="false" android:id="@id/rightButton" android:text="@string/zm_btn_enable_254512" style="@style/ZmTitleBarAction.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_pbx_call_forward_title_356266" style="@style/ZmTitleBarTitle.Medium.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:id="@id/radioGroupCallForwrdType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="@dimen/zm_setting_item_padding_left">
+                    <RadioButton android:id="@id/radioCallForwardTurnOff" android:visibility="gone" android:text="@string/zm_switch_off_186458" style="@style/ZmPhoneSettingRadioButtonItem" />
+                    <RadioButton android:id="@id/radioCallForwardToContacts" android:text="@string/zm_pbx_call_forward_to_contacts_356266" style="@style/ZmPhoneSettingRadioButtonItem" />
+                    <RadioButton android:id="@id/radioCallForwardToNumber" android:text="@string/zm_pbx_call_forward_to_number_356266" style="@style/ZmPhoneSettingRadioButtonItem" />
+                    <RadioButton android:id="@id/radioCallForwardToMail" android:text="@string/zm_pbx_call_forward_to_mail_356266" style="@style/ZmPhoneSettingRadioButtonItem" />
+                </RadioGroup>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catCallForwardTarget" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionCallForwardTargetNoSetTip" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/txtCallForwardTargetNoSetTip" android:text="@string/zm_pbx_call_forward_to_contacts_no_set_tip_356266" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionCallForwardTarget" android:paddingRight="0.0dip" android:visibility="gone" style="@style/ZmSettingItem.UnClick">
+                    <TextView android:id="@id/txtCallForwardTargetValue" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/btnCallForwardTargetClear" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/zm_ic_pbx_setting_close" android:contentDescription="@string/zm_bnt_clear" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catCallForwardToMail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionCallForwardToMail" style="@style/ZmSettingItem.UnClick">
+                    <TextView android:text="@string/zm_pbx_call_forward_to_mail_greeting_356266" style="@style/ZmSettingItemTitle" />
+                    <TextView android:ellipsize="start" android:id="@id/txtForwardToMailGreetingName" android:text="@string/zm_pbx_call_forward_to_mail_greeting_default_value_356266" style="@style/ZmSettingItemContent" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <TextView android:id="@id/txtCallForwardToMailTips" android:visibility="gone" android:text="@string/zm_pbx_call_forward_to_mail_greeting_tip_356266" style="@style/ZmSettingDescription" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catTogglePlayGreeting" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionTogglePlayGreeting" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:layout_width="0.0dip" android:text="@string/zm_pbx_call_forward_toggle_play_greeting_356266" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/checkTogglePlayGreeting" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <TextView android:id="@id/txtTogglePlayGreetingTips" android:visibility="gone" android:text="@string/zm_pbx_call_forward_toggle_play_greeting_tips_356266" style="@style/ZmSettingDescription" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catTogglePress1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionTogglePress1" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:layout_width="0.0dip" android:text="@string/zm_pbx_call_forward_toggle_press_1_356266" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/checkTogglePress1" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <TextView android:id="@id/txtTogglePress1Tips" android:visibility="gone" android:text="@string/zm_pbx_call_forward_toggle_press_1_tips_356266" style="@style/ZmSettingDescription" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:id="@id/catTimeLimit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionTimeLimit" style="@style/ZmSettingItem">
+                    <TextView android:text="@string/zm_pbx_call_forward_duration_424846" style="@style/ZmSettingItemTitle" />
+                    <TextView android:ellipsize="start" android:id="@id/txtTimeLimitValue" android:paddingRight="14.0dip" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

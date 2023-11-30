@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/select_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UIKitTextView.SecondaryText.Small" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/value" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/UIKitTextView.SecondaryText" />
+        <ImageView android:id="@id/arrow" android:background="@drawable/zm_mm_template_select_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/ZMProgressBar.Small" />
+    </LinearLayout>
+</LinearLayout>

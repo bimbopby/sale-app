@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="end" android:id="@id/zmForceEnableSecurityPopView" android:background="@drawable/zm_force_tip_bg" android:layout_width="296.0dip" android:layout_height="wrap_content" android:elevation="@dimen/zm_margin_smaller_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/panelTipContent" android:background="@drawable/zm_force_tip_content_bg" android:layout_width="@dimen/zm_security_enable_waitingroom_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:layout_marginEnd="@dimen/zm_margin_small_size" android:layout_alignParentEnd="true" android:elevation="@dimen/zm_margin_smaller_size">
+        <LinearLayout android:gravity="center" android:id="@id/zmCloseBtn" android:layout_width="@dimen/zm_text_btn_medium_min_width" android:layout_height="@dimen/zm_text_btn_medium_min_width" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_close">
+            <ImageView android:layout_width="@dimen/zm_security_close_btn_width" android:layout_height="@dimen/zm_security_close_btn_width" android:src="@drawable/zm_icon_close" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </LinearLayout>
+        <TextView android:textColor="@color/zm_v2_schedule_force_tip_text" android:gravity="start" android:id="@id/zmSecurityTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_small_size" android:layout_marginBottom="@dimen/zm_padding_small_size" android:text="@string/zm_tip_msg_force_enable_waitingroom_201331" android:maxLines="5" android:layout_marginStart="@dimen/zm_padding_small_size" android:layout_toStartOf="@id/zmCloseBtn" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_triangle_down" android:layout_below="@id/panelTipContent" android:layout_marginEnd="@dimen/zm_margin_large_minus_size" android:layout_alignParentEnd="true" android:elevation="@dimen/zm_margin_smaller_size" />
+</RelativeLayout>

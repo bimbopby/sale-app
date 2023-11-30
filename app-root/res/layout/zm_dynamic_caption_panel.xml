@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.uicommon.widget.view.CaptionView android:gravity="center" android:id="@id/dynamicClosedCaption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_large" android:layout_marginRight="@dimen/zm_margin_large" android:layout_marginBottom="@dimen/zm_margin_large" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/ZMTextView.Normal.OnDark"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

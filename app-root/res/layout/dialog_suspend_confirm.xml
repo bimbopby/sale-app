@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/txtMessage" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_suspend_activity_description_200528" />
+    <ImageView android:background="@color/zm_v2_light_bg_normal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/zm_v2_light_bg_normal" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_largest_height">
+        <TextView android:gravity="center" android:id="@id/btnCancel" android:background="@drawable/zm_btn_dialog_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="0.5dip" android:text="@string/zm_btn_cancel" android:layout_weight="1.0" style="@style/ZMTextView.DialogItem" />
+        <TextView android:gravity="center" android:id="@id/btnSuspend" android:background="@drawable/zm_btn_dialog_highlight_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.5dip" android:text="@string/zm_btn_suspend_200528" android:layout_weight="1.0" style="@style/ZMTextView.DialogItem.highligt" />
+    </LinearLayout>
+</LinearLayout>

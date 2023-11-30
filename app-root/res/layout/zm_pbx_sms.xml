@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMKeyboardDetector android:id="@id/keyboardDetector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/panelTitleLeft" zoom:zm_rightButton="@id/panelTitleRight" zoom:zm_title="@id/panelTitleCenter" style="@style/ZmTitleBar.Dark">
+            <FrameLayout android:id="@id/panelTitleLeft" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <Button android:id="@id/btnCancel" android:text="@string/zm_btn_cancel" android:contentDescription="@string/zm_btn_cancel" style="@style/ZmTitleBarAction.Dark" />
+                <ImageButton android:id="@id/btnBack" android:visibility="gone" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/panelTitleRight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/btnPhoneCall" android:visibility="gone" android:src="@drawable/zm_ic_phone_on_dark" android:contentDescription="@string/zm_mm_opt_voice_call" style="@style/ZmBackButton.Dark" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/btnInfo" android:visibility="gone" android:src="@drawable/zm_ic_chat_info_on_dark" android:contentDescription="@string/zm_title_chat_information_59554" style="@style/ZmBackButton.Dark" />
+                <Button android:id="@id/btnJump" android:visibility="gone" android:text="@string/zm_btn_jump" style="@style/ZmTitleBarAction.Dark" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/panelTitleCenter" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <LinearLayout android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.zipow.videobox.view.PresenceStateView android:id="@id/imgPresence" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" zoom:zm_subpresence_type="0" />
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_sip_title_new_sms_117773" style="@style/ZmTitleBarTitle.Dark" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/presence_status_sharing_screen_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_smallest_size" android:text="@string/zm_title_hint_sharing_screen_text_93141" style="@style/ZmTextView.Content.Primary.Small.Dark" />
+            </LinearLayout>
+            <EditText android:id="@id/btnSearch" android:background="@drawable/zm_white_search_corner_bg" android:paddingLeft="8.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:hint="@string/zm_btn_search" android:cursorVisible="false" android:drawableLeft="@null" android:alpha="0.0" style="@style/ZMEditText.GlobalSearch" />
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_select_contact" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/zm_sip_new_chat_to_117773" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                <EditText android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/et_selected_contact" android:background="@null" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:lineSpacingExtra="14.0dip" android:inputType="text" android:imeOptions="actionDone|flagNoFullscreen" android:contentDescription="@string/zm_sip_desc_to_numbers_117773" style="@style/UIKitTextView.PrimaryText.Medium" />
+            </LinearLayout>
+            <View android:background="@color/zm_v2_cell_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/releaseLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_txt_action_color" android:id="@id/releaseBtn" android:background="@drawable/zm_v2_bg_small_text_btn_light" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="6.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/zm_sip_sms_release_224489" android:layout_centerHorizontal="true" />
+            <View android:background="@color/zm_v2_cell_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/releaseBtn" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.zipow.videobox.view.sip.sms.PbxSmsRecyleView android:id="@id/smsRecyleView" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" style="@style/MMChatListView" />
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/panelBottomHint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:id="@id/txtMarkUnread" android:background="@drawable/zm_corner_bg_red" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/zm_mm_lbl_mark_unread_144564" android:drawableRight="@drawable/zm_ic_arrow_white_down" android:drawablePadding="5.0dip" style="@style/ZmTextView.Content.Primary.Dark" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:id="@id/txtBottomReplyDown" android:background="@drawable/zm_corner_bg_red" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableRight="@drawable/zm_ic_arrow_white_down" android:drawablePadding="5.0dip" style="@style/ZmTextView.Content.Primary.Dark" />
+                            <TextView android:id="@id/txtBottomReplyUp" android:background="@drawable/zm_corner_bg_red" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableRight="@drawable/zm_ic_arrow_white_up" android:drawablePadding="5.0dip" style="@style/ZmTextView.Content.Primary.Dark" />
+                            <TextView android:id="@id/txtMention" android:background="@drawable/zm_corner_bg_red" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:drawableRight="@drawable/zm_ic_arrow_white_down" android:drawablePadding="5.0dip" style="@style/ZmTextView.Content.Primary.Dark" />
+                            <TextView android:id="@id/txtNewMsgMark" android:background="@drawable/zm_corner_bg_white" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/zm_lbl_jump_latest_68444" android:drawableRight="@drawable/zm_ic_arrow_red_down" android:drawablePadding="5.0dip" style="@style/ZmTextView.Content.Primary" />
+                            <TextView android:id="@id/txtBottomHint" android:background="@drawable/zm_corner_bg_red" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableRight="@drawable/zm_ic_arrow_white_down" android:drawablePadding="5.0dip" style="@style/ZmTextView.Content.Primary.Dark" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/panelWarnMsg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <LinearLayout android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <TextView android:gravity="center" android:id="@id/txtWarnMsg" android:background="@color/zm_v2_txt_desctructive" android:padding="@dimen/zm_padding_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/panelMsgContextEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:id="@id/txtMsgContextLoadingError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_lbl_content_load_error" style="@style/ZmTextView.Button.Secondary" />
+                        <TextView android:gravity="center" android:id="@id/txtMsgContextContentLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_pull_down_refresh_list_loading" android:drawableTop="@drawable/zm_ic_conent_loading" android:drawablePadding="10.0dip" style="@style/ZmTextView.Button.Secondary" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <Button android:id="@id/replyBtn" android:visibility="gone" android:layout_marginLeft="48.0dip" android:layout_marginTop="@dimen/zm_margin_normal" android:layout_marginRight="48.0dip" android:layout_marginBottom="@dimen/zm_margin_normal" android:text="@string/zm_sip_sms_choose_to_reply_224489" style="@style/ZmButton" />
+                <LinearLayout android:orientation="vertical" android:id="@id/actionsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/rl_tip_session" android:background="@color/zm_v2_personal_note_reminder_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/zm_height_64dp">
+                        <TextView android:textSize="@dimen/zm_font_medium_size" android:textColor="@color/zm_v2_sms_tip_txt_yellow" android:gravity="start" android:layout_gravity="bottom" android:id="@id/tv_tips_new_session" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_message_pbx_sms_10dlc_tip_448513" android:layout_centerVertical="true" android:layout_marginStart="@dimen/zm_view_height_40dp" android:layout_alignParentStart="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smallest" android:src="@drawable/zm_ic_network_unavailable" android:layout_alignTop="@id/tv_tips_new_session" android:layout_marginStart="@dimen/zm_share_toolbar_margin" />
+                    </RelativeLayout>
+                    <View android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/layout_select_sender_number" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+                        <TextView android:textSize="@dimen/zm_font_normal_size" android:ellipsize="middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_sms_from_117773" android:singleLine="true" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed" />
+                        <TextView android:textColor="@color/zm_v2_txt_action" android:id="@id/tv_sender_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="7.0dip" android:drawableEnd="@drawable/zm_ic_down_arrow_blue" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                    </LinearLayout>
+                    <TextView android:enabled="false" android:id="@id/txtDisableMsg" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:maxLines="3" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                    <FrameLayout android:id="@id/panelActions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.zipow.videobox.view.sip.PBXDirectorySearchListView android:id="@id/directoryListView" android:background="@color/zm_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/zm_transparent" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.zipow.videobox.view.mm.VoiceRecordView android:gravity="center" android:orientation="vertical" android:id="@id/panelVoiceRcdHint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/tipsViewStub" android:layout="@layout/zm_mm_im_tips" android:inflatedId="@id/tipsInflate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/panelSearch" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

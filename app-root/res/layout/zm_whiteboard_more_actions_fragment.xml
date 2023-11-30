@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zm_v2_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        <Button android:id="@id/btnRight" android:visibility="gone" style="@style/ZmTitleBarAction.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_whiteboard_more_actions_title_385207" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/panelTitleBar">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/zm_whiteboard_share_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/ll_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" zoom:zm_showBottomDivider="false" zoom:zm_showTopDivider="false">
+                <LinearLayout android:id="@id/llView" android:visibility="visible" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_whiteboard_share_dialog_copy_link_view_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/ivViewCheck" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/llExport" android:visibility="gone" style="@style/ZmSettingItem.UnClick">
+                    <TextView android:id="@id/txt_export" android:layout_width="0.0dip" android:text="@string/zm_whiteborad_export_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/iv_export" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" zoom:zm_showBottomDivider="false" zoom:zm_showTopDivider="false">
+                <LinearLayout android:id="@id/llFeedback" style="@style/ZmSettingItem.UnClick">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_whiteborad_feedback_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/ivFeedback" android:visibility="gone" android:src="@drawable/zm_ic_whiteboard_right_blue" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" zoom:zm_showBottomDivider="false" zoom:zm_showTopDivider="false">
+                <LinearLayout android:id="@id/llTrash" android:visibility="gone" style="@style/ZmSettingItem.UnClick">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_whiteboard_more_actions_move_to_trash_385207" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:id="@id/ivTrash" android:visibility="gone" android:src="@drawable/zm_ic_whiteboard_right_blue" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/flLoading" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <ProgressBar android:layout_gravity="center" android:layout_width="@dimen/zm_margin_normal_size" android:layout_height="@dimen/zm_margin_normal_size" android:indeterminateDrawable="@drawable/zm_whiteboard_loading_auto" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toEndOf="@id/txtSipError" zoom:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@drawable/in_meeting_info_bg" android:paddingLeft="@dimen/zm_dialog_margin_24dp" android:paddingTop="30.0dip" android:paddingRight="@dimen/zm_dialog_margin_24dp" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_20sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/txtMeetingTtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hana Song’s Personal Meeting Room" android:maxLines="3" android:letterSpacing="0.02" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/meetingIdContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_dialog_margin_24dp">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtMeetingIdTitle" android:text="@string/zm_lbl_meeting_id2" style="@style/ZMInMeetingInfoItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtMeetingIdContent" android:text="888 966 8888" style="@style/ZMInMeetingInfoItemContent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtHostTitle" android:text="@string/zm_lbl_waiting_room_chat_title_host" style="@style/ZMInMeetingInfoItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtHostContent" android:text="Hana Song" style="@style/ZMInMeetingInfoItemContent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/passwordContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_passcode_171920" style="@style/ZMInMeetingInfoItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtPasswordContent" android:text="124599" style="@style/ZMInMeetingInfoItemContent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/inviteLinkContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_invite_link_151880" style="@style/ZMInMeetingInfoItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtInviteLinkContent" android:text="https://success.zoom.us/j/92330808057?pwd=bUpqeG5TcU11WDZwV1Z2UzhMQ2NaZz09" style="@style/ZMInMeetingInfoItemContent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/eventPageContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_meeting_info_event_page_167537" style="@style/ZMInMeetingInfoItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtEventPageContent" style="@style/ZMInMeetingInfoItemContent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/participantIdContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_participant_id" style="@style/ZMInMeetingInfoItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtParticipantIdContent" android:text="18" style="@style/ZMInMeetingInfoItemContent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/e2eContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_e2e_meeting_info_e2e_title_171869" style="@style/ZMInMeetingInfoItemTitle" />
+            <com.google.android.flexbox.FlexboxLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0" app:alignContent="flex_start" app:alignItems="flex_start" app:dividerDrawable="@drawable/zm_floatbtn_flexbox_divider" app:flexWrap="wrap" app:showDivider="middle">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/encryptionType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_encryption_enabled_e2e_211920" style="@style/ZMInMeetingInfoItemContent" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v1_blue_B400" android:id="@id/e2eVerifyBtn" android:paddingRight="@dimen/zm_margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_e2e_meeting_info_verify_171869" style="@style/ZMInMeetingInfoItemContent" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v1_yellow_500" android:id="@id/encryptionExceptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 Exceptions" style="@style/ZMInMeetingInfoItemContent" />
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_secondary_ondark" android:id="@id/txtDataCenter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_dialog_margin_24dp" android:text="@string/zm_msg_meeting_info_data_center_299543" android:letterSpacing="-0.01" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v1_yellow_500" android:id="@id/lowVersionClients" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_size" android:text="2 Low Version Clients" android:letterSpacing="-0.01" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_action" android:gravity="left" android:id="@id/txtSecuritySettingOverview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_dialog_margin_24dp" android:minWidth="@dimen/zm_accessible_btn_min_size" android:minHeight="@dimen/zm_accessible_btn_min_size" android:text="@string/zm_msg_meeting_security_settings_overview_299543" android:letterSpacing="-0.01" style="@style/ZmTextView.Button.Bottom" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

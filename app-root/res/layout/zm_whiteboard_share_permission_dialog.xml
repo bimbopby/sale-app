@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/zm_whiteboard_share_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title_bar" android:background="@color/zm_white" style="@style/ZMTitleBar">
+        <ImageButton android:id="@id/btnClose" android:contentDescription="@string/zm_btn_back" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmBackButton" />
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_wb_share_dialog_permission_title_289013" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="@id/btnClose" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmTitleBarTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" zoom:zm_showBottomDivider="false" zoom:zm_showTopDivider="false">
+            <LinearLayout android:id="@id/llOwner" style="@style/ZmSettingItem.UnClick">
+                <TextView android:layout_width="0.0dip" android:text="@string/zm_whiteboard_share_dialog_permission_co_owner_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                <ImageView android:id="@id/ivOwnerCheck" android:visibility="gone" android:src="@drawable/zm_ic_whiteboard_right_blue" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/llEditor" style="@style/ZmSettingItem.UnClick">
+                <TextView android:layout_width="0.0dip" android:text="@string/zm_whiteboard_share_dialog_permission_editor_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                <ImageView android:id="@id/ivEditorCheck" android:visibility="gone" android:src="@drawable/zm_ic_whiteboard_right_blue" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/llCommentor" style="@style/ZmSettingItem.UnClick">
+                <TextView android:layout_width="0.0dip" android:text="@string/zm_whiteboard_share_dialog_permission_commenter_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                <ImageView android:id="@id/ivCommentorCheck" android:visibility="gone" android:src="@drawable/zm_ic_whiteboard_right_blue" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/llViewer" style="@style/ZmSettingItem.UnClick">
+                <TextView android:layout_width="0.0dip" android:text="@string/zm_whiteboard_share_dialog_permission_viewer_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                <ImageView android:id="@id/ivViewerCheck" android:visibility="gone" android:src="@drawable/zm_ic_whiteboard_right_blue" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/llRemove" style="@style/ZmSettingItem.UnClick">
+                <TextView android:textColor="@color/zm_v2_txt_desctructive" android:layout_width="0.0dip" android:text="@string/zm_whiteboard_share_dialog_permission_remove_289013" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </FrameLayout>
+    <FrameLayout android:id="@id/flLoading" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <ProgressBar android:layout_gravity="center" android:layout_width="@dimen/zm_margin_normal_size" android:layout_height="@dimen/zm_margin_normal_size" android:indeterminateDrawable="@drawable/zm_whiteboard_loading_auto" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toEndOf="@id/txtSipError" zoom:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+</RelativeLayout>

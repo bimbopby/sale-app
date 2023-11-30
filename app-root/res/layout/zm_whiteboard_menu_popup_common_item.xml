@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.annotate.popup.icon.ShapeIconView android:id="@id/ivItem" android:layout_width="@dimen/zm_cloud_whiteboard_menu_bar_icon_size" android:layout_height="@dimen/zm_cloud_whiteboard_menu_bar_icon_size" />
+</FrameLayout>

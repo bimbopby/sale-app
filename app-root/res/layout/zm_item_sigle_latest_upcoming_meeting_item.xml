@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/zm_padding_normal" android:paddingTop="@dimen/zm_padding_normal" android:paddingRight="@dimen/zm_padding_normal" android:paddingBottom="@dimen/zm_padding_normal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center_vertical" android:id="@id/txtTopic" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/zm_padding_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:id="@id/txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:id="@id/txtHostId" android:paddingTop="@dimen/zm_padding_medium" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:id="@id/txtMeetingId" android:paddingTop="@dimen/zm_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+    </LinearLayout>
+    <Button android:id="@id/btnStart" android:duplicateParentState="false" android:layout_marginTop="@dimen/zm_padding_large" android:text="@string/zm_btn_start" style="@style/ZmButton.Small" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="backgroundColors">
+        <item>#ffeb1807</item>
+        <item>#ffff8a00</item>
+        <item>#fff8c200</item>
+        <item>#ff138a00</item>
+        <item>#ff006ffa</item>
+        <item>#ff9846ff</item>
+        <item>#ffe20094</item>
+        <item>#2e525280</item>
+    </array>
+    <array name="textColors">
+        <item>#ffff4343</item>
+        <item>#ffff8a00</item>
+        <item>#ffffd600</item>
+        <item>#ff49d61e</item>
+        <item>#ff2f8bff</item>
+        <item>#ffab68ff</item>
+        <item>#ffff36c7</item>
+        <item>#fff5f5f5</item>
+    </array>
+</resources>

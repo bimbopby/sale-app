@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <View android:id="@id/viewRight" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_accessibility_435474" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_settingsCategorySpacing="0.0dip">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" android:text="@string/zm_meeting_setting_screen_label_435474" android:contentDescription="@string/zm_ax_heading_acreen_435474" android:accessibilityHeading="true" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/optionDimScreenShareVideo" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmSettingItem">
+                            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_dim_screen_share_video_435474" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/checkDimScreenShareVideo" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                        </LinearLayout>
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_dim_screen_share_video_desc_435474" style="@style/ZmSettingDescription" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

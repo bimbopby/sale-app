@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.OnHoldView android:id="@id/vOnHoldView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.zipow.videobox.view.NoHostView android:id="@id/vNoHostView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.zipow.videobox.view.WaitingRoomView android:id="@id/vWaitingRoomView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_font_pip_size" android:gravity="center" android:id="@id/txtPipStatus" android:background="@color/zm_black" android:padding="@dimen/zm_padding_normal_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_msg_you_are_in_silent_mode" style="@style/ZMTextView.ExtremLarge.OnDark" />
+</FrameLayout>

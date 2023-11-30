@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:elevation="0.0dip" zoom:zm_leftButton="@id/btnCancel" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnCancel" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_btn_signup_on_welcome" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_secondary" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_margin_medium_size" android:text="@string/zm_signup_verify_age_442801" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_dialog_margin_16dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/txtBirth" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="@dimen/zm_edit_text_normal_height" android:hint="@string/zm_signup_input_birth_years_442801" style="@style/ZmInputBox" />
+                    <EditText android:id="@id/txtBirthEditText" android:background="@color/zm_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/zm_edit_text_normal_height" android:hint="@string/zm_signup_input_birth_years_442801" android:inputType="number" style="@style/ZmInputBox" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_secondary" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_margin_small_minus_size" android:text="@string/zm_txt_no_store_msg_442801" />
+            <Button android:id="@id/btnSignupContinue" android:visibility="gone" android:layout_marginLeft="@dimen/zm_dialog_margin_24dp" android:layout_marginTop="@dimen/zm_dialog_margin_24dp" android:layout_marginRight="@dimen/zm_dialog_margin_24dp" android:text="@string/zm_signup_continue_442801" style="@style/ZmButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

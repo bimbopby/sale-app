@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.uicommon.widget.view.ZMCommonTextView android:textStyle="bold" android:background="@drawable/zm_backstage_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/zm_btn_height_24dp" android:text="@string/zm_gr_backstage_label_267913" android:paddingHorizontal="@dimen/zm_padding_small" style="@style/ZmTextView.Content.Secondary.Medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/itemLayout" android:paddingTop="@dimen/zm_margin_small_size" android:paddingBottom="@dimen/zm_margin_small_size" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@drawable/zm_poll_nps_textview_color" android:gravity="center" android:id="@id/answerTxt" android:background="@drawable/zm_full_round_rect_nps_bg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:text="1" />
+</LinearLayout>

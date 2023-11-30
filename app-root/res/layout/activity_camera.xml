@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AutoFitSurfaceView android:id="@id/surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <View android:id="@id/overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@android:color/transparent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tapShootPanel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="110.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/tapShootRl" android:paddingLeft="55.0dip" android:paddingRight="55.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/btnClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_camera_close" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_cancel" />
+            <ImageView android:layout_gravity="center" android:id="@id/btnCapture" android:background="@drawable/tap_to_shoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_accessibility_capture_178874" />
+            <ImageView android:id="@id/btnSwitchCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_switch_camera" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_accessibility_switch_camera_178874" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v1_white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/zm_mm_tap_to_shoot_144953" android:layout_below="@id/tapShootRl" />
+    </LinearLayout>
+    <ImageView android:id="@id/photoViewer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/zm_accessibility_frame_178874" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/previewPanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="110.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center" android:id="@id/btnRetake" android:background="@drawable/tap_to_shoot_retake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_accessibility_retake_178874" />
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v1_white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/zm_mm_tap_to_shoot_retake_144953" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="73.0dip">
+            <ImageButton android:layout_gravity="center" android:id="@id/btnSend" android:background="@drawable/tap_to_shoot_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:minWidth="@dimen/zm_accessible_btn_min_size" android:minHeight="@dimen/zm_accessible_btn_min_size" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_accessibility_send_178874" />
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v1_white" android:layout_gravity="center_horizontal" android:id="@id/sendButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/zm_mm_tap_to_shoot_send_144953" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

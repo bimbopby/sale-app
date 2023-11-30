@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/endMeetingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnEndMeeting" android:layout_width="fill_parent" android:text="@string/zm_sip_meet_inmeeting_dialog_end_108086" style="@style/UIRedButton.EndMeeting" />
+            <Button android:id="@id/btnLeaveWithCall" android:layout_width="fill_parent" android:text="@string/zm_btn_leave_conf_with_call" style="@style/UIRedButton.EndMeeting" />
+            <Button android:id="@id/btnEndWebinarAttendees" android:layout_width="fill_parent" android:text="@string/zm_gr_end_webinar_for_attendees" style="@style/UIKitButton.LeaveMeeting" />
+            <Button android:id="@id/btnLeaveMeeting" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/zm_dialog_margin_24dp" android:text="@string/zm_btn_leave_conference" style="@style/UIKitButton.LeaveMeeting" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/endWebinarAttendeesLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnEndWebinarAttendees3Times" android:layout_width="fill_parent" android:text="@string/zm_gr_end_webinar_for_attendees" style="@style/UIRedButton.EndMeeting" />
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_large_middle" android:text="@string/zm_gr_end_webinar_for_attendees_tips" android:layout_marginHorizontal="@dimen/zm_end_webinar_attendees_marginleft" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:id="@id/btnDisconnectVoIP" android:background="@drawable/zm_audio_tip_item_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_btn_disconnect_voip" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:id="@id/btnSwitchAudioSource" android:background="@drawable/zm_audio_tip_item_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_btn_switch_audio_source" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+    </LinearLayout>
+    <TextView android:gravity="center|left" android:id="@id/btnMutePhone" android:background="@drawable/zm_audio_tip_item_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:text="@string/zm_btn_mute_phone" style="@style/ZMTextView.SettingsItem" />
+    <LinearLayout android:gravity="center|left" android:id="@id/btnCallViaVoIP" android:background="@drawable/zm_audio_tip_item_selector" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:gravity="left" android:id="@id/txtCallViaVoIP" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_btn_wifi_or_cellular_data_251315" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+        <ProgressBar android:id="@id/progressCallVoIP" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" style="@style/ZMProgressBar.Small" />
+    </LinearLayout>
+    <TextView android:gravity="center|left" android:id="@id/btnDialIn" android:background="@drawable/zm_audio_tip_item_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_dial_in" style="@style/ZMTextView.SettingsItem" />
+    <TextView android:gravity="center|left" android:id="@id/btnCallMe" android:background="@drawable/zm_audio_tip_item_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_callout_btn_callme_251315" style="@style/ZMTextView.SettingsItem" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center_horizontal" android:id="@id/tabContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/zm_view_video_effects_tab_panel" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/settingContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smallest_size" android:layout_marginBottom="@dimen/zm_margin_smallest_size">
+        <FrameLayout android:id="@id/containerApplyToAll" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_smallest_size" android:minHeight="@dimen/zm_btn_medium_height">
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v1_white" android:layout_gravity="start|center" android:id="@id/txtApplyToAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_video_effects_apply_to_all_meeting_210764" android:importantForAccessibility="no" android:layout_marginStart="@dimen/zm_margin_small_size" />
+            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:layout_gravity="end|center" android:id="@id/chkApplyToAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/containerMirrorMyVideo" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_btn_medium_height">
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v1_white" android:layout_gravity="start|center" android:id="@id/txtMirrorMyVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_video_effects_mirror_my_video_210764" android:importantForAccessibility="no" android:layout_marginStart="@dimen/zm_margin_small_size" />
+            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:layout_gravity="end|center" android:id="@id/chkMirrorMyVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

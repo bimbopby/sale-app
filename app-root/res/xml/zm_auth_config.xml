@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator android:label="@string/zm_app_name" android:icon="@drawable/zm_launcher" android:accountType="us.zoom.videomeetings" android:smallIcon="@drawable/zm_launcher"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

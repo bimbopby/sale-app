@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_padding_smaller_size" android:paddingRight="@dimen/zm_padding_smaller_size" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/zm_padding_smaller_size" android:paddingTop="@dimen/zm_dialog_margin_16dp" android:paddingRight="@dimen/zm_padding_smaller_size" android:paddingBottom="@dimen/zm_dialog_margin_16dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_txt_primary" android:ellipsize="end" android:id="@id/txt_level_title" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/zm_white" android:ellipsize="end" android:gravity="center" android:id="@id/txt_level_tag" android:paddingLeft="@dimen/zm_padding_smallest" android:paddingRight="@dimen/zm_padding_smallest" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textColor="@color/zm_v2_txt_secondary" android:ellipsize="end" android:gravity="center|left" android:id="@id/txt_level_desc" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_6dp" android:maxLines="4" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_selected" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/zm_v2_cell_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

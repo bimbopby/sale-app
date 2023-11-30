@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_whiteboard_common_toolbar_bg" android:layout_width="@dimen/zm_cloud_whiteboard_more_cursor_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llCursor" android:padding="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="@dimen/zm_cloud_whiteboard_menu_bar_text_size_popup_height" android:text="@string/zm_whiteboard_more_actions_view_cursor_385390" android:maxLines="@integer/smaller_lines" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Medium" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_cursor" android:focusable="false" android:visibility="invisible" android:clickable="false" android:src="@drawable/zm_ic_whiteboard_right_blue" style="@style/ZmSettingItemArrow" />
+    </LinearLayout>
+</LinearLayout>

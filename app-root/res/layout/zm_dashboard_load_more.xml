@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load_more_loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:textColor="@color/zm_v2_txt_secondary" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_dashboard_loading_next_296308" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/load_more_load_fail_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:textColor="@color/zm_v2_txt_secondary" android:layout_gravity="center" android:id="@id/tv_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_dashboard_loading_fail_296308" />
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:textColor="@color/zm_v2_txt_action" android:layout_gravity="center" android:id="@id/tv_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_dashboard_loading_fail_retry_296308" />
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:id="@id/load_more_load_complete_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <FrameLayout android:gravity="center" android:id="@id/load_more_load_end_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:textColor="@color/zm_v2_txt_secondary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_dashboard_loading_end_296308" />
+    </FrameLayout>
+</FrameLayout>

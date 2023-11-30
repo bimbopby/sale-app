@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@color/zm_transparent" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.videobox.view.AvatarView android:layout_gravity="top" android:id="@id/imgUserIcon" android:focusable="false" android:layout_width="@dimen/zm_view_height_40dp" android:layout_height="@dimen/zm_view_height_40dp" android:layout_marginRight="@dimen/zm_margin_smallest" zoom:zm_description_enable="false" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v1_white_500" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@id/txtUserName" android:background="@color/zm_transparent" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_plus" android:text="" android:singleLine="true" />
+</LinearLayout>

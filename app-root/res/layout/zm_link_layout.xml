@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/txtMessage" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="10.0dip" android:text="text message" android:layout_weight="1.0" style="@style/ZMTextView.Normal.DialogMsg" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_txt_action" android:gravity="center" android:id="@id/btnPolicy" android:background="@color/zm_transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMTextView.Normal.DialogMsg" />
+</LinearLayout>

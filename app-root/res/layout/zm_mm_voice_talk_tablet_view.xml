@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_margin_32dp" android:paddingRight="@dimen/zm_margin_64dp" android:layout_width="fill_parent" android:layout_height="96.0dip">
+        <ImageView android:id="@id/imgVoiceRcdCancel" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_voice_talk_cancel_tablet" android:contentDescription="@string/zm_mm_msg_rcd_hint_def_acc_171833" />
+        <com.zipow.videobox.view.mm.VoiceTalkRecordView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_voice_talk_record" android:paddingLeft="@dimen/zm_dialog_margin_16dp" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/zm_margin_64dp" android:layout_marginRight="@dimen/zm_dialog_margin_12dp" android:layout_weight="1.0" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imgVoiceRcdHint" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_voice_talk_def_tablet" android:contentDescription="@string/zm_mm_msg_rcd_hint_def_acc_171833" />
+            <ImageView android:id="@id/imgVoiceRcdSend" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_voice_talk_send_tablet" android:contentDescription="@string/zm_mm_msg_rcd_hint_def_acc_171833" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:background="@color/zm_im_search_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</merge>

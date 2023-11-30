@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:background="@drawable/zm_sip_pop_content_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_sip_pop_width_large" android:minWidth="@dimen/zm_sip_pop_width_small" app:cardCornerRadius="8.0dip" app:cardElevation="4.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.listview.ZMMenuListView android:id="@id/menuListView" android:background="@color/zm_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:listSelector="@color/zm_transparent" android:cacheColorHint="@color/zm_transparent" android:divider="@color/zm_transparent" android:layout_marginStart="17.0dip" android:layout_marginEnd="17.0dip" />
+</androidx.cardview.widget.CardView>

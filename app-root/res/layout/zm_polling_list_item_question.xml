@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_btn_black_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/questionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_size" android:maxLines="5" zoom:layout_constraintBottom_toTopOf="@id/answerRv" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZMTextView.Medium" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/answerRv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

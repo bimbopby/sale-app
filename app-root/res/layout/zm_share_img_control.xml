@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/zm_bg_float_gray_normal" android:padding="@dimen/zm_padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/zm_bg_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/btnZoomIn" android:background="@drawable/zm_bg_control_item" android:paddingLeft="@dimen/zm_margin_smallest" android:paddingTop="@dimen/zm_share_toolbar_margin" android:paddingRight="@dimen/zm_margin_smallest" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/zm_ic_plus" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/btnZoomOut" android:background="@drawable/zm_bg_control_item" android:paddingLeft="@dimen/zm_margin_smallest" android:paddingRight="@dimen/zm_margin_smallest" android:paddingBottom="@dimen/zm_share_toolbar_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/zm_ic_subtract" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/zm_bg_union" android:layout_width="@dimen/zm_control_arrow_view_wh" android:layout_height="@dimen/zm_control_arrow_view_wh" android:layout_marginLeft="@dimen/zm_margin_normal">
+        <ImageView android:id="@id/btnUp" android:background="@drawable/zm_bg_control_item" android:padding="@dimen/zm_margin_smallest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_up" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/btnDown" android:background="@drawable/zm_bg_control_item" android:padding="@dimen/zm_margin_smallest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_down" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/btnLeft" android:background="@drawable/zm_bg_control_item" android:padding="@dimen/zm_margin_smallest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_left" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/btnRight" android:background="@drawable/zm_bg_control_item" android:padding="@dimen/zm_margin_smallest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/zm_list_selector_background" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingTop="@dimen/zm_padding_smaller_size" android:paddingRight="@dimen/zm_padding_normal_size" android:paddingBottom="@dimen/zm_padding_smaller_size" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_chat_session_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView android:id="@id/zm_share_to_meeting_icon" android:duplicateParentState="true" android:layout_width="@dimen/zm_avatar_size" android:layout_height="@dimen/zm_avatar_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/zm_share_to_meeting_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" style="@style/ZmTextView.Content.Primary" />
+</LinearLayout>

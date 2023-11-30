@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="13.0sp" android:textColor="@color/zm_v2_txt_secondary" android:id="@id/ZMReportPrivacyDeclaration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:layout_marginBottom="@dimen/zm_margin_smaller_size" android:text="@string/zm_lbl_report_participant_issue_privacy_declaration_150328" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_txt_primary" android:id="@id/txtEmailTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:layout_marginBottom="@dimen/zm_margin_smaller_size" android:text="@string/zm_lbl_report_participant_issue_email_address_200528" />
+    <EditText android:textSize="16.0sp" android:textColor="@color/zm_v2_txt_primary" android:textColorHint="@color/zm_v2_txt_secondary" android:gravity="center_vertical" android:id="@id/ZMReportEmail" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:minHeight="55.0dip" android:hint="@string/zm_hint_email" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_txt_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:layout_marginBottom="@dimen/zm_margin_smaller_size" android:text="@string/zm_lbl_report_participant_issue_top_hint_200528" />
+    <FrameLayout android:id="@id/ZMReportIssueOffensive" style="@style/ZMReportIssueItem">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_report_participant_issue_offensive_200528" style="@style/ZMReportIssueItemText" />
+        <ImageView android:id="@id/offensiveTick" style="@style/ZMReportIssueItemTick" />
+    </FrameLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/zm_v2_svg_setting_divider" />
+    <FrameLayout android:id="@id/ZMReportIssueSuicide" style="@style/ZMReportIssueItem">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_report_participant_issue_suicide_200528" style="@style/ZMReportIssueItemText" />
+        <ImageView android:id="@id/suicideTick" style="@style/ZMReportIssueItemTick" />
+    </FrameLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/zm_v2_svg_setting_divider" />
+    <FrameLayout android:id="@id/ZMReportIssuePrivateInfo" style="@style/ZMReportIssueItem">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_report_participant_issue_private_info_200528" style="@style/ZMReportIssueItemText" />
+        <ImageView android:id="@id/privateInfoTick" style="@style/ZMReportIssueItemTick" />
+    </FrameLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/zm_v2_svg_setting_divider" />
+    <FrameLayout android:id="@id/ZMReportIssueSpam" style="@style/ZMReportIssueItem">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_report_participant_issue_spam_200528" style="@style/ZMReportIssueItemText" />
+        <ImageView android:id="@id/spamTick" style="@style/ZMReportIssueItemTick" />
+    </FrameLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/zm_v2_svg_setting_divider" />
+    <FrameLayout android:id="@id/ZMReportIssueCopyright" style="@style/ZMReportIssueItem">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_report_participant_issue_copyright_200528" style="@style/ZMReportIssueItemText" />
+        <ImageView android:id="@id/copyrightTick" style="@style/ZMReportIssueItemTick" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ZMReportIssueImpersonation" style="@style/ZMReportIssueItem">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_report_participant_issue_impersonation_200528" style="@style/ZMReportIssueItemText" />
+        <ImageView android:id="@id/impersonationTick" style="@style/ZMReportIssueItemTick" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ZMReportIssueOther" style="@style/ZMReportIssueItem">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_report_participant_issue_other_301491" style="@style/ZMReportIssueItemText" />
+        <ImageView android:id="@id/otherTick" style="@style/ZMReportIssueItemTick" />
+    </FrameLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/zm_v2_svg_setting_divider" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/zm_v2_svg_setting_divider" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_txt_action" android:layout_gravity="center_horizontal" android:id="@id/btnAttachPhoto" android:padding="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/zm_lbl_report_participant_issue_attach_photo_200528" />
+    <FrameLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/previewContainer" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip">
+        <com.zipow.videobox.view.roundedview.RoundedImageView android:layout_gravity="center_horizontal" android:id="@id/previewImage" android:background="@drawable/zm_in_meeting_report_photo_preview_bg" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" app:riv_corner_radius_bottom_left="8.0dip" app:riv_corner_radius_bottom_right="8.0dip" app:riv_corner_radius_top_left="8.0dip" app:riv_corner_radius_top_right="8.0dip" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/previewDelete" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_pic_delete" android:scaleType="fitCenter" android:contentDescription="@string/zm_lbl_delete" />
+    </FrameLayout>
+</LinearLayout>

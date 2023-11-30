@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/zm_mm_private_sticker_bg" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/stickerImage" android:layout_width="56.0dip" android:layout_height="56.0dip" android:scaleType="center" android:contentDescription="@string/zm_btn_settings" />
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+</LinearLayout>

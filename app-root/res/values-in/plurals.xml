@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Maju cepat %d detik</item>
+        <item quantity="one">Maju cepat %d detik</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Mundur %d detik</item>
+        <item quantity="one">Mundur %d detik</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notifikasi baru</item>
+        <item quantity="one">%d notifikasi baru</item>
+    </plurals>
+    <plurals name="zm_accessibility_reacion_label_233717">
+        <item quantity="other">%1$s, %2$d pengguna menambahkan reaksi ini</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_233717">
+        <item quantity="other">Lihat %d balasan</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="other">, %d sebut @semua baru</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="other">, %d sebut @saya baru</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="other">, %d pesan baru</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="other">%s pesan baru, tombol</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_439129">
+        <item quantity="other">Terlalu banyak upaya yang salah dilakukan. Coba lagi dalam %d menit.</item>
+    </plurals>
+    <plurals name="zm_conf_barge_slg_monitors_285616">
+        <item quantity="other">%d monitor</item>
+    </plurals>
+    <plurals name="zm_description_tab_contacts_138733">
+        <item quantity="other">Tab kontak %s pesan belum dibaca</item>
+    </plurals>
+    <plurals name="zm_description_tab_meet_and_chat_plural_448431">
+        <item quantity="other">Tab %s pesan belum dibaca Obrolan Tim</item>
+    </plurals>
+    <plurals name="zm_description_tab_sip_4_117773">
+        <item quantity="other">%1$s,%2$s pemberitahuan baru</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_hour_204709">
+        <item quantity="other">Diperbarui %d jam yang lalu</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_minute_204709">
+        <item quantity="other">Diperbarui %d menit yang lalu</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_left_times_171869">
+        <item quantity="other">keluar %d kali</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_rejoin_times_171869">
+        <item quantity="other">keluar %d kali dan bergabung kembali</item>
+    </plurals>
+    <plurals name="zm_encryption_exceptions_211920">
+        <item quantity="other">%d pengecualian</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_attendee_211920">
+        <item quantity="other">%d peserta telepon</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_211920">
+        <item quantity="other">%d panelis telepon</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_attendee_tail_211920">
+        <item quantity="other">&amp;#160;dan %d peserta telepon</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_participant_211920">
+        <item quantity="other">%d peserta telepon</item>
+    </plurals>
+    <plurals name="zm_lbl_chat_preview_card_number_416255">
+        <item quantity="other">Anda hanya dapat menambah hingga %d item dalam satu pesan.</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_439129">
+        <item quantity="other">%d balasan</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_439129">
+        <item quantity="other">%d Balasan</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_150170">
+        <item quantity="other">%d Ditandai sebagai Belum Dibaca</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_150170">
+        <item quantity="other">%d ＠semua</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_150170">
+        <item quantity="other">%d ＠saya</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_439129">
+        <item quantity="other">%s pesan baru</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_439129">
+        <item quantity="other">%d jam</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_439129">
+        <item quantity="other">%d mnt</item>
+    </plurals>
+    <plurals name="zm_lbl_participant_184616">
+        <item quantity="other">%d peserta</item>
+    </plurals>
+    <plurals name="zm_lbl_view_all_domain_447969">
+        <item quantity="other">Lihat/Edit Semua %d Domain</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count_447969">
+        <item quantity="other">Total %d pendengar panggilan telepon</item>
+    </plurals>
+    <plurals name="zm_mesh_badge_client_421788">
+        <item quantity="other">%d panelis dengan versi klien lama</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_chat_app_message_preview_428741">
+        <item quantity="other">(%d Kartu aplikasi)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_files_439129">
+        <item quantity="other">(%d File)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_pictures_439129">
+        <item quantity="other">(%d Gambar)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s pesan baru</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_439129">
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_439129">
+        <item quantity="other">%d jam</item>
+    </plurals>
+    <plurals name="zm_mm_msg_minute_439129">
+        <item quantity="other">%d menit</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_439129">
+        <item quantity="other">%d bulan</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_439129">
+        <item quantity="other">%d tahun</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_messages_no_longer_available_285622">
+        <item quantity="other">%1$d pengingat telah dihapus karena pesan tidak lagi tersedia atau dapat diakses.</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_3_439129">
+        <item quantity="other">%1$s: %2$s Gambar</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_7_285622">
+        <item quantity="other">%1$s: %2$s (%3$s File)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_8_285622">
+        <item quantity="other">%1$s: %2$s (%3$s Gambar)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_3_285622">
+        <item quantity="other">Anda: %1$s Gambar</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_7_285622">
+        <item quantity="other">Anda: %1$s (%2$s File)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_8_285622">
+        <item quantity="other">Anda: %1$s (%2$s Gambar)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_hours_285622">
+        <item quantity="other">Anda diingatkan %1$d jam yang lalu</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_minutes_285622">
+        <item quantity="other">Anda diingatkan %1$d menit yang lalu</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_unread_reminders_285622">
+        <item quantity="other">%1$s(%2$d pengingat belum dibaca)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_hours_285622">
+        <item quantity="other">Anda akan menerima pengingat dalam %1$d jam</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_minutes_285622">
+        <item quantity="other">Anda akan menerima pengingat dalam %1$d menit</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_439129">
+        <item quantity="other">%1$d Lampiran</item>
+    </plurals>
+    <plurals name="zm_mm_with_members_354919">
+        <item quantity="other">dengan %d anggota</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left_439129">
+        <item quantity="other">%d karakter tersisa</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="other">%1$d kontak ditambahkan ke %2$s</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent_439129">
+        <item quantity="other">%d undangan dikirim</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_439129">
+        <item quantity="other">%1$s(%2$d pesan belum dibaca)</item>
+    </plurals>
+    <plurals name="zm_pbx_invite_to_meeting_invitation_sent_131469">
+        <item quantity="other">%1$d undangan telah dikirim</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_msg_remove_selected_voice_mail_to_recently_deleted_232709">
+        <item quantity="other">Anda memindahkan pesan suara yang dipilih ke Baru Saja Dihapus. Tindakan ini dapat dipulihkan nanti.</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_reminder_232709">
+        <item quantity="other">Item dalam daftar menampilkan hari yang tersisa sebelum penghapusan. Setelah itu, item akan dihapus secara permanen. Ini mungkin memakan waktu hingga %d hari.</item>
+    </plurals>
+    <plurals name="zm_question_count_271813">
+        <item quantity="other">%d pertanyaan</item>
+    </plurals>
+    <plurals name="zm_reaction_counts_ax_211853">
+        <item quantity="other">%1$s, %2$d pengguna mengirimkan reaksi ini</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_count_donw_404978">
+        <item quantity="other">dalam %1$d mnt</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_end_datetime_v2_403153">
+        <item quantity="other">%1$d penyelenggaraan</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyday_403153">
+        <item quantity="other">Setiap %1$d hari, %2$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_403153">
+        <item quantity="other">Setiap %1$d bulan pada %2$d, %3$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_sequence_403153">
+        <item quantity="other">Tiap %1$d bulan pada %2$s %3$s, %4$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyweek_403153">
+        <item quantity="other">Setiap %1$d minggu pada %2$s, %3$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_hour_311995">
+        <item quantity="other">%d jam</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_member_joined_311995">
+        <item quantity="other">%1$d orang bergabung</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_min_311995">
+        <item quantity="other">%d mnt</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_439129">
+        <item quantity="other">%1$d panggilan</item>
+    </plurals>
+    <plurals name="zm_sip_desc_session_new_message_117773">
+        <item quantity="other">%1$s pesan baru</item>
+    </plurals>
+    <plurals name="zm_sip_msg_delete_selected_voicemail_232709">
+        <item quantity="other">Anda akan menghapus pesan suara yang dipilih secara permanen. Tindakan ini tidak dapat dibatalkan.</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_file_439129">
+        <item quantity="other">Mengirim %1$d file</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_image_439129">
+        <item quantity="other">Mengirim %1$d gambar</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_file_187397">
+        <item quantity="other">%1$s (%2$d File)</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_image_187397">
+        <item quantity="other">%1$s (%2$d Gambar)</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">%d emoji dipilih</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_are_following_you_383781">
+        <item quantity="other">mengikuti Anda</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_number_are_following_you_383781">
+        <item quantity="other">%d orang</item>
+    </plurals>
+</resources>

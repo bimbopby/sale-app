@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/panelSearchBar" android:background="@color/zm_white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/btnCancel2" android:background="@drawable/zm_btn_back_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:contentDescription="@string/zm_btn_cancel_160917" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/zm_im_search_bar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:id="@id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/zm_ic_im_search" />
+        <EditText android:id="@id/edtSearch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/zm_hint_search" android:layout_weight="1.0" android:imeOptions="actionDone" style="@style/ZMEditText.GlobalSearch" />
+        <ImageView android:id="@id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317" />
+    </LinearLayout>
+</LinearLayout>

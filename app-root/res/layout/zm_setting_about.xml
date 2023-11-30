@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        <Button android:id="@id/btnRight" android:visibility="gone" style="@style/ZmTitleBarAction.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_title_setting_about_86526" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionVersion" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/txtVersion" android:layout_width="0.0dip" android:text="@string/zm_lbl_version" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBarCheckingUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" style="@style/ZMProgressBar.Small" />
+                    <TextView android:id="@id/txtVersionName" android:layout_width="wrap_content" android:layout_marginRight="@dimen/zm_margin_small_size" android:layout_weight="0.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:id="@id/imgIndicatorNewVersion" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:src="@drawable/zm_ic_indicator_new" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnFeedback" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/txtSendFeedBack" android:layout_width="0.0dip" android:text="@string/zm_btn_send_feedback" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnReportProblem" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/txtReportProblem" android:layout_width="0.0dip" android:text="@string/zm_sip_send_log_title_150295" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnRecommend" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_btn_recommend" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnRate" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_btn_rate_58802" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnPrivacy" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_title_privacy_policy" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnItemsOfService" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_msg_terms_service_137212" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnCommunityStandards" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_msg_community_standards_278166" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnGrievanceOfficer" android:visibility="gone" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_zoom_setting_grievance_officer_292145" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnSendLog" android:visibility="gone" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="0.0dip" android:text="@string/zm_title_send_log_65868" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btnOpenSource" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp">
+                <TextView android:textColor="@color/zm_v2_primary_btn_normal" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="0.0dip" android:layout_marginRight="@dimen/zm_margin_smallest" android:text="@string/zm_title_open_source_software_231495" android:layout_weight="1.0" android:contentDescription="@string/zm_title_open_source_software_acc_text_231495" style="@style/ZmSettingItemTitle" />
+                <ImageView android:src="@drawable/zm_ic_new_windows" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/btnClearLog" android:background="@color/zm_ui_kit_color_red_FF4242_press" android:visibility="gone" android:layout_marginTop="50.0dip" style="@style/ZmSettingItem">
+                <TextView android:textColor="@color/zm_ui_kit_inactivated_btn_text_color" android:layout_width="0.0dip" android:text="@string/zm_title_clear_log_65868" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                <ImageView style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

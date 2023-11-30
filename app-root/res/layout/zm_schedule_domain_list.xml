@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="600.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnSave" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <Button android:id="@id/btnBack" android:text="@string/zm_btn_cancel" style="@style/ZmTitleBarAction" />
+        <Button android:id="@id/btnSave" android:text="@string/zm_btn_save" style="@style/ZmTitleBarAction" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@id/txtTitle" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_domain_list_120783" style="@style/ZMTextView.Title" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/panelTitleBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:paddingLeft="@dimen/zm_padding_normal" android:paddingRight="@dimen/zm_padding_normal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/zm_msg_domains_edit_120783" style="@style/ZMTextView.SettingsItemDesc" />
+            <us.zoom.uicommon.widget.listview.ZMChildListView android:id="@id/lvDomains" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llAdd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <View android:background="#ffc7c7c9" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <Button android:gravity="center|left" android:id="@id/btnAddNewDomain" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_padding_normal" android:paddingTop="@dimen/zm_padding_medium" android:paddingRight="@dimen/zm_padding_normal" android:paddingBottom="@dimen/zm_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_allow_join_add_domain" style="@style/ZMButton.NoBackground.Medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

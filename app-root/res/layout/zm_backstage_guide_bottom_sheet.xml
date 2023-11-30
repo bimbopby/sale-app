@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_backstage_guide_bg" android:padding="@dimen/zm_dialog_margin_24dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="206.0dip">
+        <androidx.viewpager.widget.ViewPager android:id="@id/guideViewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/vpIndexer" android:background="@drawable/zm_backstage_guide_indicator_bg" android:layout_width="wrap_content" android:layout_height="12.0dip" android:layout_marginBottom="@dimen/zm_margin_small_minus_size" android:importantForAccessibility="no" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/imgPause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:layout_marginBottom="@dimen/zm_margin_smaller_size" android:src="@drawable/zm_backstage_pause_icon" />
+    </FrameLayout>
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_24sp" android:textStyle="bold" android:textColor="@color/zm_v1_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_marginBottom="@dimen/zm_margin_small_size" android:text="@string/zm_gr_backstage_guide_welcome_267913" android:drawableRight="@drawable/zm_backstage_guide_welcome_icon" android:drawablePadding="1.0dip" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:textColor="@color/zm_v1_white_500" android:id="@id/txtNotice" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/zm_gr_backstage_guide_notice_267913" android:layout_weight="1.0" />
+    <Button android:id="@id/btnGot" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginTop="@dimen/zm_margin_small_size" android:text="@string/zm_btn_got_it" style="@style/ZmButton.Medium" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <RelativeLayout android:id="@id/panelSearchBar" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+            <com.zipow.videobox.view.ZMSearchBar android:id="@id/edtSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btnCancel" android:layout_centerVertical="true" zoom:editTextHint="@string/zm_hint_search" zoom:imeOptions="actionSearch" zoom:noMargin="true" zoom:onDark="true" />
+            <Button android:id="@id/btnCancel" android:text="@string/zm_btn_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZmTitleBarAction.Dark" />
+        </RelativeLayout>
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/invite_img" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+                <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+            </FrameLayout>
+            <ImageButton android:id="@id/invite_img" android:src="@drawable/zm_session_members_invite" android:contentDescription="@string/zm_btn_invite" style="@style/ZmBackButton.Dark" />
+            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" style="@style/ZmTitleBarTitle.Dark" />
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    </FrameLayout>
+    <com.zipow.videobox.view.ZMSearchBar android:id="@id/edtSearchDummy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/btnBack" android:layout_centerVertical="true" android:layout_marginStart="@dimen/zm_setting_item_padding_bottom" android:layout_marginEnd="@dimen/zm_setting_item_padding_bottom" zoom:editTextHint="@string/zm_hint_search" zoom:focusable="false" zoom:imeOptions="actionDone" />
+    <View android:background="@color/zm_v2_cell_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.zipow.videobox.view.mm.MMConnectAlertView android:orientation="vertical" android:id="@id/panelConnectionAlert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/sortPanel" android:background="@color/zm_v2_search_filter_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="8.0dip">
+        <TextView android:id="@id/sortText" android:background="?selectableItemBackground" android:paddingTop="@dimen/zm_padding_small_size" android:paddingBottom="@dimen/zm_padding_small_size" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/zm_im_session_members_all_members_393577" android:layout_centerVertical="true" android:contentDescription="@string/zm_im_session_members_all_members_393577" android:drawableEnd="@drawable/zm_ic_arrow_down" android:layout_marginStart="@dimen/zm_margin_small_size" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/members_recycler_view" android:background="@drawable/zm_listview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/emptyLinear" android:background="@color/zm_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center|top" android:layout_gravity="center_horizontal" android:id="@id/txtEmptyView" android:paddingTop="30.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_search_result_empty" style="@style/ZMTextView.SettingsItem.Secondary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/processLinear" android:background="@color/zm_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:paddingTop="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/btnRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+                <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+            </FrameLayout>
+            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" style="@style/ZmTitleBarTitle.Dark" />
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+        <com.zipow.videobox.view.sip.PhonePBXSharedLineRecyclerView android:id="@id/sharedLineRecyclerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/panelEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/txtEmptyViewTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_sip_title_monitor_cq_empty_210373" style="@style/ZmTextView.Title.Medium.Dimmed" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/txtEmptyView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="32.0dip" android:text="@string/zm_sip_message_monitor_cq_empty_210373" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+        </LinearLayout>
+    </LinearLayout>
+    <us.zoom.uicommon.widget.view.ZMTipLayer android:id="@id/tipLayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

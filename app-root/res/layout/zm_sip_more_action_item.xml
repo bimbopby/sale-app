@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/txtLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" style="@style/UIKitTextView.CellTitle.Selector" />
+        <TextView android:id="@id/txtSubLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="4.0dip" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed.Selector" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv" android:background="@drawable/zm_sip_dialpad_key_bg" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/ic_drop_down" android:scaleType="centerInside" android:contentDescription="@string/zm_sip_minimize_des_155628" />
+</LinearLayout>

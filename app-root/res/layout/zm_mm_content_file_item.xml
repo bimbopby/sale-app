@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/zm_list_selector_white_bg" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <com.zipow.videobox.view.ZMGifView android:id="@id/imgFileLogo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/zm_ic_filetype_image" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iconVideo" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/zm_ic_btn_play" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.zipow.videobox.view.ZMSimpleEmojiTextView android:id="@id/txtFileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/UIKitTextView.CellTitle" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/externalFileLinkIndicatorImageView" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_external_link" android:layout_weight="0.0" android:contentDescription="@string/zm_external_link_accessibility_350330" />
+        </LinearLayout>
+        <com.zipow.videobox.view.ZMSimpleEmojiTextView android:id="@id/txtFileOwner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smallest" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+        <TextView android:id="@id/txtFileGroups" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smallest" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+    </LinearLayout>
+    <ImageView android:id="@id/imgShare" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_share_to" android:contentDescription="@string/zm_description_share" />
+</LinearLayout>

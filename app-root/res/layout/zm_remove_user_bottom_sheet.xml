@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@drawable/zm_bottom_sheet_round_rect_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/itemContainer" android:padding="@dimen/zm_margin_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_24sp" android:textColor="@color/zm_v2_txt_primary" android:gravity="center" android:id="@id/txtExpelTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_alert_expel_user_confirm_title_200528" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_primary" android:gravity="center" android:id="@id/txtExpelDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_minus_size" android:text="@string/zm_alert_expel_user_confirm_meeting_200528" />
+        <Button android:id="@id/btnRemoveAndReport" android:layout_width="fill_parent" android:layout_marginTop="@dimen/zm_margin_large_minus_size" android:text="@string/zm_btn_remove_and_report_200528" style="@style/UILargestButton.RedV2" />
+        <Button android:textColor="@color/zm_v2_txt_desctructive" android:id="@id/btnRemove" android:layout_width="fill_parent" android:layout_marginTop="@dimen/zm_margin_small_size" android:text="@string/zm_btn_remove" style="@style/UILargestButton.GrayV2" />
+        <Button android:id="@id/btnCancel" android:layout_width="fill_parent" android:layout_marginTop="@dimen/zm_margin_small_size" android:text="@string/zm_btn_cancel" style="@style/UILargestButton.GrayV2" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

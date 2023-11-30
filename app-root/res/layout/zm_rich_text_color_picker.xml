@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_bg_popup_window" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:colorPickerView="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="11.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/text_color" />
+    <us.zoom.videomeetings.richtext.popup.ZMColorPickerView android:id="@id/textColorPalette" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" colorPickerView:colorViewCheckedType="checkMark" colorPickerView:colorViewHeight="24.0dip" colorPickerView:colorViewWidth="24.0dip" colorPickerView:colors="@array/textColors" colorPickerView:isTextColor="true" />
+    <TextView android:textSize="11.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/background_color" />
+    <us.zoom.videomeetings.richtext.popup.ZMColorPickerView android:id="@id/backgroundColorPalette" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" colorPickerView:colorViewCheckedType="checkMark" colorPickerView:colorViewHeight="24.0dip" colorPickerView:colorViewWidth="24.0dip" colorPickerView:colors="@array/backgroundColors" colorPickerView:isTextColor="false" />
+    <Button android:textSize="11.0sp" android:id="@id/clearBtn" android:background="@drawable/zm_bg_clear_btn" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/clear" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/btnOkay" android:layout_marginTop="8.0dip" android:text="@string/zm_encrypt_data_okay_386885" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ZmButton.Text" />
+    <View android:id="@id/divider" android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" app:layout_constraintTop_toBottomOf="@id/btnOkay" />
+    <TextView android:textSize="@dimen/zm_font_larger_size" android:textStyle="bold" android:textColor="@color/zm_v2_txt_primary" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintTop_toBottomOf="@id/divider" />
+    <TextView android:textSize="@dimen/zm_font_small_size" android:textColor="@color/zm_v2_txt_primary" android:id="@id/tvPrompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/zm_encrypt_data_all_up_to_date_prompt_386885" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

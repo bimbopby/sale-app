@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnDiagnoistic" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <Button android:id="@id/btnBack" android:text="@string/zm_btn_cancel" style="@style/ZmTitleBarAction.Dark" />
+        <Button android:enabled="false" android:id="@id/btnDiagnoistic" android:text="@string/zm_btn_next" style="@style/ZmTitleBarAction.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_sip_send_log_title_150295" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/sv_content" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/zm_margin_medium_size" android:paddingBottom="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_sip_send_log_problem_type_150295" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/panelReason" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@id/optMeeting" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/tvMeeting" android:layout_width="0.0dip" android:text="@string/zm_sip_send_log_opt_video_114606" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/imgMeeting" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/optPhone" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/tvPhone" android:layout_width="0.0dip" android:text="@string/zm_sip_send_log_feature_phone_114606" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/imgPhone" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/optChat" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/tvChat" android:layout_width="0.0dip" android:text="@string/zm_tab_content_team_chat_419860" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/imgChat" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/optWebinar" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/tvWebinar" android:layout_width="0.0dip" android:text="@string/zm_sip_send_log_feature_webinar_114606" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/imgWebinar" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/optOthers" style="@style/ZmSettingItem">
+                        <TextView android:id="@id/tvOthers" android:layout_width="0.0dip" android:text="@string/zm_sip_send_log_opt_others_101987" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                        <ImageView android:id="@id/imgOthers" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

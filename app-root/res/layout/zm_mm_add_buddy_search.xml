@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zm_v2_window_gb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="600.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/title_bar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <Button android:id="@id/btnBack" android:text="@string/zm_btn_cancel" android:contentDescription="@string/zm_btn_back" style="@style/ZmTitleBarAction" />
+        <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_im_invite_to_zoom_221346" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/actionPanel" android:background="@drawable/zm_btn_bg_blue" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="26.0dip" android:layout_marginRight="26.0dip" android:layout_below="@id/contentPanel">
+        <TextView android:textStyle="bold" android:id="@id/actionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_invite_buddy_favorite" style="@style/ZMTextView.Medium.OnDark" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/zm_v2_bg_red" android:gravity="center" android:id="@id/errorText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginTop="@dimen/zm_dialog_margin_16dp" android:layout_marginRight="@dimen/zm_dialog_margin_16dp" android:layout_below="@id/actionPanel" style="@style/ZMTextView.Medium" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_margin_medium_size" android:layout_below="@id/title_bar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/addPanel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_hint_enter_email_152253" style="@style/ZMTextView.OptionTitle" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_edit_text_normal_height">
+                    <EditText android:id="@id/editText" android:hint="@string/zm_hint_enter_email_152253" android:maxLength="128" android:inputType="textEmailAddress" style="@style/ZmInputBox" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <TextView android:id="@id/zm_mm_add_buddy_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sentPanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginBottom="45.0dip">
+            <ImageView android:layout_width="70.0dip" android:layout_height="52.0dip" android:src="@drawable/zm_ic_add_contact_invitation" />
+            <TextView android:id="@id/invitationSentText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:layout_marginBottom="8.0dip" android:text="@string/zm_hint_invitation_sent_152253" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Dimmed" />
+            <TextView android:id="@id/emailText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_hint_invitation_sent_152253" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/chatPanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginBottom="45.0dip">
+            <com.zipow.videobox.view.AvatarView android:id="@id/avatar" android:layout_width="104.0dip" android:layout_height="104.0dip" zoom:zm_description_enable="false" />
+            <TextView android:id="@id/screenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="8.0dip" android:text="@string/zm_hint_invitation_sent_152253" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_hint_already_my_contact_152253" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Dimmed" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

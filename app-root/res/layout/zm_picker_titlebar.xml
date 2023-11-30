@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnSend" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+    <TextView android:enabled="true" android:textColor="@color/zm_picker_btn_text_color" android:id="@id/btnSend" android:background="@drawable/zm_picker_round_btn_green_bg" android:text="@string/zm_picker_done_with_count" style="@style/ZmTitleBarAction.Dark" />
+    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" style="@style/ZmTitleBarTitle.Dark" />
+</us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>

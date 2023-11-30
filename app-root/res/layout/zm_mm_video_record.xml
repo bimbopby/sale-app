@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zipow.videobox.view.ptvideo.ZmPtCameraView android:id="@id/previewVideoView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/guideline" app:layout_constraintDimensionRatio="w,3:4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/txtTime" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/previewVideoView" app:layout_constraintLeft_toLeftOf="@id/previewVideoView" style="@style/UIKitTextView.PrimaryText.Normal.White" />
+    <TextView android:id="@id/txtLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:text="@string/zm_sip_lbl_videomail_290287" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/previewVideoView" style="@style/UIKitTextView.PrimaryText" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/txtLabel">
+        <com.zipow.videobox.view.sip.SipInCallPanelItemView android:id="@id/btnSend" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="14.0dip" />
+        <com.zipow.videobox.view.sip.SipInCallPanelItemView android:id="@id/btnRetake" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="14.0dip" />
+        <com.zipow.videobox.view.sip.SipInCallPanelRecordView android:id="@id/btnRecord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="14.0dip" />
+        <com.zipow.videobox.view.sip.SipInCallPanelItemView android:id="@id/btnSwitch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="14.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

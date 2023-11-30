@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zm_v2_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnClose" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <ImageButton android:id="@id/btnClose" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_wb_follow_mode_following_you_383781" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mFollowUserList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/panelTitleBar" />
+</RelativeLayout>

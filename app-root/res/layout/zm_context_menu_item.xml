@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@drawable/zm_v2_bg_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_action_sheet_menu_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_minus_size" android:layout_marginRight="@dimen/zm_margin_small_minus_size" android:layout_weight="1.0">
+        <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/menu_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary" />
+        <TextView android:gravity="left" android:id="@id/menu_desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/menu_icon" android:layout_width="@dimen/zm_btn_smallest_height" android:layout_height="@dimen/zm_btn_smallest_height" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:layout_marginBottom="@dimen/zm_margin_small_size" />
+</LinearLayout>

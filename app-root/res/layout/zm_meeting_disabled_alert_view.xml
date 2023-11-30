@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llDisabledAlert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/zm_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/zm_dimen_stroke_smallest" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_text_disable" android:gravity="center" android:id="@id/txtDisabledAlert" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_webinar_txt_chat_disabled_65892" style="@style/ZMTextView.Instructions" />
+</LinearLayout>

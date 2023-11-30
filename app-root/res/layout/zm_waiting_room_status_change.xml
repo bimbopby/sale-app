@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/zm_v1_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Large" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:layout_gravity="center" android:id="@id/txtPrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_large_minus_size" android:text="@string/zm_msg_connecting" style="@style/ZMTextView.ExtremLarge.OnDark" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="13.0sp" android:textColor="#fff8f8f8" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_minus_size" android:text="@string/zm_bo_lbl_waiting_prompt" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panelEditSearchDummy" android:background="@drawable/zm_im_search_bar_bg" android:focusable="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/zm_ic_im_search" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColorHint="@color/zm_im_search_text_hint" android:gravity="center_vertical" android:id="@id/edtSearchDummy" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/zm_hint_search" android:cursorVisible="false" android:layout_weight="1.0" style="@style/ZMEditText.GlobalSearch" />
+    </LinearLayout>
+</FrameLayout>

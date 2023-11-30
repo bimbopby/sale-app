@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <View android:id="@id/viewRight" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_title_notifications_dnd_19898" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/panelTurnOnNotification" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/panelSnoozed" style="@style/ZmSettingItem">
+                <TextView android:text="@string/zm_lbl_notification_snoozed_19898" style="@style/ZmSettingItemTitle" />
+                <TextView android:id="@id/txtSnoozed" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/optionDndScheduled" style="@style/ZmSettingItem.UnClick">
+                <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_notification_scheduled_19898" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkDndScheduled" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/panelDndFrom" style="@style/ZmSettingItem">
+                <TextView android:text="@string/zm_lbl_from_19898" style="@style/ZmSettingItemTitle" />
+                <TextView android:id="@id/txtTimeFrom" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/panelDndTo" style="@style/ZmSettingItem">
+                <TextView android:text="@string/zm_lbl_to_19898" style="@style/ZmSettingItemTitle" />
+                <TextView android:id="@id/txtTimeTo" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        <TextView android:text="@string/zm_lbl_notification_dnd_des_19898" style="@style/ZmSettingDescription" />
+    </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+</LinearLayout>

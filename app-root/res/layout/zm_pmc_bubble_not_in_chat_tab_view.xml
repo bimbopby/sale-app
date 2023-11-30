@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/zm_font_normal_size" android:id="@id/btnGoToChat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/zm_lbl_pmc_pick_up_go_to_chat_449879" android:layout_weight="1.0" android:textAllCaps="false" style="@style/ZmButton" />
+    <Button android:textSize="@dimen/zm_font_normal_size" android:textStyle="bold" android:textColor="@color/zm_v1_gray_2800" android:id="@id/btnGot" android:background="@drawable/zm_gray_f1f4f6_round_16" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/zm_btn_got_it" android:layout_weight="1.0" android:textAllCaps="false" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/zm_wb_dashboard_text_color" android:gravity="center" android:id="@id/tvTypeName" android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingBottom="@dimen/zm_padding_smallest_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/zm_btn_width_60dp" android:paddingStart="@dimen/zm_padding_small_size" android:paddingEnd="@dimen/zm_padding_small_size" style="@style/ZMTextView.Normal" />
+    <View android:background="@drawable/zm_wb_dashboard_type_selected" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginStart="@dimen/zm_padding_smallest_minus_minus_size" android:layout_marginEnd="@dimen/zm_padding_smallest_minus_minus_size" />
+</LinearLayout>

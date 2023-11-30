@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom|center" android:background="@color/zm_preview_translucent_black" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:orientation="vertical" android:id="@id/slash_command_listView" android:background="@drawable/zm_mm_slash_command_listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@color/zm_white" android:divider="@color/zm_transparent" />
+        <LinearLayout android:gravity="center" android:id="@id/progress" android:background="@drawable/zm_mm_slash_command_listview_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

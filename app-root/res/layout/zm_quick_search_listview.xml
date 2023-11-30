@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.uicommon.widget.listview.PullDownRefreshListView android:id="@id/listView" android:background="@drawable/zm_listview_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/zm_v2_svg_setting_divider" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/emptyView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:id="@id/emptyTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMTextView.Medium.Dimmed" />
+        <Button android:id="@id/emptyBtn" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="12.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" style="@style/ZMButton.NewHappyPath.Medium" />
+    </LinearLayout>
+    <us.zoom.uicommon.widget.view.QuickSearchSideBar android:layout_gravity="right" android:id="@id/quickSearchSideBar" android:layout_width="25.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="48.0sp" android:textStyle="bold" android:textColor="@color/zm_ui_kit_color_white_ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/txtQuickSearchChar" android:background="@drawable/zm_quick_search_char_bg" android:layout_width="70.0dip" android:layout_height="70.0dip" android:text="A" />
+</merge>

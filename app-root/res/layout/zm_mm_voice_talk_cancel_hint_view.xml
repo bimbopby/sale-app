@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_bg" android:background="@color/zm_half_translucent_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgVoiceCancelHint" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_voice_talk_cancel_hint" />
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v1_white" android:gravity="center" android:id="@id/txtVoiceCancelText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/zm_mm_msg_rcd_hint_release_to_cancel" />
+    </LinearLayout>
+</merge>

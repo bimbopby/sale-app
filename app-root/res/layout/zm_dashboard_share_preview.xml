@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@drawable/zm_bottom_sheet_round_rect_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/titleBar" android:background="@null" style="@style/ZmTitleBar">
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:id="@id/tvTitle" android:layout_marginStart="@dimen/zm_margin_64dp" android:layout_marginEnd="@dimen/zm_margin_64dp" zoom:layout_constrainedWidth="true" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmTitleBarTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/settingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:layout_constraintTop_toBottomOf="@id/titleBar">
+            <TextView android:id="@id/tvTempPermission" android:text="@string/zm_dashboard_preview_permissions_meeting_385400" android:layout_marginStart="@dimen/zm_margin_normal" android:layout_marginEnd="@dimen/zm_margin_normal" style="@style/ZmSettingItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/zm_margin_normal" android:layout_marginEnd="@dimen/zm_margin_normal" zoom:zm_showBottomDivider="false" zoom:zm_showTopDivider="false">
+                <LinearLayout android:id="@id/panelEdit" android:minHeight="@dimen/zm_settings_item_with_description_min_height" style="@style/ZmSettingItem">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingBottom="0.0dip" android:text="@string/zm_dashboard_permissions_edit_296308" style="@style/ZmSettingItemTitle" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/imgEditType" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/panelView" android:minHeight="@dimen/zm_chat_session_item_min_height" style="@style/ZmSettingItem">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingBottom="0.0dip" android:text="@string/zm_dashboard_permissions_view_296308" style="@style/ZmSettingItemTitle" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/imgViewType" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/zm_margin_normal" android:layout_marginEnd="@dimen/zm_margin_normal" zoom:zm_showBottomDivider="false" zoom:zm_showTopDivider="false">
+                <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/panelAllowAccessAfterMeeting" style="@style/ZmSettingItem.UnClick">
+                    <TextView android:gravity="center|left" android:id="@id/tvToggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_small" android:text="@string/zm_dashboard_preview_toggle_meeting_385400" zoom:layout_constrainedWidth="true" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toStartOf="@id/ivToggleTip" zoom:layout_constraintHorizontal_bias="0.0" zoom:layout_constraintHorizontal_chainStyle="packed" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmSettingItemTitle" />
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivToggleTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/zm_title_meeting_info" android:layout_marginEnd="@dimen/zm_margin_smallest" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toStartOf="@id/chkAllowAccessAfterMeeting" zoom:layout_constraintStart_toEndOf="@id/tvToggle" zoom:layout_constraintTop_toTopOf="@id/tvToggle" zoom:srcCompat="@drawable/zm_ic_dashborad_share_toggle_tip" />
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkAllowAccessAfterMeeting" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+        <View android:id="@id/bottomDivider" android:layout_marginTop="@dimen/zm_margin_largest" zoom:layout_constraintTop_toBottomOf="@id/settingLayout" style="@style/ZMLightLine" />
+        <Button android:id="@id/btnOpen" android:layout_marginTop="@dimen/zm_margin_small" android:layout_marginBottom="@dimen/zm_margin_small" android:text="@string/zm_dashboard_open_collaborate_296308" android:layout_marginStart="@dimen/zm_margin_normal" android:layout_marginEnd="@dimen/zm_margin_normal" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toBottomOf="@id/bottomDivider" zoom:layout_constraintVertical_bias="1.0" style="@style/ZmButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/e911Addr" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textStyle="bold" android:textColor="@color/zm_v2_txt_primary" android:gravity="center" android:id="@id/txtE911AddrTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_emergency_addr_detected_166817" />
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_txt_primary" android:gravity="center_horizontal" android:id="@id/txtE911Addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="260.0dip" android:lineSpacingExtra="4.0dip" />
+</LinearLayout>

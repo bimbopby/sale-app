@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/txtMessage" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_report_participant_issue_result_dialog_msg_without_link_158189" />
+    <ImageView android:background="@color/zm_v2_light_bg_normal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/btnRemove" android:background="@drawable/zm_btn_dialog_highlight_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/txtRemove" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/zm_lbl_report_participant_issue_result_dialog_remove_all_reported_150328" android:maxLines="1" style="@style/ZMTextView.DialogItem.highligt" />
+        <ImageView android:background="@color/zm_v2_light_bg_normal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/btnDone" android:background="@drawable/zm_btn_dialog_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/zm_btn_done" style="@style/ZMTextView.DialogItem" />
+    </LinearLayout>
+</LinearLayout>

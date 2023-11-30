@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMAlertView android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_need_cancel="true" zoom:zm_text="@string/zm_qa_meeting_msg_everyone_can_see_question_357017" zoom:zm_type="WARNING" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/hint" />
+    <LinearLayout android:orientation="vertical" android:id="@id/panelNoItemMsg" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/txtMsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_qa_meeting_msg_no_question_357017" style="@style/ZMTextView.Large.OnLight" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/txtMsg2" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_qa_meeting_asker_msg_357017" style="@style/ZMTextView.OnLight.Medium.Dimmed" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/btnRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_profile_license_184616" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/ucSettings" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/txtOptionTitleUC" android:text="@string/zm_lbl_title_uc_184616" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/ucCategory" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="top" android:id="@id/optionMeeting" style="@style/ZmSettingItem.UnClick">
+                        <TextView android:text="@string/zm_mm_setting_meeting" style="@style/ZmSettingItemTitle" />
+                        <TextView android:id="@id/txtMeeting" android:text="@string/zm_intergeated_phone_not_set_31439" style="@style/ZmSettingItemContent" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top" android:id="@id/optionBillingPlans" style="@style/ZmSettingItem.UnClick">
+                        <TextView android:text="@string/zm_sip_call_title_111498" style="@style/ZmSettingItemTitle" />
+                        <TextView android:id="@id/txtPBXBillingPlans" android:text="@string/zm_intergeated_phone_not_set_31439" style="@style/ZmSettingItemContent" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+            <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/meetingSetting" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/txtCategoryTitleMeeting" android:text="@string/zm_lbl_title_meeting_184616" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/meetingCategory" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout style="@style/ZmSettingItem.UnClick">
+                        <TextView android:id="@id/txtTitleMeeting" style="@style/ZmSettingItemTitle" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+            <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/webinarSetting" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/txtCategoryTitleWebinar" android:text="@string/zm_lbl_title_webinar_184616" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/webinarCategory" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout style="@style/ZmSettingItem.UnClick">
+                        <TextView android:id="@id/txtTitleWebinar" style="@style/ZmSettingItemTitle" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+            <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/txtCategoryTitlePBX" android:text="@string/zm_lbl_title_pbx_184616" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/pbxCategory" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+            <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/eventSetting" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/txtCategoryTitleEvent" android:text="@string/zm_lbl_title_event_283295" style="@style/ZmSettingOptionTitle" />
+                <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/eventCategory" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout style="@style/ZmSettingItem.UnClick">
+                        <TextView android:id="@id/txtTitleEvent" style="@style/ZmSettingItemTitle" />
+                    </LinearLayout>
+                </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

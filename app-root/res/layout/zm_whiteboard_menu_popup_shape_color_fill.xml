@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_whiteboard_common_toolbar_bg" android:padding="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/iv_Shape_ColorFill_Seekbar_layout" android:layout_width="fill_parent" android:layout_height="@dimen/zm_margin_large">
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_12sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Fill" />
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/iv_Shape_ColorFill_Seekbar" android:paddingLeft="@dimen/zm_margin_small_6dp" android:paddingTop="@dimen/zm_margin_smallest" android:paddingRight="@dimen/zm_margin_small_6dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="@integer/alpha_max" android:progress="@integer/alpha_max" android:thumb="@drawable/zm_whiteboard_menu_popup_shape_color_fill_seekbar" android:min="30" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/zm_v2_btn_gray" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" />
+    <TextView android:id="@id/center_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_at_buddy_list_overmany_hint_when_key_not_empty_384998" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+    <View android:background="@color/zm_v2_btn_gray" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" android:layout_marginStart="13.0dip" />
+</LinearLayout>

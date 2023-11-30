@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/playerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:controller_layout_id="@layout/media_player_playback_control" />
+    <RelativeLayout android:id="@id/downloadLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zipow.videobox.view.ZMGifView android:id="@id/videoPreviewImage" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/zm_v1_black_alpha40" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zipow.videobox.view.mm.message.MessageSimpleCircularProgressView android:id="@id/progressBar" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginBottom="16.0dip" app:backColor="@color/zm_v1_purple_50_alpha18" app:progColor="@color/zm_v1_white" app:progWidth="4.0dip" app:progress="0" />
+            <ImageView android:id="@id/iconDownloadError" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/zm_ic_download_error" android:contentDescription="@string/zm_accessibility_file_download_error_239318" />
+            <TextView android:id="@id/txtDownloadProgress" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:maxLines="@integer/small_lines" style="@style/ZmTextView.Button.Secondary.Medium.Dark" />
+            <Button android:textColor="@color/zm_v1_black" android:id="@id/btnMain" android:background="@drawable/btn_white_rounded_bg" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/zm_margin_medium_minus_size" android:text="@string/zm_record_btn_pause" style="@style/ZmButton.Secondary" />
+            <TextView android:id="@id/btnCancel" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" style="@style/ZmTextView.Button.Secondary.Medium.Dark" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

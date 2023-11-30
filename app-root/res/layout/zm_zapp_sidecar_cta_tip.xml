@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/zm_v1_gray_1900" app:cardCornerRadius="@dimen/zm_corner_smaller_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_zm_sidecar_latest_cta" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small" android:layout_marginBottom="@dimen/zm_margin_small" android:src="@drawable/zm_tip_icon_sidecar_cta_355714" android:layout_marginStart="@dimen/zm_margin_small" />
+        <TextView android:textSize="@dimen/zm_font_small_size" android:textColor="@color/zm_v1_white" android:layout_gravity="center_vertical" android:id="@id/tv_zm_sidecar_latest_cta_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small" android:layout_marginBottom="@dimen/zm_margin_small" android:maxWidth="@dimen/zm_btn_width_160dp" android:text="Get your book signed White!" android:layout_marginStart="@dimen/zm_margin_small" android:layout_marginEnd="@dimen/zm_margin_small" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

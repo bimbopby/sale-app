@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_medium_size" app:cardBackgroundColor="@color/zm_v2_webinar_cardview_bg" app:cardCornerRadius="@dimen/zm_radius_medium" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/tips" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginRight="@dimen/zm_dialog_margin_16dp" android:minHeight="@dimen/zm_text_normal_height" android:text="@string/zm_lobby_start_now_alert_title_377018" android:lineSpacingExtra="@dimen/zm_font_line_space_smallest_size" style="@style/UIKitTextView.PrimaryText.Normal.Alpha80White" />
+        <LinearLayout android:orientation="vertical" android:id="@id/zmStartArea" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_start_webinar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginBottom="@dimen/zm_margin_login_btn" android:layout_marginHorizontal="@dimen/zm_dialog_margin_16dp">
+                <us.zoom.uicommon.widget.view.ZMTextButton android:gravity="center" android:id="@id/zm_btn_start" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_btn_start" android:lineSpacingExtra="@dimen/zm_font_line_space_small_size" style="@style/UIKitTextView.PrimaryText.Normal.LightWhite" />
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBarBroadcasting" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/ZMProgressBar.Small" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/zmNotnowArea" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/zm_btn_bg_gray" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginBottom="@dimen/zm_margin_login_btn" android:layout_marginHorizontal="@dimen/zm_dialog_margin_16dp">
+                <us.zoom.uicommon.widget.view.ZMTextButton android:gravity="center" android:id="@id/zm_btn_not_now" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_btn_not_now_87408" android:lineSpacingExtra="@dimen/zm_font_line_space_small_size" style="@style/UIKitTextView.PrimaryText.Normal.LightWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

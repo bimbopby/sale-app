@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <View android:id="@id/viewRight" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_padding_larger_size" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_padding_large_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/txtGroupNotificationDes" android:text="@string/zm_lbl_messages_preferences_group_title_398217" style="@style/ZmSettingDescription" />
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/panelGroupNotification" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/panelAllMsg" style="@style/ZmSettingItem">
+                <TextView android:id="@id/panelAllMsgTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_all_msg_456591" zoom:layout_constraintLeft_toLeftOf="parent" zoom:layout_constraintRight_toLeftOf="@id/imgAllMsg" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmSettingItemTitleWithSubTitle" />
+                <TextView android:id="@id/panelAllMsgSubTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_all_msg_sub_title_398217" zoom:layout_constraintLeft_toLeftOf="parent" zoom:layout_constraintRight_toLeftOf="@id/imgAllMsg" zoom:layout_constraintTop_toBottomOf="@id/panelAllMsgTitle" style="@style/ZmSettingItemSubTitle" />
+                <ImageView android:id="@id/imgAllMsg" android:visibility="visible" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintRight_toRightOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmSettingItemArrow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/panelPrivateMsg" style="@style/ZmSettingItem">
+                <TextView android:id="@id/panelPrivateMsgTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_messages_mentions_replies_title_398217" zoom:layout_constraintLeft_toLeftOf="parent" zoom:layout_constraintRight_toLeftOf="@id/imgNotificationPrivate" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmSettingItemTitleWithSubTitle" />
+                <TextView android:id="@id/panelPrivateMsgSubTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_messages_mentions_replies_sub_title_398217" zoom:layout_constraintLeft_toLeftOf="parent" zoom:layout_constraintRight_toLeftOf="@id/imgNotificationPrivate" zoom:layout_constraintTop_toBottomOf="@id/panelPrivateMsgTitle" style="@style/ZmSettingItemSubTitle" />
+                <ImageView android:id="@id/imgNotificationPrivate" android:visibility="visible" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintRight_toRightOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmSettingItemArrow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/panelNoMsg" style="@style/ZmSettingItem">
+                <TextView android:id="@id/panelNoMsgTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_off_title_398217" zoom:layout_constraintLeft_toLeftOf="parent" zoom:layout_constraintRight_toLeftOf="@id/imgNotificationPrivate" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmSettingItemTitleWithSubTitle" />
+                <TextView android:id="@id/panelNoMsgSubTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_off_sub_title_398217" zoom:layout_constraintLeft_toLeftOf="parent" zoom:layout_constraintRight_toLeftOf="@id/imgNotificationNo" zoom:layout_constraintTop_toBottomOf="@id/panelNoMsgTitle" style="@style/ZmSettingItemSubTitle" />
+                <ImageView android:id="@id/imgNotificationNo" android:visibility="visible" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintRight_toRightOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmSettingItemArrow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/panelRestDefault" style="@style/ZmSettingItem">
+                <TextView android:textColor="@drawable/zm_button_text_color" android:layout_width="fill_parent" android:text="@string/zm_btn_reset_default_19898" style="@style/ZmSettingItemTitle" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+</LinearLayout>

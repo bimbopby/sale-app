@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/btnSave" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnCancel" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_create_group_classification_285659" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list_view_classification" android:background="@color/zm_v2_light_bg_opaque" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/panelEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/txtEmptyViewTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_sip_title_monitor_cq_empty_210373" style="@style/ZmTextView.Title.Medium.Dimmed" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/txtEmptyView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="32.0dip" android:text="@string/zm_sip_message_monitor_cq_empty_210373" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+    </LinearLayout>
+</LinearLayout>

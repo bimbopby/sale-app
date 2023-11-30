@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@id/panelTitleBar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar" />
+        <View android:id="@id/viewRight" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@id/txtTitle" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_callout_title_callme_251315" style="@style/ZMTextView.Title" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMAlertView android:id="@id/txtMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_gravity="center" zoom:zm_need_cancel="false" zoom:zm_type="WARNING" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/callPhonePanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                <LinearLayout android:gravity="center|left" android:id="@id/btnSelectCountryCode" android:paddingRight="@dimen/zm_setting_item_padding_right" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                    <TextView android:gravity="center|left" android:id="@id/txtCountryCode" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="+1" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@id/edtNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_callout_hint_phone_number_107106" android:ems="10" android:singleLine="true" android:maxLength="32" android:inputType="phone" style="@style/ZMEditText.SettingsItem">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <LinearLayout android:orientation="vertical" android:id="@id/llSelectPhonePanel" android:background="@color/zm_v2_svg_setting_option" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/zm_v2_txt_secondary" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:text="@string/zm_call_phone_tip_243737" style="@style/ZmSettingOptionTitle" />
+                <TextView android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:text="@string/zm_call_phone_des_243737" style="@style/ZmSettingOptionTitle" />
+                <TextView android:gravity="center|left" android:paddingBottom="@dimen/zm_padding_smallest_minus_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" android:text="@string/zm_call_phone_title_243737" style="@style/ZmSettingOptionTitle" />
+                <View android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_userPhone" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button android:id="@id/btnCall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="@dimen/zm_setting_item_group_spacing" android:layout_marginRight="30.0dip" android:text="@string/zm_callout_btn_call" style="@style/ZMButton.HappyPath" />
+            <Button android:id="@id/btnHangup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="@dimen/zm_setting_item_group_spacing" android:layout_marginRight="30.0dip" android:text="@string/zm_btn_hangup" style="@style/ZMButton.Alert" />
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

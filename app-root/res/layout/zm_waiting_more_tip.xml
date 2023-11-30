@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/zm_padding_small_size" android:paddingBottom="@dimen/zm_padding_small_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/zm_control_view_heigth"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|left" android:id="@id/btnReport" android:background="@drawable/zm_audio_tip_item_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:gravity="left" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_report_issue_in_waiting_room_311387" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/zm_text_normal_width" android:layout_height="@dimen/zm_text_normal_width" android:layout_marginLeft="@dimen/zm_padding_small_size" android:scaleType="center" app:srcCompat="@drawable/zm_ic_report" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|left" android:id="@id/btnChatPanel" android:background="@drawable/zm_audio_tip_item_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:gravity="left" android:id="@id/txtChat" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_unread_message_147675" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/chatIcon" android:layout_width="@dimen/zm_text_normal_width" android:layout_height="@dimen/zm_text_normal_width" android:layout_marginLeft="@dimen/zm_padding_small_size" android:scaleType="center" app:srcCompat="@drawable/icon_waiting_room_chat" />
+    </LinearLayout>
+</LinearLayout>

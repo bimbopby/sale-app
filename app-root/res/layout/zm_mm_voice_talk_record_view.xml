@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/play_img" android:background="@color/zm_transparent" android:paddingRight="@dimen/zm_margin_small_6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_voice_talk_play" android:contentDescription="@string/zm_accessibility_sip_call_play_audio" />
+    <TextView android:id="@id/chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="0:00" style="@style/UIKitTextView.Small.Gray" />
+    <com.zipow.videobox.view.mm.VoiceTalkRecordProgressBar android:layout_gravity="center_vertical" android:id="@id/processBar" android:paddingLeft="@dimen/zm_dialog_margin_16dp" android:paddingRight="@dimen/zm_dialog_margin_12dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="20.0dip" android:importantForAccessibility="no" />
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/play_progress_bar" android:paddingLeft="@dimen/zm_padding_small" android:paddingRight="@dimen/zm_dialog_margin_12dp" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/zm_padding_smallest_minus_minus_size" android:progressDrawable="@drawable/zm_voice_record_play_progress_bg" android:importantForAccessibility="no" style="@style/ZMProgressBar.Horizontal" />
+</merge>

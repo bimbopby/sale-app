@@ -1,0 +1,15 @@
+.class public interface abstract Lcom/zipow/videobox/confapp/enums/MEETING_WAIT_STATUS;
+.super Ljava/lang/Object;
+.source "MEETING_WAIT_STATUS.java"
+
+
+# static fields
+.field public static final MEETING_WAIT_STATUS_IN_12_HOURS:I = 0x2
+
+.field public static final MEETING_WAIT_STATUS_IN_PRACTICE_SESSION:I = 0x3
+
+.field public static final MEETING_WAIT_STATUS_NO_WAITING:I = 0x0
+
+.field public static final MEETING_WAIT_STATUS_OUT_12_HOURS:I = 0x1
+
+.field public static final MEETING_WAIT_STATUS_UNKNOWN:I = 0x64

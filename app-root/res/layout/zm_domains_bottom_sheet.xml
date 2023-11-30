@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/zm_domains_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top" android:paddingLeft="@dimen/zm_padding_medium" android:paddingTop="@dimen/zm_padding_large" android:paddingRight="@dimen/zm_padding_medium" android:paddingBottom="@dimen/zm_padding_large" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMTextView android:textSize="@dimen/zm_ui_kit_text_size_24sp" android:textStyle="bold" android:textColor="@color/zm_v2_txt_primary" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_domains_title_200642" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/titleIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_settings_wlc" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_settings" android:layout_alignParentEnd="true" />
+        <us.zoom.uicommon.widget.view.ZMTextView android:textColor="@color/zm_v2_txt_primary" android:id="@id/titleBtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_done" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <us.zoom.uicommon.widget.recyclerview.ZMRecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top" />
+    <RelativeLayout android:background="@color/zm_ui_kit_gray_909096" android:layout_width="fill_parent" android:layout_height="1.0sp" android:layout_below="@id/list" />
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_txt_secondary" android:gravity="center" android:id="@id/btnClose" android:padding="@dimen/zm_padding_normal" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:text="@string/zm_btn_close" android:layout_below="@id/list" />
+</RelativeLayout>

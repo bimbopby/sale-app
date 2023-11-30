@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:enterFadeDuration="500" android:exitFadeDuration="500"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="5.0dip" />
+            <solid android:color="@color/zm_white" />
+            <stroke android:width="4.0dip" android:color="@color/zm_v2_txt_secondary" />
+        </shape>
+    </item>
+</selector>

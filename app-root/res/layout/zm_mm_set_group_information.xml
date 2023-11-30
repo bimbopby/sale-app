@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/btnDone" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <Button android:id="@id/btnDone" android:text="@string/zm_btn_save" style="@style/ZmTitleBarAction.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_title_channel_information_59554" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_showTopDivider="false">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.zipow.videobox.view.EmojiEditText android:gravity="start|center" android:id="@id/edtTopic" android:hint="@string/zm_optional_chat_topic_312009" android:maxLines="1" android:maxLength="256" android:inputType="textCapSentences" zoom:zm_enableLine="false" style="@style/ZmInputBox">
+                    <requestFocus />
+                </com.zipow.videobox.view.EmojiEditText>
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+</LinearLayout>

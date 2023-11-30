@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/zm_v2_light_bg_normal" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:id="@id/txtLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:singleLine="true" android:layout_centerVertical="true" style="@style/UIKitTextView.BuddyName.Bold.Blue.Selector" />
+    <ImageView android:id="@id/ivAction" android:background="@drawable/zm_sip_dialpad_key_bg" android:padding="12.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/zm_sip_ic_take_over" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+</RelativeLayout>

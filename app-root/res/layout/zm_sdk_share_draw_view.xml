@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.annotate.AnnoContentView android:id="@id/annoContentView" android:layout_width="fill_parent" android:layout_height="fill_parent" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toTopOf="parent" />
+    <com.zipow.annotate.AnnoInputView android:id="@id/annoInputView" android:layout_width="fill_parent" android:layout_height="fill_parent" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintHorizontal_bias="0.0" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toTopOf="parent" zoom:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/panelVoicemailTranscript" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/panelTranscriptLoading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="122.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/zm_ui_kit_color_gray_8E8E93" android:id="@id/tvTranscriptLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="24.0dip" android:text="@string/zm_sip_transcribe_processing_61402" android:layout_centerInParent="true" android:lineSpacingExtra="2.0sp" />
+        <ProgressBar android:id="@id/pbTranscriptLoadingProgress" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:indeterminateDrawable="@drawable/zm_sip_transcript_loading" android:layout_toRightOf="@id/tvTranscriptLoading" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/transcript" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="24.0dip" android:text="" android:lineSpacingExtra="2.0sp" android:textIsSelectable="true" style="@style/UIKitTextView.SecondaryText" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/seeMore" android:background="@color/zm_white" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="24.0dip" android:layout_alignBottom="@id/transcript" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="..." style="@style/UIKitTextView.SecondaryText" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/zm_v2_txt_action" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/zm_sip_see_more_61381" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/zm_v2_cell_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

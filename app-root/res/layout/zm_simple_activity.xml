@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.uicommon.widget.view.ZMIgnoreKeyboardLayout android:orientation="vertical" android:id="@id/fragmentContent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <us.zoom.uicommon.widget.view.ZMKeyboardDetector android:id="@id/keyboardDetector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/zm_v2_schedule_force_bg" android:endColor="@color/zm_transparent" android:angle="0.0" android:type="radial" android:gradientRadius="80.0" />
+    <corners android:radius="@dimen/zm_corner_medium_size" />
+</shape>

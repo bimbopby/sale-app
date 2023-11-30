@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zipow.videobox.view.sip.SipConnectAlertView android:orientation="horizontal" android:background="@drawable/zm_notification_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left" android:id="@id/txtMsg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/zm_sip_connect_text_148924" android:maxLines="@integer/maximum_lines" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Small.OnLight" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/zm_ui_kit_color_blue_0862D1" android:id="@id/btnTry" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_connect_try_now_148924" style="@style/ZMButton.NoBackground" />
+        <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:indeterminateDrawable="@drawable/zm_sip_transcript_loading" />
+    </FrameLayout>
+</com.zipow.videobox.view.sip.SipConnectAlertView>

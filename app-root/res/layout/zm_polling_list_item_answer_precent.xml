@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/zm_margin_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/answerPercent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMTextView.OnLight.Medium.Dimmed" />
+</LinearLayout>

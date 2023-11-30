@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smallest" android:minHeight="@dimen/zm_height_36dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" android:layout_marginStart="8.0dip" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="start" android:id="@id/tvP" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" style="@style/ZMContextMenu" />
+</LinearLayout>

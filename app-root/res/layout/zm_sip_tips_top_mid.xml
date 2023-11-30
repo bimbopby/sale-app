@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:layout_width="@dimen/zm_sip_pop_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/zm_sip_pop_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.899994dip">
+        <TextView android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/zm_sip_call_hold_pop_text_82852" app:layout_constraintBottom_toTopOf="@id/btnOK" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginBottom="16.0dip" style="@style/UIKitTextView.Small" />
+        <Button android:gravity="center" android:id="@id/btnOK" android:background="@color/zm_transparent" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="5.0dip" android:text="@string/zm_btn_ok" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" style="@style/UIKitTextView.Small.Bold.Blue" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/zm_sip_pop_triangle_with_stroke" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+</FrameLayout>

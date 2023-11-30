@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_bottom_sheet_round_rect_white_bg" android:paddingLeft="20.0dip" android:paddingTop="@dimen/zm_preview_sheet_padding_top" android:paddingRight="20.0dip" android:paddingBottom="@dimen/zm_preview_sheet_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/channel_preview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/UIKitTextView.BuddyName.Large" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="300.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/channel_preview_content_linear" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/channel_preview_info_linear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/zm_mm_lbl_channel_preview_info_311630" style="@style/UIKitTextView.CellTitle" />
+                        <TextView android:ellipsize="end" android:id="@id/channel_preview_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" style="@style/UIKitTextView.PrimaryText.Medium" />
+                    </LinearLayout>
+                    <TextView android:id="@id/channel_preview_members" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" style="@style/UIKitTextView.CellTitle" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/channel_preview_members_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/zm_mm_lbl_channel_preview_recent_311630" style="@style/UIKitTextView.CellTitle" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="50.0dip">
+                        <us.zoom.uicommon.widget.listview.ZMChildListView android:id="@id/channel_preview_recent_messages" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:id="@id/channel_preview_recent_messages_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UIKitTextView.SecondaryText" />
+                        <ProgressBar android:layout_gravity="center" android:id="@id/channel_preview_recent_messages_progress" android:layout_width="wrap_content" android:layout_height="160.0dip" style="@style/ZMProgressBar.Small" />
+                    </FrameLayout>
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center" android:id="@id/channel_preview_content_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+                <TextView android:layout_gravity="center" android:id="@id/channel_preview_content_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_channel_preview_content_error_311630" style="@style/UIKitTextView.SecondaryText" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_preview_sheet_btn_margin_top">
+        <Button android:id="@id/btnJoin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/zm_mm_lbl_channel_preview_join_channel_311630" style="@style/ZMButton.NewHappyPath.Medium" />
+        <Button android:id="@id/btnClose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="48.0dip" android:text="@string/zm_btn_close" style="@style/ZMButton.Gray.Medium" />
+    </LinearLayout>
+</LinearLayout>

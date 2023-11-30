@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/zm_font_normal_size" android:textColor="@color/zm_v2_blue_text_color" android:id="@id/btnLearnMore" android:background="@color/zm_transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/zm_mm_msg_timed_chat_learn_more_33479" android:layout_weight="1.0" android:textAllCaps="false" />
+    <Button android:textSize="@dimen/zm_font_normal_size" android:textStyle="bold" android:textColor="@color/zm_v2_alert_view_loading_bg" android:id="@id/btnGot" android:background="@drawable/zm_new_unsupport_view_rounded_white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/zm_btn_got_it" android:layout_weight="1.0" android:textAllCaps="false" />
+</LinearLayout>

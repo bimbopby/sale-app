@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dynamicViewTestDevice" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/zm_v1_white" android:gravity="center" android:id="@id/txtDeviceTestMode" android:background="@color/zm_v1_blue_D400" android:paddingTop="@dimen/zm_padding_small" android:paddingBottom="@dimen/zm_padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_large_size" android:text="@string/zm_device_test_mode" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ZmTextView.Content.Primary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

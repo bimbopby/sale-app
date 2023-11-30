@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WheelArrayConstellation">
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+    </string-array>
+    <string-array name="WheelArrayDefault">
+        <item>AigeStudio</item>
+        <item>Aige</item>
+        <item>爱哥</item>
+        <item>الحب  اخي</item>
+        <item>jeg elsker</item>
+        <item>사랑해요 형</item>
+        <item>Amor de irmão</item>
+        <item>armastan</item>
+        <item>愛の兄</item>
+        <item>обичам те</item>
+        <item>любовь - братa</item>
+        <item>miłość bracie</item>
+        <item>Liebe</item>
+        <item>Lamour</item>
+        <item>rakastan sinua</item>
+        <item>láska..</item>
+        <item>dragostea.</item>
+        <item>jag älskar</item>
+        <item>ljubezen, brat.</item>
+        <item>愛哥</item>
+        <item>ชอบพี่</item>
+        <item>αγάπη μου</item>
+        <item>a szerelem.</item>
+        <item>Amore, fratello.</item>
+    </string-array>
+    <string-array name="WheelArrayZodiac">
+        <item>Rat</item>
+        <item>Ox</item>
+        <item>Tiger</item>
+        <item>Hare</item>
+        <item>Dragon</item>
+        <item>Snake</item>
+        <item>Horse</item>
+        <item>Sheep</item>
+        <item>Monkey</item>
+        <item>Cock</item>
+        <item>Dog</item>
+        <item>Boar</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <array name="backgroundColors">
+        <item>#ffff4343</item>
+        <item>#ffff8a00</item>
+        <item>#ffffd600</item>
+        <item>#ff49d61e</item>
+        <item>#ff2f8bff</item>
+        <item>#ffab68ff</item>
+        <item>#ffff36c7</item>
+        <item>#00ffffff</item>
+    </array>
+    <array name="colors">
+        <item>#ff000000</item>
+        <item>#ff0000ff</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <array name="textColors">
+        <item>#ffeb1807</item>
+        <item>#ffff8a00</item>
+        <item>#fff8c200</item>
+        <item>#ff138a00</item>
+        <item>#ff006ffa</item>
+        <item>#ff9846ff</item>
+        <item>#ffe20094</item>
+        <item>#ff222230</item>
+    </array>
+    <array name="zm_empty_array_51221" />
+    <string-array name="zm_mdm_three_choice_able_entry_51221">
+        <item>default</item>
+        <item>disabled</item>
+        <item>enabled</item>
+    </string-array>
+    <string-array name="zm_mdm_three_choice_entry_51221">
+        <item>default</item>
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="zm_mdm_three_choice_entry_values_51221">
+        <item>@string/zm_mdm_choice_entry_default_value_51221</item>
+        <item>@string/zm_mdm_choice_entry_no_value_51221</item>
+        <item>@string/zm_mdm_choice_entry_yes_value_51221</item>
+    </string-array>
+    <string-array name="zm_mdm_two_choice_able_entry_51221">
+        <item>disabled</item>
+        <item>enabled</item>
+    </string-array>
+    <string-array name="zm_mdm_two_choice_entry_51221">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="zm_mdm_two_choice_entry_values_51221">
+        <item>@string/zm_mdm_choice_entry_no_value_51221</item>
+        <item>@string/zm_mdm_choice_entry_yes_value_51221</item>
+    </string-array>
+</resources>

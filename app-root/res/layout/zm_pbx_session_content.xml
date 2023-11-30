@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnUploadFile" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <ImageButton android:id="@id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        <ImageButton android:id="@id/btnUploadFile" android:visibility="invisible" android:src="@drawable/zm_ic_add" android:contentDescription="@string/zm_description_mm_btn_add_contacts" style="@style/ZmBackButton.Dark" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_mm_lbl_group_files" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.zipow.videobox.view.sip.sms.PBXContentFilesListView android:id="@id/listViewFiles" android:background="@drawable/zm_listview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/panelEmptyView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/txtEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:gravity="center" android:id="@id/txtEmptyTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" style="@style/ZmTextView.Title.Medium.Dimmed" />
+                <TextView android:gravity="center" android:id="@id/txtEmptyHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Dimmed" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:id="@id/txtLoadingError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_lbl_content_load_error" style="@style/ZmTextView.Content.Primary.Dimmed" />
+            <TextView android:gravity="center" android:id="@id/txtContentLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_pull_down_refresh_list_loading" android:drawableTop="@drawable/zm_ic_conent_loading" android:drawablePadding="10.0dip" style="@style/ZmTextView.Content.Primary.Dimmed" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

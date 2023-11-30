@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <layer-list>
+            <item android:left="6.0dip" android:top="6.0dip" android:right="6.0dip" android:bottom="6.0dip">
+                <shape>
+                    <corners android:radius="8.0dip" />
+                    <solid android:color="@color/zm_v1_red_A300" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:left="6.0dip" android:top="6.0dip" android:right="6.0dip" android:bottom="6.0dip">
+                <shape>
+                    <corners android:radius="8.0dip" />
+                    <solid android:color="@color/zm_sip_income_input_send_btn_bg_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

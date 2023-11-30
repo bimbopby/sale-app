@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:zm_showTopDivider="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/optionView" style="@style/ZmSettingItem">
+        <TextView android:textColor="@color/zm_v2_txt_primary_color" android:id="@id/callQueueName" android:duplicateParentState="true" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+        <TextView android:id="@id/optOutReason" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/zm_margin_normal" android:maxLines="1" style="@style/ZmSettingItemContent" />
+        <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkReceiveCallsFromSpecificCallQueue" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+    </LinearLayout>
+</us.zoom.uicommon.widget.view.ZMSettingsCategory>

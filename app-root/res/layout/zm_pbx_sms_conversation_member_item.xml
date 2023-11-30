@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/first_item_placeholder" android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingTop="9.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:paddingStart="16.0dip">
+            <RelativeLayout android:duplicateParentState="true" android:layout_width="46.0dip" android:layout_height="46.0dip">
+                <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" zoom:zm_description_enable="false" />
+                <com.zipow.videobox.view.PresenceStateView android:id="@id/presenceStateView" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" zoom:zm_subpresence_type="0" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+                <com.zipow.videobox.view.ZMSimpleEmojiTextView android:ellipsize="end" android:id="@id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/UIKitTextView.BuddyName" />
+                <TextView android:ellipsize="end" android:id="@id/txtCustomMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:singleLine="true" style="@style/UIKitTextView.SecondaryText.Medium" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="end|center" android:id="@id/iv_tip_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow" android:contentDescription="@string/zm_sip_sms_session_member_item_detail_desc_137657" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+        <View android:id="@id/bottom_divider" android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+    <View android:id="@id/last_item_placeholder" android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

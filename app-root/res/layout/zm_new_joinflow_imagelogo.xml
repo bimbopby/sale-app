@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/imgLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_dialog_margin_16dp" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_24sp" android:textStyle="bold" android:textColor="@color/zm_v2_njf_logo_view_title_color" android:ellipsize="end" android:gravity="center" android:id="@id/txLogoTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_dialog_margin_12dp" android:maxLines="2" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/txLogoDes" app:layout_constraintTop_toTopOf="parent" style="@style/ZMTextView" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_voice_talk_cancel_bg" android:gravity="center" android:id="@id/txLogoDes" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="parent" app:layout_constraintTop_toTopOf="@id/txLogoTitle" style="@style/ZMTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

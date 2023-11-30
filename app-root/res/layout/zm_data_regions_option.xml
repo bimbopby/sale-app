@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnOK" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <Button android:id="@id/btnOK" android:visibility="gone" android:text="@string/zm_btn_ok" style="@style/ZmTitleBarAction" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:paddingLeft="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:text="@string/zm_lbl_select_additional_title_151081" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/txtTemplateDesp" android:visibility="gone" android:text="@string/zm_lbl_template_details_220898" style="@style/ZmSettingDescription" />
+</LinearLayout>

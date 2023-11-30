@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnEdit" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <Button android:id="@id/btnEdit" android:text="@string/zm_btn_edit" style="@style/ZmTitleBarAction" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtTitle" android:paddingLeft="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:text="@string/zm_meeting_info_meeting_details_167537" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.panel.ZmPairedRoomInfoPanel android:id="@id/panelPairedZR" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/panelInfo" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="0.0dip" android:paddingBottom="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_showTopDivider="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panelWhen" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_when" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:id="@id/txtWhen" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_small_size" android:text="2012/11/22 13:48" android:layout_weight="2.5" style="@style/ZmTextView.Content.Primary" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_topic" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:id="@id/txtTopic" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_small_size" android:text="Reed Yang's meeting" android:layout_weight="2.5" style="@style/ZmTextView.Content.Primary" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panelMeetingId" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:id="@id/txtMeetingIdTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_meeting_id2" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:id="@id/txtMeetingId" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_small_size" android:text="123 456 789" android:layout_weight="2.5" style="@style/ZmTextView.Content.Primary" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panelDuration" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_duration" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:id="@id/txtDuration" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_small_size" android:text="60 minutes" android:layout_weight="2.5" style="@style/ZmTextView.Content.Primary" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panelPassword" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_passcode_171920" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:id="@id/txtPassword" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_small_size" android:text="123456" android:layout_weight="2.5" style="@style/ZmTextView.Content.Primary" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/panelActions" android:paddingLeft="@dimen/zm_padding_large_size" android:paddingTop="@dimen/zm_margin_medium_size" android:paddingRight="@dimen/zm_padding_large_size" android:paddingBottom="@dimen/zm_padding_small_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btnStartMeeting" android:layout_marginBottom="@dimen/zm_margin_medium_size" android:text="@string/zm_btn_start" style="@style/ZmButton" />
+                <Button android:id="@id/btnJoinFromRoom" android:layout_marginBottom="@dimen/zm_margin_medium_size" android:text="@string/zm_btn_room_btn_join_from_room_179549" style="@style/ZmButton.Secondary" />
+                <Button android:id="@id/btnAddToCalendar" android:layout_marginBottom="@dimen/zm_margin_medium_size" android:text="@string/zm_btn_add_to_calendar" style="@style/ZmButton.Secondary" />
+                <Button android:id="@id/btnSendInvitation" android:layout_marginBottom="@dimen/zm_margin_medium_size" android:text="@string/zm_btn_invite" style="@style/ZmButton.Secondary" />
+                <Button android:id="@id/btnDeleteMeeting" android:layout_marginBottom="@dimen/zm_margin_small_minus_size" android:text="@string/zm_btn_delete" style="@style/ZmButton.Secondary" />
+            </LinearLayout>
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_gravity="center_horizontal" android:id="@id/zmEventTx" android:visibility="gone" android:text="View Event" style="@style/ZmTitleBarAction" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

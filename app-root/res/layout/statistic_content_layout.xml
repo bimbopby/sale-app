@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/statistic_cpu_memory_content" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_cpu_zoom" />
+                    <ProgressBar android:layout_gravity="left" android:id="@id/progress_cpu_zoom" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMProgressBar.Horizontal" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_over_all" />
+                    <ProgressBar android:layout_gravity="left" android:id="@id/progress_cpu" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMProgressBar.Horizontal" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_memory_zoom" />
+                    <ProgressBar android:layout_gravity="left" android:id="@id/progress_memory_zoom" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMProgressBar.Horizontal" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:id="@id/zoom_pss_memory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_zoom_memory" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:id="@id/occupy_memory_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_occupy_memory" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_over_all" />
+                    <ProgressBar android:layout_gravity="left" android:id="@id/progress_memory" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMProgressBar.Horizontal" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:id="@id/occupy_memory_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_occupy_memory" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:id="@id/total_memory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_total_memory" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/statistic_cpu_memory_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_band_width" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/panel_band_width" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_network" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/panel_network_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_proxy" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/panel_proxy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_conn_type" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/panel_conn_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_data_center" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/panel_data_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_encryption" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/panel_encryption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_statistic_panel_version" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/panel_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <TextView android:textColor="@color/zm_v2_btn_black_text_color" android:gravity="left" android:id="@id/test_log" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

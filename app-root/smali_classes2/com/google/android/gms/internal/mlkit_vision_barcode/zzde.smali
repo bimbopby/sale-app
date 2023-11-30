@@ -1,0 +1,21 @@
+.class final Lcom/google/android/gms/internal/mlkit_vision_barcode/zzde;
+.super Lcom/google/android/gms/internal/mlkit_vision_barcode/zzda;
+.source "com.google.android.gms:play-services-mlkit-barcode-scanning@@16.1.4"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/mlkit_vision_barcode/zzda;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zza(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .locals 0
+
+    return-void
+.end method

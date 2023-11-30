@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmSettingItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvName" android:layout_width="0.0dip" android:layout_weight="3.0" style="@style/ZmSettingItemTitle" />
+    <TextView android:id="@id/tvRingtone" android:layout_width="wrap_content" android:layout_weight="0.0" style="@style/ZmSettingItemContent" />
+    <ImageView android:layout_marginLeft="@dimen/zm_margin_small_size" android:contentDescription="@string/zm_msg_button_292937" style="@style/ZmSettingItemArrow" />
+</LinearLayout>

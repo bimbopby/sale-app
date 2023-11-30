@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/zm_margin_smallest_plus_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/zm_v1_gray_2150" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/imgAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/zm_margin_medium_size" android:src="@drawable/zm_conf_no_avatar" android:minWidth="@dimen/zm_btn_width_60dp" android:minHeight="@dimen/zm_btn_width_60dp" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_11sp" android:textColor="@color/zm_v1_white" android:ellipsize="end" android:layout_gravity="start|bottom|center" android:id="@id/txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_smallest_plus_size" android:maxLines="3" android:importantForAccessibility="no" android:layout_marginStart="@dimen/zm_margin_smallest_plus_size" android:layout_marginEnd="@dimen/zm_margin_smallest_plus_size" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

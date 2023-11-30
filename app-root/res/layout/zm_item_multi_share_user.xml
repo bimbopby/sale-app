@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/zm_v2_bg_menu" android:paddingLeft="@dimen/zm_padding_larger_size" android:paddingRight="@dimen/zm_padding_larger_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_action_sheet_menu_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.videobox.view.AvatarView android:id="@id/user_avatar" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" zoom:zm_cornerRadiusRatio="0.32" />
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_17sp" android:textColor="@color/zm_v2_txt_primary" android:gravity="left" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_minus_size" android:layout_marginRight="@dimen/zm_margin_small_minus_size" android:maxLines="@integer/maximum_lines" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/icon_tick" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_multi_share_user_checked" android:importantForAccessibility="no" />
+</LinearLayout>

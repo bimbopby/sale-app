@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/zm_titlebar_height">
+        <include layout="@layout/zm_meeting_search_bar" />
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnCancel" zoom:zm_rightButton="@id/btnOK" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+            <ImageButton android:id="@id/btnCancel" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+            <Button android:id="@id/btnOK" android:text="@string/zm_btn_ok" style="@style/ZmTitleBarAction" />
+            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:text="@string/zm_lbl_edit_dial_in_country_127873" android:singleLine="true" style="@style/ZmTitleBarTitle" />
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    </FrameLayout>
+    <include layout="@layout/zm_meeting_dummy_search_bar" />
+    <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.listview.QuickSearchListView android:id="@id/phoneNumberListView" android:background="@drawable/zm_listview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/zm_margin_large_size" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/panelSelect" android:background="@drawable/zm_tab_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height">
+            <TextView android:gravity="center|left" android:id="@id/txtBtnSelect" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_sip_select_all_61381" style="@style/ZmTitleBarAction" />
+            <TextView android:gravity="center|left" android:id="@id/txtBtnClear" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_btn_clear_selection_103901" style="@style/ZmTitleBarAction" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

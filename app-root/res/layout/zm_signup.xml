@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:elevation="0.0dip" zoom:zm_leftButton="@id/btnBackPanel" zoom:zm_rightButton="@id/btnSignup" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <LinearLayout android:orientation="horizontal" android:id="@id/btnBackPanel" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+            <Button android:id="@id/btnClose" android:visibility="gone" android:text="@string/zm_btn_close" android:contentDescription="@string/zm_btn_close" style="@style/ZmTitleBarAction" />
+        </LinearLayout>
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_title_signup" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/panelSignup" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                    <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginBottom="@dimen/zm_dialog_margin_12dp" android:text="@string/zm_login_msg_enter_email_tip_442801" />
+                    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_edit_text_normal_height">
+                            <EditText android:id="@id/edtEmail" android:hint="@string/zm_hint_email" android:maxLength="128" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/ZmInputBox" />
+                        </LinearLayout>
+                    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+                    <Button android:id="@id/btnSignupContinue" android:layout_marginLeft="@dimen/zm_dialog_margin_24dp" android:layout_marginTop="@dimen/zm_dialog_margin_16dp" android:layout_marginRight="@dimen/zm_dialog_margin_24dp" android:text="@string/zm_signup_continue_442801" style="@style/ZmButton" />
+                    <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_signin_privacy_service_color" android:id="@id/linkAcceptTerms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginTop="@dimen/zm_dialog_margin_12dp" android:layout_marginRight="@dimen/zm_dialog_margin_16dp" android:text="@string/zm_signup_accept_terms_442801" />
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/zm_signup_gdpr_layout" android:background="@color/zm_v2_svg_setting_option" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/zm_edit_text_normal_height" android:layout_marginTop="@dimen/zm_margin_32dp">
+                        <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_signup_email_subscrip_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_signup_email_subscription_442801" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/zm_signup_email_subscrption_chkbox" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_secondary" android:id="@id/zm_signup_email_sub_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginTop="@dimen/zm_dialog_margin_12dp" android:layout_marginRight="@dimen/zm_dialog_margin_16dp" android:text="@string/zm_signup_email_subscription_desc_442801" />
+                    <ViewStub android:id="@id/viewStubInternational" android:layout="@layout/zm_view_international_login" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ViewStub android:id="@id/viewStubChina" android:layout="@layout/zm_view_china_login" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

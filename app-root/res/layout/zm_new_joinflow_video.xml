@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_white" android:gravity="center" android:id="@id/tvWebTitle" android:background="@drawable/zm_njf_webtitle_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.exoplayer2.ui.PlayerView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:controller_layout_id="@layout/zm_video_player_control" app:hide_on_touch="false" app:show_timeout="0" app:surface_type="texture_view" app:use_controller="true" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/pbLoadingVidoe" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/zm_padding_smallest_size" android:layout_marginBottom="@dimen/zm_margin_larger_size" android:progressTint="@color/zm_v2_btn_white_text_color" android:progressBackgroundTint="@color/zm_dark" style="?android:progressBarStyleHorizontal" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_20sp" android:textColor="@color/zm_text_dim" android:gravity="center" android:layout_gravity="center" android:id="@id/tvVidoeStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_msg_waiting_meeting_video_loading_297193" style="@style/ZMTextView" />
+        <Button android:layout_gravity="center" android:id="@id/btnReloadVideo" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginTop="@dimen/zm_margin_large_size" android:text="@string/zm_btn_retry" style="@style/ZmButton" />
+    </FrameLayout>
+</LinearLayout>

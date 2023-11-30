@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_bg_dialog_security_settings_overview_sheet" android:paddingTop="@dimen/zm_margin_smallest" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/ssosTxtTitle" android:paddingTop="@dimen/zm_margin_small" android:paddingBottom="@dimen/zm_margin_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_sheet_title_max_width" android:text="@string/zm_msg_meeting_security_settings_overview_299543" android:maxLines="3" android:layout_weight="1.0" style="@style/ZmTitleBarTitle" />
+        <TextView android:id="@id/txtDone" android:paddingLeft="@dimen/zm_margin_medium" android:paddingTop="@dimen/zm_margin_small" android:paddingRight="@dimen/zm_margin_medium" android:paddingBottom="@dimen/zm_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_done_43757" style="@style/ZmTitleBarAction" />
+    </LinearLayout>
+    <View android:id="@id/line_top" style="@style/ZmSecuritySettingsOverviewSheetStyle" />
+    <us.zoom.uicommon.widget.recyclerview.ZMRecyclerView android:id="@id/sso_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/zm_bg_item_chat_mesage_preview" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="280.0dip" android:layout_height="@dimen/zm_picker_bottom_photo_size_v2" android:layout_margin="4.0dip" android:maxWidth="280.0dip" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+        <TextView android:ellipsize="end" android:id="@id/chatMsgtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="280.0dip" android:maxLines="1" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/ZmTextView.Button.Primary.Small" />
+        <TextView android:ellipsize="end" android:gravity="left" android:id="@id/chatMsgDes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="280.0dip" android:lines="2" android:singleLine="false" android:layout_below="@id/chatMsgtitle" android:layout_alignParentStart="true" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center|right|top" android:id="@id/iv_delete" android:background="@drawable/ic_pic_delete" android:layout_width="20.0dip" android:layout_height="20.0dip" android:contentDescription="@string/zm_mm_delete_image_accessibility_134397" />
+</FrameLayout>

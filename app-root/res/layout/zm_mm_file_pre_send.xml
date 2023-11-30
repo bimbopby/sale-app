@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/panelView" android:background="@drawable/zm_message_file" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip">
+        <ImageView android:id="@id/imgFileIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/zm_ic_filetype_doc" android:layout_alignParentLeft="true" />
+        <com.zipow.videobox.view.ZMSimpleEmojiTextView android:ellipsize="middle" android:gravity="center|left" android:id="@id/txtFileName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/imgFileIcon" android:layout_alignParentRight="true" style="@style/ZmTextView.Content.Primary" />
+        <TextView android:gravity="center|left" android:id="@id/txtFileSize" android:paddingTop="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="10 M" android:layout_toRightOf="@id/imgFileIcon" android:layout_below="@id/txtFileName" android:layout_alignParentRight="true" style="@style/ZmTextView.Content.Primary.Small.Dimmed" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/btnDelete" android:background="@drawable/ic_pic_delete" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="6.0dip" android:contentDescription="@string/zm_mm_delete_file_accessibility_137127" android:layout_marginEnd="6.0dip" />
+</FrameLayout>

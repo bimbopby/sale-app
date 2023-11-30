@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/zm_padding_smallest_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imgClose" android:padding="@dimen/zm_padding_smallest_minus_minus_size" android:layout_width="@dimen/zm_btn_smallest_height" android:layout_height="@dimen/zm_btn_smallest_height" android:src="@drawable/zm_dialog_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/zm_btn_close" />
+    <EditText android:gravity="top" android:id="@id/edtQuestion" android:padding="@dimen/zm_padding_smallest_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_smallest_size" android:layout_marginBottom="@dimen/zm_padding_smallest_size" android:hint="@string/zm_qa_hint_ask_question_41047" android:lines="@integer/zm_qa_question_input_max_lines" android:maxLength="1000" android:layout_below="@id/imgClose" android:inputType="textMultiLine" android:imeOptions="actionSend" android:layout_marginStart="@dimen/zm_padding_smallest_size" android:layout_marginEnd="@dimen/zm_padding_smallest_size" style="@style/InMeetingChatEditText" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_smallest_size" android:layout_marginRight="@dimen/zm_padding_smallest_size" android:layout_below="@id/edtQuestion">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/optionAnonymously" android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingBottom="@dimen/zm_padding_smallest_size" android:layout_width="0.0dip" android:layout_height="@dimen/zm_pt_titlebar_height" android:layout_weight="1.0">
+            <CheckBox android:textColor="@color/zm_textview_textcolor_black_selector" android:id="@id/chkAnonymously" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_qa_msg_send_anonymousely_41047" />
+        </LinearLayout>
+        <us.zoom.uicommon.widget.view.ZMTextButton android:enabled="false" android:id="@id/btnSend" android:text="@string/zm_btn_send" style="@style/ZmButton.Small" />
+    </LinearLayout>
+</RelativeLayout>

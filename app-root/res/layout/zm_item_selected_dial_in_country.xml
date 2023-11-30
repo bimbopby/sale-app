@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_item_drag_swip_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/txtCountry" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem.Small" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/imgCountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_small_size" android:src="@drawable/zm_ic_drag" android:scaleType="center" />
+    </LinearLayout>
+    <View android:background="@drawable/zm_settings_center_divider" android:layout_width="fill_parent" android:layout_height="@dimen/zm_divider_height" />
+</LinearLayout>

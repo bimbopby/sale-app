@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_title_forgetpwd" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:gravity="center|top" android:orientation="vertical" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_dialog_margin_12dp" android:text="@string/zm_login_msg_enter_email_tip_442801" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/zm_edit_text_normal_height">
+                    <EditText android:id="@id/edtEmail" android:hint="@string/zm_hint_email" android:maxLength="128" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/ZmInputBox" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <TextView android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:text="@string/zm_msg_indication_forgetpwd_192681" android:maxLines="10" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+            <Button android:id="@id/btnSendEmail" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_medium_size" android:text="@string/zm_btn_send" style="@style/ZmButton" />
+            <TextView android:id="@id/linkAcceptTerms" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/zm_msg_forgot_passwd_137212" android:maxLines="5" style="@style/ZmTextView.Content.Primary.Medium" />
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

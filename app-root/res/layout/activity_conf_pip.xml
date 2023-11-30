@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rootLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/zm_font_pip_size" android:gravity="center" android:id="@id/txtPipStatus" android:background="@color/zm_black" android:padding="@dimen/zm_padding_normal_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_msg_you_are_in_silent_mode" style="@style/ZMTextView.ExtremLarge.OnDark" />
+</androidx.constraintlayout.widget.ConstraintLayout>

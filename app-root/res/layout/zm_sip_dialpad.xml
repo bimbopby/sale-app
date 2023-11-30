@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:paddingTop="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.zipow.videobox.view.sip.DialKeyboardView android:id="@id/panelKeybord" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/panelCallBtns" android:layout_width="@dimen/zm_sip_dialpad_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_sip_dialpad_row_space" android:layout_below="@id/panelKeybord">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imgSearch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/zm_sip_ic_keyboard_search" android:layout_weight="1.0" android:contentDescription="@string/zm_sip_dial_search_hint_31432" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center" android:id="@id/btnDial" android:layout_width="@dimen/zm_sip_dialpad_key_width" android:layout_height="@dimen/zm_sip_dialpad_key_width" android:src="@drawable/zm_sip_start_call" android:scaleType="fitCenter" android:contentDescription="@string/zm_accessibility_sip_call_dial" />
+                </FrameLayout>
+                <ImageView android:id="@id/imgDelete" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/zm_sip_ic_keyboard_del" android:layout_weight="1.0" android:contentDescription="@string/zm_btn_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/panelRegisterSipNo" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/zm_sip_register_num_text_size" android:gravity="center" android:id="@id/txtRegisterSipNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/ic_drop_down_secondary" android:drawablePadding="7.0dip" style="@style/UIKitTextView.IconLabel.Dimmed" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="-40.0dip" android:layout_above="@id/content">
+        <com.zipow.videobox.view.sip.ConnectAlertView android:id="@id/panelConnectionAlert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <us.zoom.uicommon.widget.view.ZMAlertView android:id="@id/txtSipUnavailable" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_gravity="center" zoom:zm_need_cancel="false" zoom:zm_type="WARNING" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginRight="100.0dip" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed" />
+        <EditText android:ellipsize="start" android:gravity="center" android:id="@id/txtDialNum" android:background="@color/zm_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="54.0dip" android:layout_marginRight="54.0dip" android:cursorVisible="true" android:singleLine="true" android:digits="*+#,0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz" android:inputType="text" android:textCursorDrawable="@color/zm_color_accent" style="@style/ZMTextView.Dialpad.Num" />
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/txtDialUserName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginTop="-4.0dip" android:layout_marginRight="100.0dip" style="@style/UIKitTextView.PrimaryText.Normal" />
+    </LinearLayout>
+    <TextView android:id="@id/btnClose" android:paddingTop="@dimen/zm_padding_smaller_size" android:paddingBottom="@dimen/zm_padding_smaller_size" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" style="@style/ZmTitleBarAction" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_loc_warning" android:background="@drawable/zm_btn_round_gray_bkg" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/zm_ic_pbx_location_warning" android:scaleType="centerInside" android:contentDescription="@string/zm_accessibility_location_unavailable_186458" android:layout_marginEnd="2.0dip" />
+        <ImageView android:id="@id/iv_out_of_range" android:background="@drawable/zm_btn_round_gray_bkg" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/zm_sip_ic_out_of_range" android:scaleType="centerInside" android:layout_marginEnd="2.0dip" />
+        <ImageView android:id="@id/iv_no_emergency_call" android:background="@drawable/zm_btn_round_gray_bkg" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/zm_sip_ic_no_emergency_service" android:scaleType="centerInside" android:layout_marginEnd="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/titlebarStub" android:layout="@layout/zm_titlebar_simple" android:inflatedId="@id/titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" />
+    </LinearLayout>
+</RelativeLayout>

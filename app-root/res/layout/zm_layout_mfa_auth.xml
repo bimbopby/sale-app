@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:background="@drawable/zm_window_bg" zoom:zm_leftButton="@id/btnLeft" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZMTitleBar.Light">
+        <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="@dimen/zm_btn_medium_height" />
+        <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:id="@id/btnLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_medium_size">
+            <Button android:gravity="bottom|center|left" android:id="@id/btnCancel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" android:contentDescription="@string/zm_btn_cancel" style="@style/UIKitButton.Medium.OnLight.NoBackground" />
+            <ImageButton android:gravity="bottom|center|left" android:id="@id/btnBack" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton.OnLight" />
+        </LinearLayout>
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_font_large_size" android:textStyle="bold" android:textColor="@color/zm_v2_txt_title_header" android:layout_gravity="bottom" android:id="@id/txtTitle" android:paddingLeft="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginTop="@dimen/zm_padding_medium_size" android:text="@string/zm_text_mfa_two_factor_auth_176897" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/appAuthView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/scrollLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/enterCodeByApp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/zm_margin_large" android:layout_marginTop="100.0dip" android:layout_marginRight="@dimen/zm_margin_large" android:text="@string/zm_text_mfa_enter_auth_app_code_176897" style="@style/ZMTextView.Normal" />
+                <com.zipow.videobox.login.view.ZmVerifySmsCodeView android:id="@id/verifyCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_normal_size" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_txt_warn" android:gravity="center" android:id="@id/invalidwarn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_normal_size" android:text="@string/zm_text_mfa_invalid_verify_code_176897" style="@style/ZmButton.Small.Text.noBackground" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_radius_small">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/otherOptionsInVerify" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_margin_large" android:text="@string/zm_text_mfa_other_options_176897" style="@style/UIKitButton.Small.OnLight.NoBackground" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_margin_large">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/descText" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_otp_not_get_code_344945" style="@style/UIKitButton.Small.NoBackground" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/resend" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_smallest" style="@style/UIKitButton.Small.OnLight.NoBackground" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:id="@id/recoveryView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/enterCodeRecovery" android:layout_width="fill_parent" android:layout_height="@dimen/zm_edit_text_normal_height" android:layout_marginTop="@dimen/zm_edit_text_normal_height" android:layout_marginBottom="@dimen/zm_font_largest_size" android:text="@string/zm_text_mfa_enter_one_recovery_code_176897" style="@style/ZMTextView.Normal" />
+                <ImageView android:background="@color/zm_v2_bg_pressed" android:layout_width="fill_parent" android:layout_height="@dimen/zm_dimen_stroke_smallest" />
+                <EditText android:gravity="center" android:id="@id/enterCode" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="@dimen/zm_edit_text_normal_height" android:hint="@string/zm_text_mfa_enter_code_176897" android:maxLength="128" android:inputType="textEmailAddress" style="@style/ZMEditText.SettingsItem" />
+                <ImageView android:background="@color/zm_v2_bg_pressed" android:layout_width="fill_parent" android:layout_height="@dimen/zm_dimen_stroke_smallest" />
+                <Button android:id="@id/btnMFAVerify" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:text="@string/zm_btn_mfa_verify_176897" style="@style/UIKitItinactivatedBtn.Large" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_radius_small">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/recoveryOtherOptions" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_margin_large" android:text="@string/zm_text_mfa_other_options_176897" style="@style/UIKitButton.Small.OnLight.NoBackground" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:id="@id/smsView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/sendTip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:text="@string/zm_text_mfa_sms_send_to_176897" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/phoneNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" android:text="+1 123****789" style="@style/ZmTextView" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_radius_small" android:layout_marginRight="@dimen/zm_margin_small_size">
+                <Button android:id="@id/sendViaSMS" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginBottom="@dimen/zm_margin_small_size" android:text="@string/zm_btn_mfa_send_via_sms_176897" style="@style/UIKitItinactivatedBtn.Large" />
+                <Button android:id="@id/sendViaPhone" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginBottom="@dimen/zm_margin_small_size" android:text="@string/zm_btn_mfa_send_via_phone_176897" style="@style/UIKitItinactivatedBtn.Large.Secondary" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/otherOptionsForSms" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_largest_size" android:text="@string/zm_text_mfa_other_options_176897" style="@style/UIKitButton.Small.OnLight.NoBackground" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

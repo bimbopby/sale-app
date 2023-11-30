@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@drawable/in_meeting_info_bg" android:paddingLeft="@dimen/zm_dialog_margin_24dp" android:paddingTop="@dimen/zm_margin_normal_size" android:paddingRight="@dimen/zm_dialog_margin_24dp" android:paddingBottom="@dimen/zm_margin_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/pollIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_polling_indicator" android:layout_marginEnd="@dimen/zm_margin_small_size" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/pollText" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:id="@id/pollText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_polling_btn_view_poll_progress_159402" android:layout_marginStart="@dimen/zm_margin_small_size" app:layout_constraintStart_toEndOf="@id/pollIndicator" app:layout_constraintTop_toTopOf="parent" style="@style/ZmTextView.Content.Primary.Medium.Dark" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

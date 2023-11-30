@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/panelDeleteAll" android:background="@color/zm_white" android:paddingLeft="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <TextView android:ellipsize="end" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="max_steitle" android:singleLine="true" android:layout_toLeftOf="@id/tvTime" android:layout_toRightOf="@id/avatarView" android:layout_alignTop="@id/avatarView" android:lineSpacingExtra="2.0sp" style="@style/UIKitTextView.BuddyName.Bold" />
+    <TextView android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/avatarView" android:layout_below="@id/tvName" android:lineSpacingExtra="2.0sp" style="@style/UIKitTextView.SecondaryText" />
+    <TextView android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="12:12" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/UIKitTextView.SecondaryText" />
+</RelativeLayout>

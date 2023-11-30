@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <RelativeLayout android:id="@id/layout_search" android:background="@drawable/zm_sip_gray_search_corner_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+            <ImageView android:id="@id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true" android:layout_marginStart="9.0dip" android:layout_marginEnd="7.0dip" />
+            <EditText android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="#ff909096" android:id="@id/et_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_sip_hint_search_message_117773" android:layout_centerVertical="true" android:imeOptions="actionSearch" android:paddingEnd="30.0dip" android:layout_toEndOf="@id/imgSearch" style="@style/ZMEditText.GlobalSearch" />
+            <Button android:id="@id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <Button android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" style="@style/ZMButton.TitleBar.Search" />
+    </LinearLayout>
+</LinearLayout>

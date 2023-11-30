@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnConvert" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_convert_to_channel_312009" style="@style/ZmTitleBarTitle.Dark" />
+        <Button android:id="@id/btnConvert" android:text="@string/zm_convert_action_312009" style="@style/ZmTitleBarAction.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <TextView android:id="@id/descText" android:padding="@dimen/zm_padding_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toBottomOf="@id/panelTitleBar" />
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:layout_width="0.0dip" android:layout_height="wrap_content" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toBottomOf="@id/descText" zoom:zm_showTopDivider="false">
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/zm_padding_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="start|center" android:id="@id/editChatTopic" android:layout_width="0.0dip" android:hint="@string/zm_hint_suggest_chat_topic_name_312009" android:maxLines="1" android:maxLength="256" android:inputType="textCapSentences" android:paddingEnd="@dimen/zm_padding_normal" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toStartOf="@id/clearAllButton" zoom:layout_constraintStart_toStartOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmInputBox">
+                <requestFocus />
+            </EditText>
+            <ImageButton android:id="@id/clearAllButton" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/zm_icon_clear_search" android:contentDescription="@string/clear" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+</androidx.constraintlayout.widget.ConstraintLayout>

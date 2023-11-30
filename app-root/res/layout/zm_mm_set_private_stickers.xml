@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnDelete" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <Button android:id="@id/btnBack" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Dark" />
+        <Button android:id="@id/btnDelete" android:visibility="invisible" android:text="@string/zm_btn_delete" style="@style/ZmTitleBarAction.Dark" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_title_edit_emoji_no_selected" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.mm.sticker.MMPrivateStickerGridView android:id="@id/gridViewStickers" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

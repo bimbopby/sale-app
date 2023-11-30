@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+            <ImageButton android:id="@id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:textStyle="normal" android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.Title" />
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_members" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <us.zoom.uicommon.widget.view.ZMTipLayer android:id="@id/tipLayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

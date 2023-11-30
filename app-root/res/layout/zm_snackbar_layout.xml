@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/snackbar_root" android:background="@drawable/zm_v2_bg_pin_snackbar" android:paddingLeft="@dimen/zm_padding_smaller_size" android:paddingRight="@dimen/zm_padding_smaller_size" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pin_snackbar_height" android:layout_margin="@dimen/zm_margin_smallest_size" android:elevation="@dimen/zm_elevation_small_size">
+        <ImageView android:id="@id/snackbar_icon" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:src="@drawable/zm_mm_pinned_icon" style="@style/ZmSettingItemArrow" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_smaller_size">
+            <com.zipow.videobox.view.ZMGifView android:id="@id/snackbar_message_image" android:background="@drawable/bound_shape_image_view_bg" android:visibility="gone" android:layout_width="@dimen/zm_btn_smallest_height" android:layout_height="@dimen/zm_btn_smallest_height" android:scaleType="centerCrop" style="@style/ZmSettingItemArrow" />
+            <ImageView android:id="@id/videoIcon" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/zm_ic_btn_play" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/panel_for_code_snippet" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:layout_weight="1.0">
+            <com.zipow.videobox.view.EmojiTextView android:gravity="left" android:id="@id/code_snippet_title" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/ZmTextView.Content.Secondary.Medium" />
+            <com.zipow.videobox.view.EmojiTextView android:gravity="left" android:id="@id/code_snippet_first_line" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/ZmTextView.Content.Secondary.Medium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/panel_message" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:layout_weight="1.0">
+            <com.zipow.videobox.view.EmojiTextView android:ellipsize="middle" android:gravity="left" android:id="@id/snackbar_message" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:maxLines="2" android:layout_weight="1.0" style="@style/ZmTextView.Content.Secondary.Medium" />
+            <com.zipow.videobox.view.EmojiTextView android:gravity="left" android:id="@id/snackbar_description" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmTextView.Content.Secondary.Medium.Dimmed" />
+        </LinearLayout>
+        <ImageButton android:id="@id/snackbar_action_btn" android:visibility="gone" android:layout_width="@dimen/zm_btn_smallest_height" android:layout_height="@dimen/zm_btn_smallest_height" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/zm_ic_reaction_more_action" android:contentDescription="@string/zm_btn_more_no_dot" style="@style/ZmBackButton" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZMTitleBarNoBackground">
+            <Button android:id="@id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMBackButton" />
+            <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <TextView android:textSize="19.0sp" android:gravity="center_horizontal" android:id="@id/txtTitle" android:paddingLeft="@dimen/zm_sip_income_avatar_padding" android:paddingRight="@dimen/zm_sip_income_avatar_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_assign_new_host_title_151447" style="@style/ZMTextView.Title" />
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+        <EditText android:textColor="@color/zm_white" android:id="@id/edtSearch" android:background="@drawable/zm_search_bar_gray_bg" android:padding="@dimen/zm_sip_income_avatar_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_height_32dp" android:layout_marginLeft="@dimen/zm_margin_normal" android:layout_marginRight="@dimen/zm_margin_normal" android:hint="@string/zm_hint_search" android:cursorVisible="true" android:drawableLeft="@drawable/zm_ic_search" android:drawablePadding="@dimen/zm_share_toolbar_margin" android:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <us.zoom.uicommon.widget.listview.QuickSearchListView android:id="@id/attendeesListView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_height_64dp" />
+                <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_white" android:gravity="center" android:layout_gravity="center" android:id="@id/tipNoParticipants" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_no_participants_150328" />
+            </FrameLayout>
+            <Button android:layout_gravity="bottom" android:id="@id/btnAssign" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/zm_margin_medium" android:text="@string/zm_assign_and_leave_151447" android:layout_alignParentBottom="true" style="@style/UIRedButton.EndMeeting" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

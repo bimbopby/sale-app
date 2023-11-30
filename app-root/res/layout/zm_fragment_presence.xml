@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_presence_status_312112" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+        <LinearLayout android:id="@id/panelPsAvailable" style="@style/ZmSettingItem">
+            <ImageView android:id="@id/imgPsAvailable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_status_available" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_presence_status_available_40739" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <ImageView android:id="@id/chkPsAvailable" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelPsAway" style="@style/ZmSettingItem">
+            <ImageView android:id="@id/imgPsAway" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_away" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_presence_status_away_40739" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <ImageView android:id="@id/chkPsAway" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelPsBusy" android:visibility="gone" style="@style/ZmSettingItem">
+            <ImageView android:id="@id/imgPsBusy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_status_busy_v2" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_presence_status_busy_256131" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <ImageView android:id="@id/chkPsBusy" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelPsOffline" android:visibility="gone" style="@style/ZmSettingItem">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_status_offline" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:layout_width="0.0dip" android:text="Offline" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <ImageView android:id="@id/chkPsOffline" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelNotedOutOfOffice" android:visibility="gone" style="@style/ZmSettingItem">
+            <ImageView android:id="@id/imgPsOOO" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_status_out_of_offices" android:contentDescription="@string/zm_lbl_presence_status_out_of_office_351919" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_presence_status_out_of_office_351919" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <ImageView android:id="@id/chkNotedOOOIV" android:visibility="gone" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+        </LinearLayout>
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+        <LinearLayout android:id="@id/panelPsDnd" style="@style/ZmSettingItem">
+            <ImageView android:id="@id/imgPsDnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_status_dnd" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_presence_status_dnd_40739" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <LinearLayout android:gravity="center|right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/zm_v1_blue_C900" android:gravity="right" android:id="@id/txtRemainingSnoozeTime" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/zm_margin_normal" android:layout_marginEnd="@dimen/zm_margin_normal" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+                    <TextView android:textColor="@color/zm_v1_blue_C900" android:gravity="right" android:id="@id/txtRemainingScheduledDndTime" android:focusable="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/zm_margin_normal" android:layout_marginEnd="@dimen/zm_margin_normal" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+                </FrameLayout>
+                <ImageView style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelPsDndScheduled" style="@style/ZmSettingItem">
+            <Space android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:layout_width="0.0dip" android:text="@string/zm_lbl_notification_scheduled_312112" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkPsDndScheduled" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelDndFrom" style="@style/ZmSettingItem">
+            <Space android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:text="@string/zm_lbl_from_19898" style="@style/ZmSettingItemTitle" />
+            <TextView android:id="@id/txtScheduledDndFrom" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/panelDndTo" style="@style/ZmSettingItem">
+            <Space android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginEnd="@dimen/zm_margin_small_size" />
+            <TextView android:text="@string/zm_lbl_to_19898" style="@style/ZmSettingItemTitle" />
+            <TextView android:id="@id/txtScheduledDndTo" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+        </LinearLayout>
+        <TextView android:text="@string/zm_lbl_notification_dnd_des_361276" style="@style/ZmSettingDescription" />
+    </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+</LinearLayout>

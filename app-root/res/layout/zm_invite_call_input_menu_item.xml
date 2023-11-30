@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/zm_v2_bg_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:minHeight="@dimen/zm_action_sheet_menu_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/inputBox" android:background="@drawable/in_meeting_chat_edit_text_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginRight="@dimen/zm_margin_small_size" android:layout_weight="1.0">
+        <EditText android:id="@id/edtMessage" android:background="@null" android:paddingTop="@dimen/zm_padding_smaller_size" android:paddingBottom="@dimen/zm_padding_smaller_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/zm_invite_call_input_msg_393647" android:maxLines="4" android:maxLength="1024" android:layout_weight="1.0" android:inputType="textMultiLine" android:imeOptions="actionSend" style="@style/InMeetingChatEditText" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnSend" android:background="@drawable/zm_mm_chat_input_send_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_btn_send" android:minWidth="@dimen/zm_accessible_btn_min_size" android:minHeight="@dimen/zm_accessible_btn_min_size" android:contentDescription="@string/zm_btn_send" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/zm_v1_gray_2100" android:id="@id/tvFollowPeople" android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingBottom="@dimen/zm_padding_smallest_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_wb_follow_mode_you_are_following_383781" android:paddingStart="@dimen/zm_margin_small_size" android:paddingEnd="@dimen/zm_margin_small_size" style="@style/ZMTextView.Medium" />
+    <View android:id="@id/divider" android:background="@color/zm_v1_black_50_alpha56" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:textColor="@color/zm_v1_gray_2100" android:id="@id/tvStopFollow" android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingBottom="@dimen/zm_padding_smallest_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_wb_follow_mode_stop_following_383781" android:paddingStart="@dimen/zm_margin_small_size" android:paddingEnd="@dimen/zm_margin_small_size" style="@style/ZMTextView.Medium" />
+</merge>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:duplicateParentState="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="15.0dip" zoom:zm_cornerRadiusRatio="0.32" />
+        <us.zoom.uicommon.widget.view.PListNameRoleLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/zm_textview_textcolor_black_selector" android:ellipsize="middle" android:id="@id/txtQuestionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beatruce Walters" android:singleLine="true" style="@style/ZMTextView.OnLight.Medium" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_txt_secondary" android:id="@id/txtQuestionTime" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10:20 AM" style="@style/ZMTextView.OnLight.Small.Dimmed" />
+        </us.zoom.uicommon.widget.view.PListNameRoleLayout>
+    </LinearLayout>
+    <us.zoom.uicommon.widget.view.ZMTextView android:textSize="16.0sp" android:textColor="@color/zm_textview_textcolor_black_selector" android:id="@id/txtQuestion" android:paddingTop="8.0dip" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves?" style="@style/ZMTextView.OnLight.Medium" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llTyping" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_qa_pencil" />
+        <us.zoom.uicommon.widget.view.ZMTextView android:id="@id/txtTyping" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_qa_typing_one_person_196163" style="@style/ZMTextView.OnLight.Medium.Dimmed" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMLinearLayoutButton android:gravity="bottom" android:orientation="horizontal" android:id="@id/llUpvote" android:paddingTop="16.0dip" android:paddingRight="8.0dip" android:focusable="true" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/imgUpVote" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/zm_ic_qa_upvote" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="13.0sp" android:id="@id/txtUpVoteCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="2.0dip" android:text="24" style="@style/ZMTextView.OnLight.Medium.Dimmed" />
+        </us.zoom.uicommon.widget.view.ZMLinearLayoutButton>
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="13.0sp" android:textColor="@color/zm_v2_txt_secondary" android:layout_gravity="center_vertical" android:id="@id/txtStatusHint" android:paddingTop="16.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_qa_attendee_dimiss_by_host_162313" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/dividerLine" android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+</LinearLayout>

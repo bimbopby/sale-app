@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/zm_padding_smallest_minus_size" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/emoji_raise_hand" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/zm_margin_smallest" android:src="@drawable/reaction_270b" />
+    <ImageView android:id="@id/emoji_normal" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="@dimen/zm_margin_smallest" android:src="@drawable/reaction_1f389" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panel_emoji_nvf" android:background="@drawable/zm_video_emoji_reaction_nvf_bg" android:padding="@dimen/zm_padding_smallest_minus_size" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/emoji_nvf" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/reaction_slower" />
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v1_white" android:id="@id/emoji_nvf_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_smallest" android:text="@string/zm_mm_lbl_slower_12050" />
+    </LinearLayout>
+</LinearLayout>

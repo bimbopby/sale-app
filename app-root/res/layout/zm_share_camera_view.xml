@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.feature.video.views.ZmShareCameraView android:id="@id/shareCameraView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.zipow.videobox.conference.viewgroup.ZmShareCameraControlView android:layout_gravity="bottom|center|right" android:id="@id/panelShareControl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_small" android:layout_marginBottom="@dimen/zm_control_view_margin_bottom" />
+</FrameLayout>

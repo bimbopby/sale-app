@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_top_bar" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageButton android:id="@id/iv_keypad" android:background="@drawable/zm_ui_kit_btn_normal_round12_white_selector" android:src="@drawable/zm_sip_ic_keyboard" android:scaleType="centerInside" android:contentDescription="@string/zm_sip_keypad_desc_117773" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ZmBackButton" />
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@id/iv_search" android:background="@drawable/zm_ui_kit_btn_normal_round12_white_selector" android:visibility="gone" android:src="@drawable/zm_sip_ic_sms_search" android:scaleType="centerInside" android:contentDescription="@string/zm_btn_search" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_new_chat" app:layout_constraintTop_toTopOf="parent" style="@style/ZmBackButton" />
+        <ImageButton android:id="@id/iv_new_chat" android:background="@drawable/zm_ui_kit_btn_normal_round12_white_selector" android:src="@drawable/zm_sip_ic_new_chat" android:scaleType="centerInside" android:contentDescription="@string/zm_sip_new_sms_desc_117773" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ZmBackButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-58.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_no_conversation" android:importantForAccessibility="no" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_normal_size" android:text="@string/zm_sip_sms_no_conversations_117773" style="@style/ZmTextView.Content.Primary" />
+        </LinearLayout>
+        <com.zipow.videobox.view.sip.sms.PhonePBXMessageSessionRecyclerView android:id="@id/rv_session_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/zm_margin_normal_plus_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.uicommon.widget.view.ZMTextView android:id="@id/txtTime" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_allow_device_dlg_label_time_382015" style="@style/ZMTextView.BuddyName.Normal" />
+    <us.zoom.uicommon.widget.view.ZMTextView android:id="@id/txtBrowser" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_allow_device_dlg_label_browser_382015" style="@style/ZMTextView.BuddyName.Normal" />
+    <us.zoom.uicommon.widget.view.ZMTextView android:id="@id/txtOS" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_allow_device_dlg_label_os_382015" style="@style/ZMTextView.BuddyName.Normal" />
+    <us.zoom.uicommon.widget.view.ZMTextView android:id="@id/txtLoc" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_allow_device_dlg_label_location_382015" style="@style/ZMTextView.BuddyName.Normal" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <View android:id="@id/viewRight" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_title_verify_phone_number" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/zm_padding_larger_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_verification_sms_sent_to" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary" />
+            <TextView android:id="@id/txtNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_minus_size" android:text="" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Button.Primary" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_large_minus_size" android:text="@string/zm_msg_enter_verification_code" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.MediumPlus" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size" zoom:zm_showTopDivider="false">
+                <LinearLayout style="@style/ZmSettingItem">
+                    <EditText android:id="@id/edtCode" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/zm_hint_verification_code" android:layout_weight="1.0" style="@style/ZMEditText.SettingsItem">
+                        <requestFocus />
+                    </EditText>
+                    <Button android:id="@id/btnResend" android:text="@string/zm_btn_resend_code_33300" style="@style/ZmButton.Small.Secondary" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <Button android:id="@id/btnNext" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_medium_size" android:text="@string/zm_btn_next" style="@style/ZmButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

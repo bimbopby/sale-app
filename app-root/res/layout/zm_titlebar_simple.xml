@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_titlebar_height" zoom:zm_leftButton="@id/panelTitleLeft" zoom:zm_rightButton="@id/panelTitleRight" zoom:zm_title="@id/panelTitleCenter" style="@style/ZmTitleBar.Dark"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/panelTitleLeft" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <Button android:id="@id/btnCancel" android:text="@string/zm_btn_cancel" android:contentDescription="@string/zm_btn_cancel" style="@style/ZmTitleBarAction.Dark" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/panelTitleRight" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/panelTitleCenter" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_sip_title_new_sms_117773" style="@style/ZmTitleBarTitle.Dark" />
+    </LinearLayout>
+</us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>

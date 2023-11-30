@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="600.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/leftButton" zoom:zm_rightButton="@id/btnApply" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/leftButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btnClose" android:visibility="gone" android:duplicateParentState="true" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Tablet" />
+            <ImageButton android:id="@id/btnBack" android:duplicateParentState="true" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        </FrameLayout>
+        <Button android:id="@id/btnApply" android:text="@string/zm_btn_save" style="@style/ZmTitleBarAction.Dark" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_profile_meeting_room_name" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_margin_small_size">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingTop="0.0dip" android:paddingRight="@dimen/zm_padding_normal_size" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@id/edtMeetingRoomName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/zm_lbl_profile_meeting_room_name" android:maxLines="@integer/maximum_lines" android:maxLength="40" android:layout_weight="1.0" style="@style/ZmInputBox">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <TextView android:gravity="center|left" android:id="@id/txtInstructions" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_small_size" android:text="@string/zm_lbl_vanity_url_instruction" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+            <TextView android:textColor="@color/zm_v2_txt_desctructive" android:gravity="center|left" android:id="@id/txtMessage" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Error message here" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/panelMsgLayout" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_normal_size" android:paddingBottom="@dimen/zm_padding_smallest_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/messageHeader" android:visibility="gone" android:layout="@layout/zm_mm_starred_message_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="56.0dip" layout="@layout/zm_mm_starred_message_title_view" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:layout_width="@dimen/zm_avatar_small_size" android:layout_height="@dimen/zm_avatar_small_size" android:layout_marginRight="8.0dip" app:zm_avatarBorderSize="0.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/panel_textMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip">
+            <com.zipow.videobox.view.EmojiTextView android:gravity="center|left" android:id="@id/txtMessage" android:paddingLeft="0.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_mm_bubble_width" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/zm_mm_starred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_starred_icon_on_v2" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_smaller_size" layout="@layout/zm_message_pin_info_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="48.0dip" layout="@layout/zm_message_reaction_labels_view_layout" />
+</LinearLayout>

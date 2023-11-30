@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/zm_tip_new_background" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@drawable/zm_ic_tick" />
+    <View android:id="@id/divider" android:layout_width="5.0dip" android:layout_height="0.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_conf_waiting_to_invite_title" style="@style/ZMTextView.TipMessage.Title.OnDark" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:layout_gravity="center" android:id="@id/txtMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/zm_msg_conf_waiting_to_invite" style="@style/ZMTextView.TipMessage.OnDark" />
+    </LinearLayout>
+</LinearLayout>

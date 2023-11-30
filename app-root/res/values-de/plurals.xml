@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d Sekunden vorspulen</item>
+        <item quantity="one">%d Sekunde vorspulen</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d Sekunden zurückspulen</item>
+        <item quantity="one">%d Sekunde zurückspulen</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d neue Benachrichtigungen</item>
+        <item quantity="one">%d neue Benachrichtigung</item>
+    </plurals>
+    <plurals name="zm_accessibility_reacion_label_233717">
+        <item quantity="other">%1$s, %2$d Benutzer haben diese Reaktion hinzugefügt</item>
+        <item quantity="one">%1$s, %2$d Benutzer hat diese Reaktion hinzugefügt</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_233717">
+        <item quantity="other">%d Antworten anzeigen</item>
+        <item quantity="one">%d Antwort anzeigen</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="other">, %d neue Erwähnungen @alle</item>
+        <item quantity="one">, %d neue Erwähnung @alle</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="other">, %d neue Erwähnungen @mir</item>
+        <item quantity="one">, %d neue Erwähnung @mir</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="other">, %d neue Nachrichten</item>
+        <item quantity="one">, %d neue Nachricht</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="other">%s neue Nachrichten, Schaltfläche</item>
+        <item quantity="one">%s neue Nachricht, Schaltfläche</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_439129">
+        <item quantity="other">Sie haben zu viele ungültige Versuche unternommen. Versuchen Sie es in %d Minuten noch einmal.</item>
+        <item quantity="one">Sie haben zu viele ungültige Versuche unternommen. Versuchen Sie es in %d Minute noch einmal.</item>
+    </plurals>
+    <plurals name="zm_conf_barge_slg_monitors_285616">
+        <item quantity="other">%d Überwacher</item>
+        <item quantity="one">%d Überwacher</item>
+    </plurals>
+    <plurals name="zm_description_tab_contacts_138733">
+        <item quantity="other">Registerkarte %s ungelesene Nachrichten von Kontakte</item>
+        <item quantity="one">Registerkarte %s ungelesene Nachricht von Kontakte</item>
+    </plurals>
+    <plurals name="zm_description_tab_meet_and_chat_plural_448431">
+        <item quantity="other">Team-Chat, Registerkarte %s ungelesene Nachrichten</item>
+        <item quantity="one">Team-Chat, Registerkarte %s ungelesene Nachricht</item>
+    </plurals>
+    <plurals name="zm_description_tab_sip_4_117773">
+        <item quantity="other">%1$s, %2$s neue Benachrichtigungen</item>
+        <item quantity="one">%1$s, %2$s neue Benachrichtigung</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_hour_204709">
+        <item quantity="other">Vor %d Stunden erneuert</item>
+        <item quantity="one">Vor %d Stunde erneuert</item>
+    </plurals>
+    <plurals name="zm_e2e_code_update_time_minute_204709">
+        <item quantity="other">Vor %d Minuten erneuert</item>
+        <item quantity="one">Vor %d Minute erneuert</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_left_times_171869">
+        <item quantity="other">%d Mal verlassen</item>
+        <item quantity="one">%d Mal verlassen</item>
+    </plurals>
+    <plurals name="zm_e2e_plist_rejoin_times_171869">
+        <item quantity="other">%d Mal verlassen und wieder beigetreten</item>
+        <item quantity="one">%d Mal verlassen und wieder beigetreten</item>
+    </plurals>
+    <plurals name="zm_encryption_exceptions_211920">
+        <item quantity="other">%d Ausnahmen</item>
+        <item quantity="one">%d Ausnahme</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_attendee_211920">
+        <item quantity="other">%d Zuschauer über Telefon</item>
+        <item quantity="one">%d Zuschauer über Telefon</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_211920">
+        <item quantity="other">%d Diskussionsteilnehmer über Telefon</item>
+        <item quantity="one">%d Diskussionsteilnehmer über Telefon</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_panelist_attendee_tail_211920">
+        <item quantity="other"> und %d Zuschauer über Telefon</item>
+        <item quantity="one"> und %d Zuschauer über Telefon</item>
+    </plurals>
+    <plurals name="zm_exception_telephone_participant_211920">
+        <item quantity="other">%d Teilnehmer über Telefon</item>
+        <item quantity="one">%d Teilnehmer über Telefon</item>
+    </plurals>
+    <plurals name="zm_lbl_chat_preview_card_number_416255">
+        <item quantity="other">Sie können höchstens %d Elemente in einer Nachricht hinzufügen.</item>
+        <item quantity="one">Sie können höchstens %d Element in einer Nachricht hinzufügen.</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_439129">
+        <item quantity="other">%d Antworten</item>
+        <item quantity="one">%d Antwort</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_439129">
+        <item quantity="other">%d Antworten</item>
+        <item quantity="one">%d Antwort</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_150170">
+        <item quantity="other">%d Als ungelesen markieren</item>
+        <item quantity="one">%d Als ungelesen markieren</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_150170">
+        <item quantity="other">%d ＠Alle</item>
+        <item quantity="one">%d ＠Alle</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_150170">
+        <item quantity="other">%d ＠Ich</item>
+        <item quantity="one">%d ＠Ich</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_439129">
+        <item quantity="other">%s neue Nachrichten</item>
+        <item quantity="one">%s neue Nachricht</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_439129">
+        <item quantity="other">%d Stunden</item>
+        <item quantity="one">%d Stunde</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_439129">
+        <item quantity="other">%d Min.</item>
+        <item quantity="one">%d Min.</item>
+    </plurals>
+    <plurals name="zm_lbl_participant_184616">
+        <item quantity="other">%d Teilnehmer</item>
+        <item quantity="one">%d Teilnehmer</item>
+    </plurals>
+    <plurals name="zm_lbl_view_all_domain_447969">
+        <item quantity="other">Alle %d Domänen anzeigen/bearbeiten</item>
+        <item quantity="one">%d Domäne anzeigen/bearbeiten</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count_447969">
+        <item quantity="other">Insgesamt %d Telefoneinwahl-Zuhörer</item>
+        <item quantity="one">Insgesamt %d Telefoneinwahl-Zuhörer</item>
+    </plurals>
+    <plurals name="zm_mesh_badge_client_421788">
+        <item quantity="other">%d Diskussionsteilnehmer mit veralteter Client-Version</item>
+        <item quantity="one">%d Diskussionsteilnehmer mit veralteter Client-Version</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_chat_app_message_preview_428741">
+        <item quantity="other">(%d App-Karten)</item>
+        <item quantity="one">(%d App-Karte)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_files_439129">
+        <item quantity="other">(%d Dateien)</item>
+        <item quantity="one">(%d Datei)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_message_text_and_x_pictures_439129">
+        <item quantity="other">(%d Bilder)</item>
+        <item quantity="one">(%d Bild)</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s neue Nachrichten</item>
+        <item quantity="one">↑%s neue Nachricht</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_439129">
+        <item quantity="other">%d Tage</item>
+        <item quantity="one">%d Tag</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_439129">
+        <item quantity="other">%d Stunden</item>
+        <item quantity="one">%d Stunde</item>
+    </plurals>
+    <plurals name="zm_mm_msg_minute_439129">
+        <item quantity="other">%d Minuten</item>
+        <item quantity="one">%d Minute</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_439129">
+        <item quantity="other">%d Monate</item>
+        <item quantity="one">%d Monat</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_439129">
+        <item quantity="other">%d Jahre</item>
+        <item quantity="one">%d Jahr</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_messages_no_longer_available_285622">
+        <item quantity="other">%1$d Erinnerungen wurden gelöscht, da die Nachrichten nicht mehr verfügbar oder zugänglich sind.</item>
+        <item quantity="one">%d Erinnerung wurde gelöscht, da die Nachricht nicht mehr verfügbar oder zugänglich ist.</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_3_439129">
+        <item quantity="other">%1$s: %2$s Bilder</item>
+        <item quantity="one">%1$s: Bild</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_7_285622">
+        <item quantity="other">%1$s: %2$s (%3$s Dateien)</item>
+        <item quantity="one">%1$s: %2$s (%3$s Datei)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_8_285622">
+        <item quantity="other">%1$s: %2$s (%3$s Bilder)</item>
+        <item quantity="one">%1$s: %2$s (%3$s Bild)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_3_285622">
+        <item quantity="other">Sie: %1$s Bilder</item>
+        <item quantity="one">Sie: %1$s Bild</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_7_285622">
+        <item quantity="other">Sie: %1$s (%2$s Dateien)</item>
+        <item quantity="one">Sie: %1$s (%2$s Datei)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_notification_body_format_you_8_285622">
+        <item quantity="other">Sie: %1$s (%2$s Bilder)</item>
+        <item quantity="one">Sie: %1$s (%2$s Bild)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_hours_285622">
+        <item quantity="other">Sie wurden vor %1$d Stunden erinnert</item>
+        <item quantity="one">Sie wurden vor %1$d Stunde erinnert</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_reminded_minutes_285622">
+        <item quantity="other">Sie wurden vor %1$d Minuten erinnert</item>
+        <item quantity="one">Sie wurden vor %1$d Minute erinnert</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_unread_reminders_285622">
+        <item quantity="other">%1$s(%2$d Erinnerungen ungelesen)</item>
+        <item quantity="one">%1$s(%2$d Erinnerung ungelesen)</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_hours_285622">
+        <item quantity="other">Sie erhalten in %1$d Stunden eine Erinnerung</item>
+        <item quantity="one">Sie erhalten in %1$d Stunde eine Erinnerung</item>
+    </plurals>
+    <plurals name="zm_mm_reminders_will_receive_minutes_285622">
+        <item quantity="other">Sie erhalten in %1$d Minuten eine Erinnerung</item>
+        <item quantity="one">Sie erhalten in %1$d Minute eine Erinnerung</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_439129">
+        <item quantity="other">%1$d Anhänge</item>
+        <item quantity="one">%1$d Anhang</item>
+    </plurals>
+    <plurals name="zm_mm_with_members_354919">
+        <item quantity="other">mit %d Mitgliedern</item>
+        <item quantity="one">mit %d Mitglied</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left_439129">
+        <item quantity="other">Noch %d Zeichen</item>
+        <item quantity="one">Noch %d Zeichen</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="other">%1$d Kontakte zu %2$s hinzugefügt</item>
+        <item quantity="one">1 Kontakt zu %2$s hinzugefügt</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent_439129">
+        <item quantity="other">%d Einladungen wurden verschickt</item>
+        <item quantity="one">%d Einladung wurde verschickt</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_439129">
+        <item quantity="other">%1$s(%2$d ungelesene Nachrichten)</item>
+        <item quantity="one">%1$s(%2$d ungelesene Nachricht)</item>
+    </plurals>
+    <plurals name="zm_pbx_invite_to_meeting_invitation_sent_131469">
+        <item quantity="other">%1$d Einladungen wurden versendet</item>
+        <item quantity="one">%1$d Einladung wurde versendet</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_msg_remove_selected_voice_mail_to_recently_deleted_232709">
+        <item quantity="other">Sie verschieben ausgewählte Sprachnachrichten nach Kürzlich Gelöscht. Der Vorgang kann später wiederhergestellt werden.</item>
+        <item quantity="one">Sie verschieben ausgewählte Sprachnachricht nach Kürzlich Gelöscht. Der Vorgang kann später wiederhergestellt werden.</item>
+    </plurals>
+    <plurals name="zm_pbx_trash_reminder_232709">
+        <item quantity="other">Die Elemente in der Liste zeigen die verbleibenden Tage bis zur Löschung an. Nach dieser Zeit werden die Elemente dauerhaft gelöscht. Das kann bis zu %d Tage dauern.</item>
+        <item quantity="one">Die Elemente in der Liste zeigen die verbleibenden Tage bis zur Löschung an. Nach dieser Zeit werden die Elemente dauerhaft gelöscht. Das kann bis zu %d Tag dauern.</item>
+    </plurals>
+    <plurals name="zm_question_count_271813">
+        <item quantity="other">%d Fragen</item>
+        <item quantity="one">%d Frage</item>
+    </plurals>
+    <plurals name="zm_reaction_counts_ax_211853">
+        <item quantity="other">%1$s, %2$d Benutzer haben diese Reaktion gesendet</item>
+        <item quantity="one">%1$s, %2$d Benutzer hat diese Reaktion gesendet</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_count_donw_404978">
+        <item quantity="other">in %1$d Min.</item>
+        <item quantity="one">in %1$d Min.</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_end_datetime_v2_403153">
+        <item quantity="other">%1$d Mal</item>
+        <item quantity="one">%1$d Mal</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyday_403153">
+        <item quantity="other">Alle %1$d Tage, %2$s</item>
+        <item quantity="one">Jeden Tag, %1$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_403153">
+        <item quantity="other">Alle %1$d Monate am %2$d, %3$s</item>
+        <item quantity="one">Jeden Monat am %1$d des Monats, %2$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everymonth_sequence_403153">
+        <item quantity="other">Alle %1$d Monate am %2$s %3$s, %4$s</item>
+        <item quantity="one">Jeden Monat am %1$s %2$s, %3$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_everyweek_403153">
+        <item quantity="other">Alle %1$d Wochen am %2$s, %3$s</item>
+        <item quantity="one">Jede Woche am %1$s, %2$s</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_hour_311995">
+        <item quantity="other">%d Std.</item>
+        <item quantity="one">%d Std.</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_member_joined_311995">
+        <item quantity="other">%1$d Personen beigetreten</item>
+        <item quantity="one">%d Person beigetreten</item>
+    </plurals>
+    <plurals name="zm_schedule_meeting_min_311995">
+        <item quantity="other">%d Min.</item>
+        <item quantity="one">%d Min.</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_439129">
+        <item quantity="other">%1$d Anrufe</item>
+        <item quantity="one">%1$d Anruf</item>
+    </plurals>
+    <plurals name="zm_sip_desc_session_new_message_117773">
+        <item quantity="other">%1$s neue Nachrichten</item>
+        <item quantity="one">%1$s neue Nachricht</item>
+    </plurals>
+    <plurals name="zm_sip_msg_delete_selected_voicemail_232709">
+        <item quantity="other">Sie löschen eine ausgewählte Voicemail dauerhaft. Diese Aktion kann nicht rückgängig gemacht werden.</item>
+        <item quantity="one">Sie löschen eine ausgewählte Voicemail dauerhaft. Diese Aktion kann nicht rückgängig gemacht werden.</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_file_439129">
+        <item quantity="other">%1$d Dateien gesendet</item>
+        <item quantity="one">%1$d Datei gesendet</item>
+    </plurals>
+    <plurals name="zm_sip_sms_notification_image_439129">
+        <item quantity="other">%1$d Bilder gesendet</item>
+        <item quantity="one">%1$d Bild gesendet</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_file_187397">
+        <item quantity="other">%1$s (%2$d Dateien)</item>
+        <item quantity="one">%1$s (%2$d Datei)</item>
+    </plurals>
+    <plurals name="zm_sip_sms_summary_text_image_187397">
+        <item quantity="other">%1$s (%2$d Bilder)</item>
+        <item quantity="one">%1$s (%2$d Bild)</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">%d Emojis ausgewählt</item>
+        <item quantity="one">Ein Emoji ausgewählt</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_are_following_you_383781">
+        <item quantity="other">folgen Ihnen</item>
+        <item quantity="one">folgt Ihnen</item>
+    </plurals>
+    <plurals name="zm_wb_follow_mode_people_number_are_following_you_383781">
+        <item quantity="other">%d Personen</item>
+        <item quantity="one">%d Person</item>
+    </plurals>
+</resources>

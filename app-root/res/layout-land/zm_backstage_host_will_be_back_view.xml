@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/constraintContent" android:background="@color/zm_v1_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/zm_margin_64dp" android:paddingEnd="@dimen/zm_margin_64dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dynamicLL" android:background="@color/zm_v1_white_alpha9" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/zm_font_larger_size" android:textColor="#9effffff" android:gravity="center" android:id="@id/tvNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_gr_backstage_host_will_be_back_267913" android:layout_marginHorizontal="@dimen/zm_margin_medium_size" />
+        <TextView android:textSize="@dimen/zm_font_smallest_plus_size" android:textColor="#9effffff" android:gravity="center" android:id="@id/tvNoticePip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_gr_backstage_host_will_be_back_267913" android:layout_marginHorizontal="@dimen/zm_margin_medium_size" />
+    </LinearLayout>
+</LinearLayout>

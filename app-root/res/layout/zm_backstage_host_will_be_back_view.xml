@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraintContent" android:background="@color/zm_v1_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dynamicLL" android:background="@color/zm_v1_white_alpha9" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="h,5:3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_font_larger_size" android:textColor="#9effffff" android:gravity="center" android:id="@id/tvNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_gr_backstage_host_will_be_back_267913" android:layout_marginHorizontal="@dimen/zm_margin_medium_size" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_font_smaller_size" android:textColor="#9effffff" android:gravity="center" android:id="@id/tvNoticePip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_gr_backstage_host_will_be_back_267913" android:layout_marginHorizontal="@dimen/zm_margin_medium_size" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

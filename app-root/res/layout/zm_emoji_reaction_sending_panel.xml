@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/raiseHandBg" android:background="@drawable/zm_v2_reaction_menu_bg" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_weight="10.0">
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_txt_primary" android:ellipsize="end" android:layout_gravity="center" android:id="@id/btnRaiseHand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_raise_hand" android:maxLines="1" android:drawableLeft="@drawable/reaction_raisehand" android:drawablePadding="@dimen/zm_dimen_smallest" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_btn_raise_hand" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/feedbacks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/yesBg" android:background="@drawable/zm_v2_reaction_menu_bg" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="@dimen/zm_btn_large_height" android:layout_weight="1.0">
+                <TextView android:textColor="@color/zm_v2_txt_primary" android:layout_gravity="center" android:id="@id/btnYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/reaction_yes" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_mm_lbl_yes_12050" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/noBg" android:background="@drawable/zm_v2_reaction_menu_bg" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginLeft="@dimen/zm_margin_smaller_size" android:layout_weight="1.0">
+                <TextView android:textColor="@color/zm_v2_txt_primary" android:layout_gravity="center" android:id="@id/btnNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/reaction_no" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_mm_lbl_no_12050" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/slowerBg" android:background="@drawable/zm_v2_reaction_menu_bg" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginLeft="@dimen/zm_margin_smaller_size" android:layout_weight="1.0">
+                <TextView android:textColor="@color/zm_v2_txt_primary" android:layout_gravity="center" android:id="@id/btnSlower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/reaction_slower" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_reaction_label_slow_234726" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fasterBg" android:background="@drawable/zm_v2_reaction_menu_bg" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginLeft="@dimen/zm_margin_smaller_size" android:layout_weight="1.0">
+                <TextView android:textColor="@color/zm_v2_txt_primary" android:layout_gravity="center" android:id="@id/btnFaster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/reaction_faster" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_reaction_label_fast_234726" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/coffeeBg" android:background="@drawable/zm_v2_reaction_menu_bg" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginLeft="@dimen/zm_margin_smaller_size" android:layout_weight="1.0">
+                <TextView android:textColor="@color/zm_v2_txt_primary" android:layout_gravity="center" android:id="@id/btnCoffee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/reaction_coffee" android:layout_centerHorizontal="true" android:contentDescription="@string/zm_reaction_label_coffee_283801" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/emojis" android:background="@drawable/zm_v2_reaction_menu_bg" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_large_height" android:layout_marginTop="@dimen/zm_padding_normal_size">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/btnClap" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reaction_1f44f" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_clap_122373" />
+            <ImageView android:layout_gravity="center" android:id="@id/audioIconForClap" android:background="@drawable/ic_audible_reaction_speaker" android:layout_width="17.0dip" android:layout_height="14.0dip" android:scaleType="fitCenter" android:translationX="10.0dip" android:translationY="7.0dip" android:importantForAccessibility="no" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/btnThumbup" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reaction_1f44d" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_thumbup_122373" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/btnHeart" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reaction_2764" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_heart_146307" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/btnJoy" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reaction_1f602" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_joy_146307" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/btnOpenMouth" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reaction_1f62e" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_open_mouth_146307" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/btnTada" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/reaction_1f389" android:scaleType="fitCenter" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:contentDescription="@string/zm_accessibility_btn_meeting_reactions_tada_146307" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/moreArea" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/btnMoreEmojis" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_more_on_light" android:scaleType="fitCenter" android:contentDescription="@string/zm_accessibility_more_reaction_88133" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

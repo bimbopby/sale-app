@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.feature.video.views.ZmPreviewVideoView android:id="@id/previewVideoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip">
+        <TextView android:textSize="@dimen/zm_font_size_medium" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/tipVB" android:background="@drawable/tip_down_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="18.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_virtual_background_choose_vb_tip_174032" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/recyclerView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/zm_bottom_gradient_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <us.zoom.uicommon.widget.view.ZMTextButton android:textSize="@dimen/zm_ui_kit_text_size_15sp" android:textColor="@color/zm_v1_white" android:layout_gravity="end|center" android:id="@id/btnClose" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" android:shadowColor="@color/zm_v1_black_alpha44" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" android:layout_marginEnd="6.0dip" />
+        <us.zoom.uicommon.widget.view.ZMTextButton android:textSize="@dimen/zm_ui_kit_text_size_15sp" android:textColor="@color/zm_v1_white" android:layout_gravity="start|center" android:id="@id/btnRemove" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_remove" android:shadowColor="@color/zm_v1_black_alpha44" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" android:layout_marginStart="6.0dip" />
+    </FrameLayout>
+</FrameLayout>

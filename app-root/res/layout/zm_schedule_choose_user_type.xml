@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="600.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnSave" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <Button android:id="@id/btnSave" android:visibility="invisible" android:text="@string/zm_btn_save" style="@style/ZmTitleBarAction" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:paddingLeft="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:text="@string/zm_lbl_allow_join_meeting_202232" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_padding_large_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="left" android:id="@id/txtDomainsLabel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_minus_size" android:text="@string/zm_setting_select_one_160553" style="@style/ZmSettingOptionTitle" />
+            <us.zoom.uicommon.widget.listview.ZMChildListView android:id="@id/lvAuths" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/panelEditDomains" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size">
+                <LinearLayout style="@style/ZmSettingItem.UnClick">
+                    <TextView android:textColor="@color/zm_v2_btn_blue_text_color" android:id="@id/txtEditDomainsLabel" android:layout_width="0.0dip" android:text="View/Edit all %d domains" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

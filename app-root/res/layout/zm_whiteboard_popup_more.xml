@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_whiteboard_common_toolbar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llView" android:padding="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:layout_width="@dimen/zm_cloud_whiteboard_menu_bar_more_popup_width" android:layout_height="@dimen/zm_cloud_whiteboard_menu_bar_text_size_popup_height" android:text="@string/zm_whiteboard_share_dialog_copy_link_view_289013" style="@style/ZmTextView.Content.Primary.Medium" />
+        <ImageView android:layout_gravity="center_vertical" android:focusable="false" android:visibility="visible" android:clickable="false" android:src="@drawable/zm_ic_whiteboard_share_arrow_right" style="@style/ZmSettingItemArrow" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llImport" android:padding="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:layout_width="@dimen/zm_cloud_whiteboard_menu_bar_more_popup_width" android:layout_height="@dimen/zm_cloud_whiteboard_menu_bar_text_size_popup_height" android:text="@string/zm_whiteborad_export_289013" style="@style/ZmTextView.Content.Primary.Medium" />
+        <ImageView android:layout_gravity="center_vertical" android:focusable="false" android:visibility="gone" android:clickable="false" android:src="@drawable/zm_ic_whiteboard_share_arrow_right" style="@style/ZmSettingItemArrow" />
+    </LinearLayout>
+    <View android:id="@id/line_export" android:background="@color/zm_item_highlight" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_marginRight="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_marginStart="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llFeedback" android:padding="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:layout_width="@dimen/zm_cloud_whiteboard_menu_bar_more_popup_width" android:layout_height="@dimen/zm_cloud_whiteboard_menu_bar_text_size_popup_height" android:text="@string/zm_whiteborad_feedback_289013" style="@style/ZmTextView.Content.Primary.Medium" />
+        <ImageView android:layout_gravity="center_vertical" android:focusable="false" android:visibility="gone" android:clickable="false" android:src="@drawable/zm_ic_whiteboard_share_arrow_right" style="@style/ZmSettingItemArrow" />
+    </LinearLayout>
+    <View android:id="@id/line_trash" android:background="@color/zm_item_highlight" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_marginRight="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_marginStart="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llTrash" android:padding="@dimen/zm_cloud_whiteboard_menu_bar_icon_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:layout_width="@dimen/zm_cloud_whiteboard_menu_bar_more_popup_width" android:layout_height="@dimen/zm_cloud_whiteboard_menu_bar_text_size_popup_height" android:text="@string/zm_whiteboard_more_actions_move_to_trash_385207" style="@style/ZmTextView.Content.Primary.Medium" />
+        <ImageView android:layout_gravity="center_vertical" android:focusable="false" android:visibility="gone" android:clickable="false" android:src="@drawable/zm_ic_whiteboard_share_arrow_right" style="@style/ZmSettingItemArrow" />
+    </LinearLayout>
+</LinearLayout>

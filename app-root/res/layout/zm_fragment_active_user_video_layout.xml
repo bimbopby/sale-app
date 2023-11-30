@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/activeVideoContainer" android:background="@color/zm_v1_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.conference.ui.view.render.ZmActiveUserVideoView android:layout_gravity="center" android:id="@id/videoView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <us.zoom.feature.video.views.ZmPreviewVideoView android:layout_gravity="center" android:id="@id/previewVideoView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/panelThumbnail" android:background="@color/zm_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zipow.videobox.conference.ui.view.render.ZmThumbnailRenderView android:layout_gravity="center|right|top" android:id="@id/thumbnailRenderView" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="1.0px" android:layout_height="1.0px" />
+    </FrameLayout>
+</FrameLayout>

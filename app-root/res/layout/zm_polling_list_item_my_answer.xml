@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/zm_full_my_answer_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/myAnswer" android:paddingTop="@dimen/zm_margin_smaller_size" android:paddingBottom="@dimen/zm_margin_smaller_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="@dimen/zm_margin_smaller_size" style="@style/ZMTextView.Normal.Dimmed" />
+</LinearLayout>

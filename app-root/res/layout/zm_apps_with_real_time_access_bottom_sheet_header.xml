@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_20sp" android:textStyle="bold" android:textColor="@color/zm_v1_white" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/txtAppsTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:letterSpacing="0.02" />
+    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v1_white_alpha54" android:layout_gravity="start" android:id="@id/txtAppsDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small" android:layout_marginBottom="@dimen/zm_margin_medium" style="@style/ZMTextView.Normal.gray.darkMode" />
+</LinearLayout>

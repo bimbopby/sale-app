@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@drawable/zm_bottom_sheet_white_bg" android:paddingLeft="@dimen/zm_dialog_margin_24dp" android:paddingTop="30.0dip" android:paddingRight="@dimen/zm_dialog_margin_24dp" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/itemContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/txtTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_title_pbx_conference_leave_210413" android:maxLines="3" style="@style/ZmTextView.Title.Medium" />
+        <Button android:id="@id/btnLeave" android:layout_width="fill_parent" android:layout_height="@dimen/zm_view_height_40dp" android:layout_marginLeft="56.0dip" android:layout_marginTop="@dimen/zm_btn_large_height" android:layout_marginRight="56.0dip" android:text="@string/zm_btn_leave_conf" style="@style/UILargestButton.RedV2" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

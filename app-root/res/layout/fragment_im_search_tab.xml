@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/panelTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMTitleBar.Search.NoElevation">
+        <RelativeLayout android:id="@id/btnBack" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/zm_btn_width_48dp" android:minHeight="@dimen/zm_btn_width_48dp" android:layout_alignTop="@id/panelSearchBar" android:layout_alignBottom="@id/panelSearchBar" android:layout_alignParentLeft="true">
+            <ImageView android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/zm_ic_back_blue_normal" android:layout_centerInParent="true" android:contentDescription="@string/zm_btn_back" />
+        </RelativeLayout>
+        <com.zipow.videobox.view.ZMSearchBar android:id="@id/panelSearchBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/btnBack" android:layout_centerVertical="true" zoom:editTextHint="@string/zm_hint_search_im_18680" zoom:imeOptions="actionSearch" zoom:maxLength="256" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout_type" android:background="@color/zm_white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/zm_btn_normal_height" android:layout_marginLeft="16.0dip" zoom:tabBackground="@color/zm_transparent" zoom:tabGravity="center" zoom:tabIndicatorColor="@color/zm_transparent" zoom:tabIndicatorHeight="0.0dip" zoom:tabMaxWidth="120.0dip" zoom:tabMode="scrollable" zoom:tabPaddingEnd="16.0dip" zoom:tabPaddingStart="16.0dip" zoom:tabRippleColor="@color/zm_transparent" zoom:tabTextAppearance="@color/zm_v2_txt_secondary" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/panel_recent_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/zm_v2_txt_secondary" android:gravity="center_vertical" android:id="@id/txt_recent" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_padding_normal" android:layout_width="fill_parent" android:layout_height="@dimen/zm_btn_normal_height" android:text="@string/zm_mm_search_global_recent_searches_121980" style="@style/ZmTextView.Content.Secondary.Medium" />
+        <com.zipow.videobox.view.mm.MMRecentSearchesRecycleView android:id="@id/recent_searches_view" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.zipow.videobox.view.mm.GestureScrollSearchView android:id="@id/panel_search_result" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.uicommon.widget.view.ZMViewPager android:id="@id/viewpager_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zipow.videobox.view.mm.GestureScrollSearchView>
+</LinearLayout>

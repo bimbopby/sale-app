@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="500.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/zm_pbx_title_sharing_key_148025" style="@style/UIKitTextView.LargeTitle" />
+    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_pbx_lbl_sharing_key_148025" style="@style/ZMTextView" />
+    <EditText android:textColorHint="@color/zm_im_search_text_hint" android:id="@id/edtShareCode" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="" android:hint="@string/zm_pbx_hint_sharing_key_148025" android:maxLength="50" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ " android:inputType="textVisiblePassword|textCapCharacters" android:imeOptions="actionDone|flagNoExtractUi" />
+</LinearLayout>

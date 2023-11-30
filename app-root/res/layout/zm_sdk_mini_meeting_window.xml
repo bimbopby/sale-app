@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zm_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.sdk.MinMeetingView android:id="@id/bigVideoView" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_11sp" android:textColor="@color/zm_white" android:gravity="center" android:id="@id/txtWaitingTitle" android:background="@color/zm_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_msg_waiting_meeting_nitification_277592" style="@style/ZMTextView.ExtremLarge.OnLight" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false" android:color="@color/zm_v2_im_keyboard_panel_unselected" />
+    <item android:state_selected="true" android:color="@color/zm_v2_svg_ic_fill_color_new_style" />
+</selector>

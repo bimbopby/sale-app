@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:elevation="0.0dip" zoom:zm_leftButton="@id/btnBack" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_signup_verification_442801" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_64dp">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_minus_size" android:layout_marginRight="@dimen/zm_margin_small_minus_size" android:text="@string/zm_signup_verify_code_442801" android:maxLines="1" style="@style/ZmTextView.Title.Medium" />
+            <TextView android:id="@id/zm_signup_verification_email_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginTop="@dimen/zm_margin_small_minus_size" android:layout_marginRight="@dimen/zm_dialog_margin_16dp" android:text="@string/zm_signup_verify_code_tips_442801" android:maxLines="3" style="@style/ZmTextView.Content.Primary.MediumPlus.Dimmed" />
+            <com.zipow.videobox.login.view.ZmVerifySmsCodeView android:id="@id/zm_signup_verification_verifyCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_larger_size" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/zm_signup_verification_invalidwarn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginTop="@dimen/zm_dialog_margin_24dp" android:layout_marginRight="@dimen/zm_margin_medium_size">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/zm_dialog_margin_16dp" android:layout_height="@dimen/zm_dialog_margin_16dp" android:src="@drawable/zm_signup_verification_error" android:contentDescription="todo" />
+                <TextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v1_red_A120" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small" android:text="@string/zm_signup_invalid_verify_code_442801" />
+            </LinearLayout>
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_tab_text_unselected" android:gravity="center" android:id="@id/zm_signup_verification_countdown" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_dialog_margin_24dp" style="@style/UIKitButton.Small.NoBackground" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginTop="@dimen/zm_dialog_margin_16dp" android:layout_marginRight="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_margin_large">
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_txt_primary" android:gravity="center" android:id="@id/descText" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_otp_not_get_code_344945" style="@style/UIKitButton.Small.NoBackground" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center" android:id="@id/resend" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_smallest" android:singleLine="true" style="@style/UIKitButton.Small.OnLight.NoBackground" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

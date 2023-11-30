@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/panelMsgLayout" android:paddingTop="8.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/zm_message_list_item_title_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+        <com.zipow.videobox.view.ZMSimpleEmojiTextView android:id="@id/txtScreenName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/ZMTextView.ExSmall.Dimmed" />
+        <TextView android:textColor="@color/zm_v2_txt_desctructive" android:id="@id/newMessage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_new_message_14491" android:layout_marginStart="4.0dip" style="@style/ZMTextView.ExSmall" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+            <com.zipow.videobox.view.ZMGifView android:id="@id/imgPic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_image_placeholder" android:scaleType="fitXY" android:adjustViewBounds="true" android:maxWidth="200.0dip" android:maxHeight="200.0dip" />
+            <TextView android:id="@id/txtRatio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/ZMTextView.Medium.OnDark" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/panelProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+            <ProgressBar android:id="@id/progressBarDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip" style="@style/ZMProgressBar.Small" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imgStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_msg_state_fail" android:contentDescription="@string/zm_sip_sms_send_fail_desc_137657" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

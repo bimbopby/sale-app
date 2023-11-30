@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_bg_popup_window" android:layout_width="160.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fontPickerView="http://schemas.android.com/apk/res-auto">
+    <us.zoom.videomeetings.richtext.popup.ZMFontPickerView android:id="@id/fontSizePickerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPickerView:fontPickerMode="size" />
+    <us.zoom.videomeetings.richtext.popup.ZMFontPickerView android:id="@id/fontPickerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPickerView:fontPickerMode="paragraph" />
+</LinearLayout>

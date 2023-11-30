@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_no_chat_no_contact" />
+        <TextView android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_normal_size" android:text="@string/zm_lbl_find_people_and_start_chat_79032" style="@style/ZmTextView.Content.Primary" />
+        <Button android:id="@id/btn_start_new_chat" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/zm_margin_largest_size" android:layout_marginTop="@dimen/zm_margin_large_size" android:layout_marginRight="@dimen/zm_margin_largest_size" android:layout_marginBottom="@dimen/zm_margin_large_size" android:text="@string/zm_btn_channel_start_new_chat_323431" android:drawableStart="@drawable/zm_ic_btn_new_chat_white" style="@style/ZmButton.Medium" />
+    </LinearLayout>
+</LinearLayout>

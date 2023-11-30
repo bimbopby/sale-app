@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleAudioButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleVideoButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleReactionButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleShareButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleUnShareButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleRecordButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleWhiteboardButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleTranslationButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleRaiseHandButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleUnRaiseHandButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleZRCButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleQAButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecyclePlistButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleChatButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+    <com.zipow.videobox.view.btrecycle.ToolbarRecycleButton android:id="@id/confRecycleMoreButton" android:layout_width="wrap_content" android:layout_height="65.0dip" />
+</LinearLayout>

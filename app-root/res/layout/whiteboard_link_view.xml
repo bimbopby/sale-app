@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/whiteboard_layout" android:background="@drawable/ic_whiteboard_preview_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:round_corner_v2="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/titlePanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <ImageView android:id="@id/imgTitleIcon" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_whiteboard_preview_title" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/zm_v1_gray_2100" android:ellipsize="end" android:id="@id/txt_whiteboard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/panelLoadingView" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="132.0dip">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" style="@style/ZMProgressBar.Small" />
+            <TextView android:textColor="@color/zm_v2_txt_placeholder" android:gravity="left" android:id="@id/txtMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_loading" style="@style/ZmTextView.Content.Primary.MediumPlus" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_whiteboard" android:visibility="gone" android:layout_width="268.0dip" android:layout_height="118.0dip" android:src="@drawable/zm_image_placeholder" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_whiteboard_error" android:visibility="gone" android:layout_width="268.0dip" android:layout_height="118.0dip" android:src="@drawable/zm_ic_whiteboard_preview_error" android:scaleType="centerInside" />
+    </FrameLayout>
+</LinearLayout>

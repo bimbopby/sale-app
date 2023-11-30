@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_whiteboard_share_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/zm_white" style="@style/ZMTitleBar">
+        <Button android:id="@id/btnClose" android:text="@string/zm_btn_close" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmTitleBarAction" />
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_whiteboard_accessibility_pages_289013" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="@id/btnClose" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmTitleBarTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.zipow.annotate.popup.pages.PagesView android:id="@id/mPagesView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/zm_margin_small_minus_size" android:layout_weight="1.0" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_smaller_size" android:layout_marginStart="@dimen/zm_margin_smaller_size" android:layout_marginEnd="@dimen/zm_margin_smaller_size">
+        <TextView android:id="@id/tvPageIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZmTextView.Content.Primary.MediumPlus" />
+    </LinearLayout>
+</LinearLayout>

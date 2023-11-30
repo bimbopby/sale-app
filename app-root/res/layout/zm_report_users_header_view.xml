@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingTop="@dimen/zm_padding_smaller_size" android:paddingRight="@dimen/zm_padding_normal_size" android:paddingBottom="@dimen/zm_padding_smaller_size" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/zm_v2_txt_secondary" android:id="@id/ZMReportPrivacyDeclaration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_report_participant_issue_privacy_declaration_150328" />
+    <TextView android:textColor="@color/zm_v2_txt_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_smaller_size" android:text="@string/zm_lbl_report_participant_user_top_hint_200528" />
+</LinearLayout>

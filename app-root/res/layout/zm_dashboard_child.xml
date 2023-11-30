@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_v2_window_gb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.videobox.view.ZMSearchBar android:id="@id/searchBar" android:background="@null" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingRight="@dimen/zm_padding_normal_size" android:layout_width="fill_parent" android:layout_height="@dimen/zm_dashborad_searchbar_height" android:layout_marginTop="@dimen/zm_margin_normal" android:elevation="0.0dip" zoom:editTextHint="@string/zm_dashboard_search_keyword_296308" zoom:imeOptions="actionSearch" zoom:layout_constraintTop_toBottomOf="@id/btnClose" style="@style/ZmTitleBar" />
+    <FrameLayout android:id="@id/flTabIndicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_normal_size" android:layout_marginStart="@dimen/zm_padding_normal_size" android:layout_marginEnd="@dimen/zm_padding_normal_size">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvTabIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:layout_gravity="bottom" android:id="@id/viewTabIndicator" android:background="@drawable/zm_wb_dashboard_type_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginStart="@dimen/zm_padding_smallest_minus_minus_size" android:layout_marginEnd="@dimen/zm_padding_smallest_minus_minus_size" />
+    </FrameLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/mSwipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mRecyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

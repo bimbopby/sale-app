@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/zm_white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/zm_im_search_shadow" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textColor="@color/zm_v2_txt_action" android:id="@id/txt_item_recent_search" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/zm_btn_clear_all_12050" style="@style/ZmTextView.Content.Primary.MediumPlus" />
+</LinearLayout>

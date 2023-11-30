@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.uicommon.widget.view.ZMTextButton android:id="@id/txtNeutral" android:text="@string/zm_btn_cancel" android:layout_centerVertical="true" style="@style/ZmButton.Small.Secondary" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <us.zoom.uicommon.widget.view.ZMTextButton android:id="@id/txtNegative" android:text="@string/zm_btn_cancel" style="@style/ZmButton.Small.Secondary" />
+        <us.zoom.uicommon.widget.view.ZMTextButton android:textStyle="bold" android:id="@id/txtPositive" android:layout_marginLeft="@dimen/zm_margin_smaller_size" android:text="@string/zm_btn_ok" style="@style/ZmButton.Small" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/zm_list_selector_background" android:paddingTop="@dimen/zm_padding_small" android:paddingBottom="@dimen/zm_padding_small" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="66.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView android:layout_gravity="center_vertical" android:id="@id/zm_folder_avatarView" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/zm_avatar_size" android:layout_height="@dimen/zm_avatar_size" android:layout_marginLeft="@dimen/zm_padding_normal" android:layout_marginRight="@dimen/zm_font_medium_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/zm_annotation_popup_text_max_width" android:text="@string/zm_mm_header_folder_357393" android:singleLine="true" style="@style/UIKitTextView.CellTitle" />
+</LinearLayout>

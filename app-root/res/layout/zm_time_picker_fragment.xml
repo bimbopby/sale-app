@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnConfirm" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <Button android:id="@id/btnConfirm" android:text="@string/zm_btn_confirm_19898" style="@style/ZmTitleBarAction" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_personal_note_display_time_287600" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" zoom:zm_showTopDivider="false">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/timeOptList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/customTime" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" zoom:zm_showTopDivider="false">
+                <LinearLayout android:id="@id/panelFromTime" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="wrap_content" android:text="@string/zm_lbl_from_19898" style="@style/ZmSettingItemTitle" />
+                    <TextView android:id="@id/txtFromTime" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/panelToTime" style="@style/ZmSettingItem">
+                    <TextView android:layout_width="wrap_content" android:text="@string/zm_lbl_to_19898" style="@style/ZmSettingItemTitle" />
+                    <TextView android:id="@id/txtToTime" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

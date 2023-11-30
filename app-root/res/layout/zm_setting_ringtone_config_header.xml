@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/panelRingtone" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_normal_size">
+        <TextView android:text="@string/zm_ringtone_volume_353890" style="@style/ZmSettingOptionTitle" />
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:importantForAccessibility="no" style="@style/ZmSettingItem">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_volume_min" android:contentDescription="@string/zm_ax_ringtone_volume_mute_353890" />
+                <SeekBar android:id="@id/seekbarRingtone" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:progress="40" android:progressDrawable="@drawable/zm_seekbar_bkg" android:thumbOffset="12.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_volume_max" android:contentDescription="@string/zm_ax_ringtone_volume_max_353890" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:id="@id/panelWaiting" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_normal_size">
+        <TextView android:text="@string/zm_call_waiting_volume_353890" style="@style/ZmSettingOptionTitle" />
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:importantForAccessibility="no" style="@style/ZmSettingItem">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_volume_min" android:contentDescription="@string/zm_ax_ringtone_volume_mute_353890" />
+                <SeekBar android:id="@id/seekbarWaiting" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:progress="40" android:progressDrawable="@drawable/zm_seekbar_bkg" android:thumbOffset="12.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_volume_max" android:contentDescription="@string/zm_ax_ringtone_volume_max_353890" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_normal_size">
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/panelMeetings" style="@style/ZmSettingItem">
+                <TextView android:layout_width="0.0dip" android:text="@string/zm_tab_content_meetings_52777" android:layout_weight="3.0" style="@style/ZmSettingItemTitle" />
+                <TextView android:id="@id/tvMeetingsRingtone" android:layout_width="wrap_content" android:layout_weight="0.0" style="@style/ZmSettingItemContent" />
+                <ImageView android:layout_marginLeft="@dimen/zm_margin_small_size" android:contentDescription="@string/zm_msg_button_292937" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/panelPhone" style="@style/ZmSettingItem">
+                <TextView android:layout_width="0.0dip" android:text="@string/zm_tab_sip_14480" android:layout_weight="3.0" style="@style/ZmSettingItemTitle" />
+                <ImageView android:layout_marginLeft="@dimen/zm_margin_small_size" android:contentDescription="@string/zm_msg_button_292937" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/panelNotificationFor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:zm_showBottomDivider="false">
+            <LinearLayout android:id="@id/panelAddContact" style="@style/ZmSettingItem">
+                <TextView android:textColor="@color/zm_v2_btn_blue_text_color2" android:id="@id/btnAddContact" android:layout_width="0.0dip" android:text="@string/zm_btn_add_contact" android:layout_weight="3.0" style="@style/ZmSettingItemTitle" />
+                <ImageView android:layout_marginLeft="@dimen/zm_margin_small_size" android:src="@color/zm_transparent" android:contentDescription="@string/zm_msg_button_292937" style="@style/ZmSettingItemArrow" />
+            </LinearLayout>
+        </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+    </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+</LinearLayout>

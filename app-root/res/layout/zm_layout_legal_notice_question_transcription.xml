@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/zm_immersive_download_progress_view_bg" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/panelShowDialog" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="@color/zm_v1_white" android:gravity="left" android:layout_gravity="left" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_legal_notice_tip_transcription_260953" android:singleLine="false" style="@style/ZMTextView.Normal" />
+        <TextView android:textColor="@color/zm_v1_white" android:ellipsize="end" android:gravity="left" android:layout_gravity="left" android:id="@id/btnLegalQuestion" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_legal_notice_question_transcription_260953" android:singleLine="true" android:drawableLeft="@drawable/ic_data_privacy_transcript" android:drawablePadding="@dimen/zm_padding_small" style="@style/ZMTextView.Normal" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/btnClose" android:padding="@dimen/zm_padding_small" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/zm_btn_legal_tip_close_light" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_close" />
+</LinearLayout>

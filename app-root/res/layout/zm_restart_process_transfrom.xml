@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/transformLayout" android:background="@color/zm_black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/arrowImgView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/greenroom_arrow_right" android:layout_marginEnd="@dimen/zm_padding_medium_size" />
+            <ImageView android:id="@id/transformImgView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/greenroom_transforms" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_normal_size" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginHorizontal="@dimen/zm_padding_smaller_size">
+            <TextView android:textSize="@dimen/zm_font_larger_size" android:textColor="@color/zm_text_on_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/transformText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_waiting" />
+            <TextView android:textSize="@dimen/zm_font_normal_size" android:textColor="@color/zm_text_on_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/transformTextTips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_padding_smaller_size" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton.Dark" />
+        <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtTitle" android:text="@string/zm_title_my_profile_192681" style="@style/ZmTitleBarTitle.Dark" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.panel.ZmAlertDisablePmiPanel android:id="@id/panelDisablePmiAlert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/panelOptions" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_margin_medium_size" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_margin_medium_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionProfilePhoto" android:paddingTop="@dimen/zm_padding_large_size" android:paddingBottom="@dimen/zm_padding_large_size" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_profile_photo" style="@style/ZmSettingItemTitle" />
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:duplicateParentState="false" android:layout_width="@dimen/zm_avatar_size" android:layout_height="@dimen/zm_avatar_size" android:layout_marginRight="@dimen/zm_margin_small_size" zoom:zm_cornerRadiusRatio="0.32" />
+                        <ImageView android:id="@id/avatarArrow" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionAccount" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_profile_account_152735" style="@style/ZmSettingItemTitle" />
+                    <LinearLayout android:gravity="center|right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtAccount" style="@style/ZmSettingItemContent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionDisplayName" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_profile_name_109011" style="@style/ZmSettingItemTitle" />
+                    <LinearLayout android:gravity="center|right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtDisplayName" style="@style/ZmSettingItemContent" />
+                        <ImageView android:id="@id/displayNameArrow" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionPronoun" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:text="@string/zm_lbl_pronoun_281068" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/txtPronoun" android:text="@string/zm_mm_lbl_not_set" android:maxLines="2" style="@style/ZmSettingItemContent" />
+                    <ImageView android:visibility="gone" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnPassword" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_profile_password_109011" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/pbxCategory" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="top" android:id="@id/optionDirectNumber" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtTitleDirectNumber" android:text="@string/zm_title_direct_number_184616" style="@style/ZmSettingItemTitle" />
+                    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:id="@id/directContainer" android:paddingTop="@dimen/zm_padding_medium_size" android:paddingBottom="@dimen/zm_padding_medium_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionCompanyNumber" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtCompanyNumberTitle" android:text="@string/zm_title_company_number_184616" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtCompanyNumber" android:text="@string/zm_intergeated_phone_not_set_31439" style="@style/ZmSettingItemContent" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/btn_department" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:text="@string/zm_lbl_profile_department_109011" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/txt_department" android:text="@string/zm_mm_lbl_not_set" android:maxLines="2" style="@style/ZmSettingItemContent" />
+                    <ImageView android:visibility="gone" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btn_manager" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:text="@string/zm_lbl_profile_manager_255208" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/txt_manager" android:text="@string/zm_mm_lbl_not_set" android:maxLines="@integer/maximum_lines" style="@style/ZmSettingItemContent" />
+                    <ImageView android:visibility="gone" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btn_job_title" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:text="@string/zm_lbl_profile_job_title_109011" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/txt_job_title" android:text="@string/zm_mm_lbl_not_set" android:maxLines="2" style="@style/ZmSettingItemContent" />
+                    <ImageView android:visibility="gone" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btn_location" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:text="@string/zm_lbl_profile_location_109011" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMEllipsizeTextView android:ellipsize="end" android:id="@id/txt_location" android:text="@string/zm_mm_lbl_not_set" android:maxLines="2" android:singleLine="false" zoom:showLink="true" style="@style/ZmSettingItemContent" />
+                    <ImageView android:visibility="gone" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/panelWorkLocation" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_profile_work_location_367445" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/txtWorkLocation" android:text="@string/zm_mm_lbl_not_set" android:maxLines="1" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/panelPresence" style="@style/ZmSettingItem">
+                    <com.zipow.videobox.view.PresenceStateView android:id="@id/presenceStateView" android:layout_width="wrap_content" android:layout_height="wrap_content" zoom:zm_subpresence_type="0" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtPresence" android:importantForAccessibility="no" android:layout_marginStart="10.0dip" android:layout_marginEnd="0.0dip" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:text="" android:maxLines="1" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/panelPersonalNote" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_custom_status_13602" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/txtPersonalNote" android:text="@string/zm_mm_lbl_not_set" android:maxLines="1" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/pmiCategory" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/btnPMI" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_personal_meeting_id_with_abbr" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtMeetingId" android:layout_width="wrap_content" android:layout_weight="0.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnMeetingRoomName" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_profile_meeting_room_name" style="@style/ZmSettingItemTitle" />
+                    <LinearLayout android:gravity="center|right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="right" android:id="@id/txtMeetingRoomName" android:paddingRight="0.0dip" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_not_set" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Dimmed" />
+                        <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnCallinCountry" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_profile_default_call_in_country_104883" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtCallinCountry" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_profile_default_user_type_88385" style="@style/ZmSettingItemTitle" />
+                    <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtUserType" android:text="@string/zm_lbl_profile_user_type_basic_88385" style="@style/ZmSettingItemContent" />
+                        <ImageView android:visibility="gone" android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionLicense" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_profile_license_184616" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionSubscription" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_subscription_setting_287238" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/optionFingerprint" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_profile_use_fingerprint_id_22438" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkOpenFingerprint" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtAccountDesp" android:text="@string/zm_lbl_basic_learn_more_371493" style="@style/ZmSettingDescription" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/catAdvancedEncryption" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionAdvancedEncryption" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_setting_advanced_encryption_386885" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <LinearLayout android:orientation="horizontal" android:id="@id/zm_dlp_enable_linear" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingTop="@dimen/zm_margin_small_size" android:paddingRight="@dimen/zm_padding_normal_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chat_moderation" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/zm_dlp_enable_txt" android:paddingLeft="@dimen/zm_padding_smallest_size" android:layout_marginTop="0.0dip" android:text="@string/zm_mm_lbl_dlp_enable_dialog_title_357063" style="@style/ZmSettingDescription" />
+            </LinearLayout>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/btnSignout" android:contentDescription="@string/zm_btn_signout" style="@style/ZmSettingItem">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:textColor="@color/zm_v2_btn_desctructive" android:gravity="center" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_signout" style="@style/ZmTextView.Content.Primary" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

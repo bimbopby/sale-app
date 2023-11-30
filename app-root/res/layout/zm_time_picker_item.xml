@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ZmSettingItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/nameOption" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+    <ImageView android:id="@id/imgOption" android:visibility="visible" android:src="@drawable/zm_group_type_select" android:contentDescription="@string/zm_accessibility_icon_item_selected_19247" style="@style/ZmSettingItemArrow" />
+</LinearLayout>

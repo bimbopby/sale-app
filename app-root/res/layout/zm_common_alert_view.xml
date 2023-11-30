@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linAlert" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingTop="@dimen/zm_padding_medium_size" android:paddingRight="@dimen/zm_padding_normal_size" android:paddingBottom="@dimen/zm_padding_medium_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgAlert" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" />
+        <TextView android:gravity="left" android:id="@id/txtAlert" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:maxLines="@integer/maximum_lines" android:layout_weight="1.0" style="@style/ZmTextView.Content.Primary.Medium.OnLight" />
+        <ImageView android:id="@id/imgAlertClose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_alert_close" android:contentDescription="@string/zm_mm_btn_dismiss_content_description_57731" />
+    </LinearLayout>
+    <ImageView android:id="@id/imgDivider" android:background="@drawable/zm_list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

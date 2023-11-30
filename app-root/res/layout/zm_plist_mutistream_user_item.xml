@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingLeft="@dimen/zm_padding_larger_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/zm_v2_cell_divider" android:layout_width="@dimen/zm_divider_height" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center|left" android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingBottom="@dimen/zm_padding_smallest_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:visibility="gone" android:layout_width="@dimen/zm_btn_medium_height" android:layout_height="@dimen/zm_btn_medium_height" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="@dimen/zm_divider_height" android:layout_marginBottom="@dimen/zm_divider_height" zoom:zm_description_enable="false" />
+        <us.zoom.uicommon.widget.view.PListNameRoleLayout android:orientation="horizontal" android:paddingTop="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:paddingBottom="@dimen/zm_padding_smallest_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_small_size" android:layout_weight="1.0">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:ellipsize="end" android:id="@id/txtScreenName" android:paddingRight="@dimen/zm_padding_smallest_minus_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.BuddyName.Normal" />
+        </us.zoom.uicommon.widget.view.PListNameRoleLayout>
+        <ImageView android:id="@id/imgVideo" android:padding="@dimen/zm_divider_height" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_margin_smaller_size" android:src="@drawable/zm_video_on" />
+    </LinearLayout>
+</LinearLayout>

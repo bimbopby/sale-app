@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="600.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/btnSchedule" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <Button android:id="@id/btnBack" android:text="@string/zm_btn_cancel" style="@style/ZmTitleBarAction" />
+        <Button android:id="@id/btnSchedule" android:text="@string/zm_btn_done" style="@style/ZmTitleBarAction" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:paddingLeft="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:text="@string/zm_title_schedule_meeting" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.panel.ZmAlertDisablePmiPanel android:id="@id/panelAlertDisablePMI" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.zipow.videobox.view.panel.ZmAlertUseWebSettingPanel android:id="@id/panelAlertUseWebSetting" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_settingsCategorySpacing="0.0dip">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_ui_kit_color_black_232333" android:id="@id/txtTip" android:background="@color/zm_snackbar_warning_bkg" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingTop="@dimen/zm_padding_small" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="@dimen/zm_padding_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_ncp_epidemic_cn_schedule_137975" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:gravity="left" android:id="@id/edtTopic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/zm_lbl_topic_default" android:maxLines="3" android:maxLength="128" style="@style/ZmInputBox">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:id="@id/txtTopicCannotEditTip" android:paddingTop="@dimen/zm_margin_smallest_size" android:paddingBottom="@dimen/zm_margin_smaller_size" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="@string/zm_msg_meeting_topic_edit_tip_121401" style="@style/ZmSettingDescription" />
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/optionDate" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_date_on_schedle" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtDate" android:text="Thu 2012-09-27" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionTimeFrom" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_from" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtTimeFrom" android:text="09:00 am" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionTimeTo" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_to" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtTimeTo" android:text="10:00 am" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionTimeZone" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_time_zone" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtTimeZone" android:text="GMT+08:00 China Stardard Time" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionRepeat" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_repeat" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtRepeatType" android:text="@string/zm_lbl_repeat_never" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionEndRepeat" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:text="@string/zm_lbl_end_repeat" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:id="@id/txtEndRepeat" android:text="@string/zm_lbl_end_repeat_never" style="@style/ZmSettingItemContent" />
+                    <ImageView android:layout_marginLeft="@dimen/zm_margin_smaller_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/optionUsePMI" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmSettingItem.UnClick">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/zm_lbl_use_pmi" style="@style/ZmSettingItemTitle" />
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="center|left" android:id="@id/txtUsePMI" android:paddingTop="0.0dip" android:paddingBottom="@dimen/zm_padding_medium_size" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmSettingItemContent" />
+                    </LinearLayout>
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkUsePMI" style="@style/ZMScheduleCheckBox" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <FrameLayout android:id="@id/zmSecurityPanel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <us.zoom.uicommon.widget.view.ZMCommonTextView android:gravity="left" android:id="@id/txtPMIAlert" android:paddingTop="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_description_schedule_pmi_21201" android:maxLines="5" style="@style/ZmSettingDescription" />
+                    </LinearLayout>
+                    <com.zipow.videobox.view.schedule.ZMScheduleMeetingOptionLayout android:id="@id/zmMeetingOptions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_margin_medium_size">
+                <LinearLayout android:id="@id/optionAddToCalendar" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_chk_add_to_calendar" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkAddToCalendar" style="@style/ZMScheduleCheckBox" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/optionAddToGoogleCalendar" android:visibility="gone" style="@style/ZmSettingItem.UnClick">
+                    <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_chk_add_to_google_calendar_378288" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkAddToGoogleCalendar" style="@style/ZMScheduleCheckBox" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

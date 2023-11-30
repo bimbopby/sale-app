@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.ZMSimpleEmojiTextView android:gravity="center|left" android:id="@id/txtCateName" android:paddingLeft="@dimen/zm_padding_normal_size" android:paddingTop="@dimen/zm_padding_large_size" android:paddingBottom="@dimen/zm_padding_large_size" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZmTextView.Title.Medium" />
+    <View android:background="@color/zm_v2_cell_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" />
+</LinearLayout>

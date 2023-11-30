@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/zm_ic_sip_indicator_size" android:layout_height="@dimen/zm_ic_sip_indicator_size" android:scaleType="centerInside" />
+    <TextView android:id="@id/txtLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" style="@style/UIKitTextView.PrimaryText.Medium" />
+    <TextView android:textColor="@color/zm_v2_blue_btn_bg_color" android:id="@id/tvAction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="36.0dip" style="@style/UIKitTextView.PrimaryText.Medium" />
+</LinearLayout>

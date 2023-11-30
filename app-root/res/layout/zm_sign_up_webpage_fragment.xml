@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <Button android:id="@id/viewRight" android:text="@string/zm_btn_agree_159086" style="@style/ZmTitleBarAction" />
+        <TextView android:id="@id/txtTitle" android:text="@string/zm_title_signup" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <TextView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/zm_margin_smaller_size" android:text="@string/zm_mm_sign_up_web_page_hint_178692" style="@style/ZmTextView.Content.Primary.Medium.Dimmed" />
+    <ProgressBar android:id="@id/webLoadingProgress" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:progress="50" style="?android:progressBarStyleHorizontal" />
+    <WebView android:id="@id/webviewPage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

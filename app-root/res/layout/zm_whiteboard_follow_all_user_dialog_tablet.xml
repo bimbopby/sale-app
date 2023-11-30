@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zm_v2_bottom_sheet_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title_bar" android:background="@color/zm_white" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZMTitleBar">
+        <Button android:id="@id/btnClose" android:text="@string/zm_whiteboard_share_dialog_close_289013" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmTitleBarAction" />
+        <TextView android:gravity="center" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_wb_follow_mode_following_you_383781" zoom:layout_constraintBottom_toBottomOf="parent" zoom:layout_constraintEnd_toEndOf="parent" zoom:layout_constraintStart_toStartOf="@id/btnClose" zoom:layout_constraintTop_toTopOf="parent" style="@style/ZmTitleBarTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mFollowUserList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" />
+</RelativeLayout>

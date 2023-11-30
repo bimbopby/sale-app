@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/resetBtn" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <Button android:id="@id/btnBack" android:text="@string/zm_btn_cancel" android:contentDescription="@string/zm_btn_cancel" style="@style/ZmTitleBarAction" />
+        <Button android:id="@id/resetBtn" android:text="@string/zm_lbl_notification_reset_exception_group_19898" android:contentDescription="@string/zm_lbl_notification_reset_exception_group_19898" style="@style/ZmTitleBarAction" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_lbl_filters_title_212356" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <us.zoom.uicommon.widget.view.ZMSettingsLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/search_type_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:id="@id/optionSearchType" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/lblSearchType" android:text="@string/zm_lbl_filters_search_type_365159" style="@style/ZmSettingItemTitle" />
+                    <TextView android:textColor="@color/zm_v2_txt_secondary_color" android:ellipsize="end" android:id="@id/txtSearchType" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:id="@id/imgSearchTypeArrow" android:layout_marginLeft="@dimen/zm_margin_small_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/file_type_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:id="@id/optionFileType" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/lblFileType" android:text="@string/zm_lbl_filters_file_type_212356" style="@style/ZmSettingItemTitle" />
+                    <TextView android:ellipsize="end" android:id="@id/txtFileType" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:id="@id/imgFileTypeArrow" android:layout_marginLeft="@dimen/zm_margin_small_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/search_in_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:id="@id/optionSearchIn" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/lblSearchIn" android:text="@string/zm_lbl_filters_search_in_212356" style="@style/ZmSettingItemTitle" />
+                    <TextView android:ellipsize="end" android:id="@id/txtSearchIn" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:id="@id/imgSearchInArrow" android:layout_marginLeft="@dimen/zm_margin_small_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/sent_by_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:id="@id/optionSentBy" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/lblSentBy" android:text="@string/zm_lbl_filters_sent_from_365159" style="@style/ZmSettingItemTitle" />
+                    <TextView android:ellipsize="end" android:id="@id/txtSentBy" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:id="@id/imgSentByArrow" android:layout_marginLeft="@dimen/zm_margin_small_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/when_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:id="@id/optionWhen" style="@style/ZmSettingItem">
+                    <TextView android:id="@id/lblWhen" android:text="@string/zm_lbl_filters_when_212356" style="@style/ZmSettingItemTitle" />
+                    <TextView android:ellipsize="end" android:id="@id/txtWhen" android:layout_width="0.0dip" android:maxLines="1" android:layout_weight="1.0" style="@style/ZmSettingItemContent" />
+                    <ImageView android:id="@id/imgWhenArrow" android:layout_marginLeft="@dimen/zm_margin_small_size" style="@style/ZmSettingItemArrow" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+            <us.zoom.uicommon.widget.view.ZMSettingsCategory android:orientation="vertical" android:id="@id/atMePanel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/atMeLayout" style="@style/ZmSettingItem.UnClick">
+                    <TextView android:textColor="@color/zm_v2_txt_primary_color" android:id="@id/txtAtMe" android:layout_width="0.0dip" android:text="@string/zm_lbl_filters_at_me_242700" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+                    <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkAtMe" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+                </LinearLayout>
+            </us.zoom.uicommon.widget.view.ZMSettingsCategory>
+        </us.zoom.uicommon.widget.view.ZMSettingsLayout>
+    </ScrollView>
+    <Button android:id="@id/btnApply" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/zm_margin_medium_size" android:layout_marginTop="@dimen/zm_margin_medium_size" android:layout_marginRight="@dimen/zm_margin_medium_size" android:layout_marginBottom="@dimen/zm_margin_large_minus_size" android:text="@string/zm_btn_apply" style="@style/ZmButton" />
+</LinearLayout>

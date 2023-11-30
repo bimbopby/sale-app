@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <EditText android:id="@id/edtUnVisible" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginTop="-1.0dip">
+        <requestFocus />
+    </EditText>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <RelativeLayout android:id="@id/panelSearchBar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+            <com.zipow.videobox.view.ZMSearchBar android:id="@id/searchBar" android:paddingLeft="16.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_toLeftOf="@id/btnCancel" android:layout_alignWithParentIfMissing="true" zoom:editTextHint="@string/zm_hint_search" zoom:imeOptions="actionSearch" zoom:noMargin="true" zoom:onDark="true" style="@style/ZmTitleBar.Dark" />
+            <Button android:id="@id/btnCancel" android:text="@string/zm_btn_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZmTitleBarAction.Dark" />
+        </RelativeLayout>
+        <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnClose" zoom:zm_rightButton="@id/panelRight" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar.Dark">
+            <Button android:id="@id/btnClose" android:text="@string/zm_btn_close" style="@style/ZmTitleBarAction.Dark" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/panelRight" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:text="@string/zm_mm_title_share_to" style="@style/ZmTitleBarTitle.Dark" />
+        </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    </FrameLayout>
+    <com.zipow.videobox.view.ZMSearchBar android:id="@id/edtSearchDummy" android:background="@color/zm_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:cursorVisible="false" zoom:editTextHint="@string/zm_hint_search" />
+    <View android:id="@id/searchBarDivideLine" android:background="@color/zm_im_search_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.zipow.videobox.view.mm.MMConnectAlertView android:orientation="vertical" android:id="@id/panelConnectionAlert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.zipow.videobox.view.mm.MMSelectSessionAndBuddyListView android:id="@id/sessionsListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/emptyLinear" android:background="@color/zm_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center|top" android:layout_gravity="center_horizontal" android:id="@id/txtEmptyView" android:paddingTop="30.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_search_result_empty" style="@style/ZmTextView.Button.Secondary.Dimmed" />
+            <TextView android:layout_gravity="center" android:id="@id/txtIBTipsCenter" android:paddingLeft="36.0dip" android:paddingRight="36.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_mm_information_barries_dialog_search_all_115072" android:maxLines="@integer/maximum_lines" style="@style/ZmTextView.Content.Primary.Dimmed" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textColor="@color/zm_v2_txt_primary" android:ellipsize="end" android:gravity="center" android:id="@id/txt_level_custom_tag_title" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_dialog_margin_16dp" android:layout_marginTop="@dimen/zm_dialog_margin_16dp" android:layout_marginRight="@dimen/zm_dialog_margin_16dp" android:layout_marginBottom="@dimen/zm_padding_small" android:maxLines="2" />
+    <View android:background="@color/zm_v2_cell_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

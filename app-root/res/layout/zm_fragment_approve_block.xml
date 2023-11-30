@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" zoom:zm_leftButton="@id/btnBack" zoom:zm_title="@id/txtTitle" style="@style/ZmTitleBar">
+        <ImageButton android:id="@id/btnBack" android:contentDescription="@string/zm_btn_back" style="@style/ZmBackButton" />
+        <us.zoom.uicommon.widget.view.ZMDynTextSizeTextView android:id="@id/txtTitle" android:paddingLeft="@dimen/zm_padding_smallest_size" android:paddingRight="@dimen/zm_padding_smallest_size" android:text="@string/zm_lbl_select_approve_block_title_151081" style="@style/ZmTitleBarTitle" />
+    </us.zoom.uicommon.widget.view.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/lvSelectType" android:background="@color/zm_v2_svg_setting_option" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llSelectCountryPanel" android:background="@color/zm_v2_svg_setting_option" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center|left" android:paddingBottom="@dimen/zm_padding_smallest_minus_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_medium_size" android:text="@string/zm_lbl_audio_connection_188709" style="@style/ZmSettingOptionTitle" />
+                <View android:background="@color/zm_line_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvSelectCountry" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:gravity="center|left" android:id="@id/txtEditCountry" android:background="@color/zm_v2_svg_setting_option" android:paddingTop="@dimen/zm_margin_smaller_size" android:paddingBottom="@dimen/zm_margin_smaller_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:minHeight="@dimen/zm_btn_large_height" android:text="@string/zm_btn_edit_country_188709" style="@style/ZmTitleBarAction" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

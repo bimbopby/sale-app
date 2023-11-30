@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.uicommon.widget.view.ZmFoldableLayout android:id="@id/fodable_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:firstViewId="@id/start_layout" custom:secondViewId="@id/end_layout">
+        <com.zipow.videobox.view.ZmUnexpectedReattachDetector android:layout_width="1.0px" android:layout_height="1.0px" />
+        <com.zipow.videobox.conference.ui.view.ZmMainContentLayout android:id="@id/start_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.zipow.videobox.conference.ui.view.ZmMobileMainControlLayout android:id="@id/end_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </us.zoom.uicommon.widget.view.ZmFoldableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

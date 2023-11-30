@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edtSearchDummy" android:background="@drawable/zm_im_search_bar_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/zm_margin_small_size" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/zm_margin_small_size" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_margin_small_minus_size" android:src="@drawable/zm_ic_im_search" />
+    <EditText android:textColorHint="@color/zm_im_search_text_hint" android:gravity="center|left" android:paddingLeft="@dimen/zm_padding_smaller_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/zm_hint_search" android:cursorVisible="false" android:layout_weight="1.0" android:imeOptions="actionDone" style="@style/ZmInputBox" />
+</LinearLayout>

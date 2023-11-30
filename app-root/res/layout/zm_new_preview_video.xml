@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/zm_dialog_margin_16dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/panelTopBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="start|center" android:id="@id/btnLeave" android:padding="@dimen/zm_padding_smaller_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_new_jfl_close" android:contentDescription="@string/zm_btn_leave_conf" style="@style/ZMTextView.Title.OnLight" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="28.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/txtTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_title_video_preview_95788" android:layout_weight="1.0" style="@style/ZMTextView.ExtremLarge.OnLight" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/panelVideoContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/zm_dialog_margin_16dp" android:minHeight="180.0dip" android:layout_weight="1.0">
+            <us.zoom.feature.video.views.ZmPreviewVideoView android:id="@id/previewVideoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center" android:id="@id/imgUserPic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/zm_margin_normal" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/containerVB" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/btnVB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/zm_margin_small" android:src="@drawable/zm_btn_video_preview_choose_vb" android:contentDescription="@string/zm_title_setting_virtual_background_174032" />
+                <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_font_size_medium" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tipVB" android:background="@drawable/tip_left_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_virtual_background_video_preview_tip_174032" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/zm_height_36dp">
+                    <CheckedTextView android:id="@id/btnNjfPreAudio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_padding_medium_size" android:checkMark="@drawable/btn_audio_state_bg" />
+                    <CheckedTextView android:id="@id/btnNjfPreVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/btn_video_state_bg" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_padding_medium_size">
+                    <include android:id="@id/panelWebinarNameTag" layout="@layout/zm_layout_video_unit_name_tag" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hostSelectVBDownloadPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_size">
+            <ProgressBar android:id="@id/downloadProgressBar" android:layout_width="@dimen/zm_dialog_margin_16dp" android:layout_height="@dimen/zm_dialog_margin_16dp" android:layout_marginRight="6.0dip" />
+            <ImageView android:id="@id/imgDownloadStatus" android:layout_width="@dimen/zm_dialog_margin_16dp" android:layout_height="@dimen/zm_dialog_margin_16dp" android:layout_marginRight="6.0dip" />
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:textSize="@dimen/zm_ui_kit_text_size_13sp" android:textColor="@color/zm_v2_txt_primary" android:id="@id/txtDownloadStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionTurnOnVideoWithoutPreview" android:layout_marginTop="@dimen/zm_margin_small_size" style="@style/ZmSettingItem.UnClick">
+            <us.zoom.uicommon.widget.view.ZMCommonTextView android:layout_width="0.0dip" android:text="@string/zm_lbl_turn_on_video_without_preview_95788" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:id="@id/chkTurnOnVideoWithoutPreview" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:id="@id/btnJoin" android:layout_marginBottom="@dimen/zm_margin_small_size" android:text="@string/zm_btn_join" style="@style/ZmButton" />
+    </LinearLayout>
+</ScrollView>

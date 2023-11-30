@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@drawable/bottom_sheet_white_bg" android:paddingLeft="@dimen/zm_margin_normal_size" android:paddingRight="@dimen/zm_margin_normal_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/zm_ui_kit_text_size_17sp" android:textStyle="bold" android:textColor="@color/zm_v2_txt_primary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_normal_size" android:text="@string/zm_suspicious_link_268214" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/textDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_margin_small_minus_size" android:maxLines="@integer/medium_lines" style="@style/ZmTextView.Content.Primary.Dimmed" />
+        <Button android:id="@id/btnVisit" android:layout_marginTop="@dimen/zm_margin_medium_size" android:text="@string/zm_suspicious_link_visit_268214" style="@style/ZmButton" />
+        <Button android:id="@id/btnCancel" android:layout_marginTop="@dimen/zm_margin_small_size" android:text="@string/zm_btn_cancel" style="@style/ZmButton.Secondary" />
+        <LinearLayout android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_marginTop="@dimen/zm_margin_small_size" android:layout_marginBottom="@dimen/zm_margin_small_size" style="@style/ZmSettingItem.UnClick">
+            <TextView android:layout_width="0.0dip" android:text="@string/zm_suspicious_link_not_remind_again_268214" android:layout_weight="1.0" style="@style/ZmSettingItemTitle" />
+            <us.zoom.uicommon.widget.view.ZMCheckedTextView android:gravity="center" android:id="@id/chkNotRemind" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
